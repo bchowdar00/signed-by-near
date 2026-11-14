@@ -2,42 +2,35 @@
 
 ![Signed by NEAR? How much of NEAR's cross-chain flow needs NEAR's signer: five tests, fixed before any counted result was read](docs/banner-grid.svg)
 
-An evidence-first investment thesis on Chain Signatures, NEAR's MPC signer (`v1.signer`), for the Investment Thesis track of NEAR Hackathon 2026. It asks how much of NEAR's cross-chain flow needs NEAR's signer, whether that reach is widening, and what NEAR pays for it. It is research, not investment advice.
+**On Bitcoin, the flow runs on the bridge that NEAR's signer signs for. On the other seven chains this sample can read, that is not shown.** An evidence-first investment thesis on Chain Signatures, NEAR's MPC signer (`v1.signer`), for the Investment Thesis track of NEAR Hackathon 2026. It is research, not investment advice.
 
-**The answer.** Narrow today. Nearly all of NEAR Intents' Bitcoin flow runs on Omni, the NEAR bridge whose withdrawals Chain Signatures signs, and by the frozen test that flow moved there, on a gap of 3.4 points between two intervals; Omni's share of all bridged BTC on NEAR is about where it was in July 2025. On the other chains this sample can read, Omni is not shown to be the main route.
+- **Dashboard, live:** https://bchowdar00.github.io/signed-by-near/ (in this repository: [`docs/index.html`](docs/index.html))
+- **The write-up:** [`THESIS.md`](THESIS.md), and the same words as a page: https://bchowdar00.github.io/signed-by-near/thesis.html
+- **For judges and screening agents:** [`JUDGES.md`](JUDGES.md)
 
-**Why it can be trusted.** Five tests were fixed in advance: three results that would have shown a broad moat, and two that would have changed the read on cost and on direction. None of the five occurred. What was fixed when, in 2026 and UTC:
+## The finding
 
-- Nov 10: the method, the list of windows and the collector were hashed and submitted to OpenTimestamps at 11:51Z, a minute before collection began; the analysis code, with the five tests in it, at 13:04Z, while collection ran and before any analysis read a collected row. Bitcoin holds both hashes in a block of 14:41Z that day. The block time is what anyone can verify; the two earlier times are this entry's own record.
-- Nov 10 to Nov 13, 00:00Z: collection.
-- Nov 13: the claim's sentence and the read for a NEAR holder were stamped (in a Bitcoin block at 07:25Z), after collection ended and before the first read of any counted result at 11:00:30Z.
+**Narrow today.** Five tests were fixed before any counted result was read, each naming a result that would have gone against this reading on one point. None of the five was shown.
 
-The claim and the tests were written after an uncounted pilot that their author had seen; `THESIS.md` says what it showed. Every number in the write-up is recomputed by two offline commands, and one command, `sh check.sh`, runs them with every check that follows.
+- **Bitcoin runs on the signer's bridge.** Omni, the NEAR bridge whose withdrawals Chain Signatures signs, carried [99.7%, 100.0%] of the bitcoin that moved through NEAR Intents over the 90 days measured. NEAR's own sentence about Bitcoin holds on chain.
+- **Beyond Bitcoin it is not shown.** This sample can read 8 chains, and Omni is shown to be the main route on 1 of them. On Arbitrum, Base, Ethereum, Tron and XRP every sampled dollar moved on a custodial bridge that does not use the signer.
+- **The call count overstates adoption.** The signer took 14,046 calls a day in October. 34.0% of them came from one app, Sweat Wallet, and that app ends in its present form on Dec 30, 2026. Apps beyond NEAR's own infrastructure, leaving Sweat out, made 3.5% [1.7%, 17.4%].
+- **It is a cost, and it is not falling.** The signer charges no fee. NEAR paid its operators 0.1065 NEAR per request in September, and by the frozen test that did not fall from July.
 
-What a NEAR holder watches next is dated: three readings, each with the threshold it has to clear and what this entry expects, written after the read and timestamped before publication ([`afterread/NEXT-READS.md`](afterread/NEXT-READS.md)).
+![Where Intents' measured cross-chain flow runs](docs/chart1-routes-grid.svg)
 
-- The write-up: [`THESIS.md`](THESIS.md), and the same words as a page: [`docs/thesis.html`](docs/thesis.html)
-- The dashboard: [`docs/index.html`](docs/index.html) (static; open it in a browser)
-- For judges and screening agents: [`JUDGES.md`](JUDGES.md)
-
-## What the track asks for, and where it is
-
-The track's own prompt lists five things to build and one rule.
-
-| The prompt asks for | Here | How |
-|---|---|---|
-| "One command that rebuilds every chart from raw data." | Met | `python3 -I rebuild.py data --draft` recomputes every number, table and chart from the saved rows (step 2 below). `sh check.sh` runs it, then fills the write-up and runs every offline check, and ends `ALL OK`. |
-| "A static dashboard page: each chart, the query behind it, and one plain sentence on what it shows." | Met | `docs/index.html`, written by `python3 -I publish/written.py data` (step 3). No script is needed to read it, and it loads nothing from elsewhere. |
-| "THESIS.md with the claim, the evidence for it, the evidence against it, and what result would change my mind." | Met | `THESIS.md`: "Summary" (the claim and Table 1), "4. Results", "5. Evidence against this reading", "7. What would change my mind". |
-| "SQL queries against the NEAR BigQuery public dataset" | Done differently | BigQuery needs a cloud account. The five tests use sources anyone can query with no account or key (NearBlocks' public API, neardata.xyz, FastNEAR's archival RPC, the HSP-007 thread, NearStats). `THESIS.md`, "8. Limitations", lists what that rules out: daily active accounts and contract usage across NEAR. |
-| "A pull from the NEAR Intents Explorer API for swap volume" | Done after the read | That API needs a key from the partner dashboard, so the five tests do not use it: in them Intents' swap volume is NearStats' published figure, as reported, used only as a reference. A key was issued to the author on Nov 13, after the counted read. With it the 90 days to T0 were read in one pull, to a plan hashed and submitted to OpenTimestamps before the first counted request (`explorer/PLAN.md`); the result is `THESIS.md` §4.8 and changes no test. |
-| "Never invent numbers. If a metric can't be computed from these sources, write that in THESIS.md." | Met | Every number is filled from the results by `publish/fill.py`, or is a count that `publish/check_thesis.py` re-derives and checks. Readings that rest on a window that did not finish are printed "not completed". |
+**What a NEAR holder watches next** is dated: January 2027, the first full month without Sweat; October's payout, when it is executed; and the next complete reading of Solana and Zcash. Each has the threshold it has to clear and what this entry expects, written after the read and timestamped before publication ([`afterread/NEXT-READS.md`](afterread/NEXT-READS.md)).
 
 ## Reproduce it
 
-Python 3, standard library only. No key, no install. Steps 1 to 6 run offline, except the one command in step 6 marked "with network". The saved rows are in `data/`: 773 files, 15 MB ([`data/README.md`](data/README.md) says what each is and credits its sources).
+```bash
+sh check.sh
+```
 
-**One command.** `sh check.sh` runs steps 1 to 6 in order, with the Explorer read's offline checks from step 7. It takes about three minutes, stops at the first step that fails, and ends with a line that starts `ALL OK`. The steps, one by one:
+Python 3, standard library only. No key, no install, no network. It recomputes every number, table and chart from the saved rows in `data/` (773 files, 15 MB; [`data/README.md`](data/README.md) says what each is and credits its sources), checks that the write-up and the pages come out as the committed bytes, runs the tests and checks the manifests. It runs steps 1 to 6 below in order (all but the one command in step 6 marked "with network"), with the Explorer read's offline checks from step 7, takes about three minutes, stops at the first step that fails, and ends with a line that starts `ALL OK`.
+
+<details>
+<summary>The steps, one by one, with what each prints</summary>
 
 1. **Keep the committed outputs to compare with.**
    Do: `cp -R out out-committed`
@@ -92,7 +85,40 @@ Python 3, standard library only. No key, no install. Steps 1 to 6 run offline, e
    `python3 -I publish/dest_audit.py out audit` repeats the destination audit (20 lookups on public explorers, 6 s apart, about two minutes). When it has run, `audit/dest-audit.md` lists the same picks with the same counts as `THESIS.md` §4.7, unless an explorer's record has changed.
    `python3 -I verify.py check frozen/instants.json data` re-pulls a seeded sample of 20 windows from NearBlocks' public API and checks them against the published rows; its last line is `PASS` when every window matches. It is optional and has not been run since the collection ended, so it is not timed here. With `--all` it re-pulls every window, which takes three days or more, because NearBlocks accepted fewer calls than its documented limit (`POST-FREEZE.md`).
 
+</details>
+
+## Why it can be trusted
+
+- **Fixed in advance.** The five tests were in a Bitcoin block on Nov 10, while collection ran; the claim's sentence was in one on Nov 13, before the first read of any counted result. Three of the five would have shown a broad moat; two would have changed the read on cost and on direction.
+- **Weak points stated.** The claim and the tests were written after an uncounted pilot that their author had seen, and `THESIS.md` says what it showed. The one sign of widening, Bitcoin's move to Omni, rests on a gap of 3.4 points between two intervals. `THESIS.md`, "5. Evidence against this reading", gathers what cuts against the finding.
+- **Recomputed twice.** A second implementation, written from the method and the saved rows alone, recomputes the write-up's numbers and reports where it agrees (`rederive/`).
+
+<details>
+<summary>What was fixed when, in 2026 and UTC</summary>
+
+- Nov 10: the method, the list of windows and the collector were hashed and submitted to OpenTimestamps at 11:51Z, a minute before collection began; the analysis code, with the five tests in it, at 13:04Z, while collection ran and before any analysis read a collected row. Bitcoin holds both hashes in a block of 14:41Z that day. The block time is what anyone can verify; the two earlier times are this entry's own record.
+- Nov 10 to Nov 13, 00:00Z: collection.
+- Nov 13: the claim's sentence and the read for a NEAR holder were stamped (in a Bitcoin block at 07:25Z), after collection ended and before the first read of any counted result at 11:00:30Z.
+
+</details>
+
+## What the track asks for, and where it is
+
+The track's own prompt lists five things to build and one rule.
+
+| The prompt asks for | Here | How |
+|---|---|---|
+| "One command that rebuilds every chart from raw data." | Met | `python3 -I rebuild.py data --draft` recomputes every number, table and chart from the saved rows (step 2 below). `sh check.sh` runs it, then fills the write-up and runs every offline check, and ends `ALL OK`. |
+| "A static dashboard page: each chart, the query behind it, and one plain sentence on what it shows." | Met | `docs/index.html`, written by `python3 -I publish/written.py data` (step 3). No script is needed to read it, and it loads nothing from elsewhere. |
+| "THESIS.md with the claim, the evidence for it, the evidence against it, and what result would change my mind." | Met | `THESIS.md`: "Summary" (the claim and Table 1), "4. Results", "5. Evidence against this reading", "7. What would change my mind". |
+| "SQL queries against the NEAR BigQuery public dataset" | Done differently | BigQuery needs a cloud account. The five tests use sources anyone can query with no account or key (NearBlocks' public API, neardata.xyz, FastNEAR's archival RPC, the HSP-007 thread, NearStats). `THESIS.md`, "8. Limitations", lists what that rules out: daily active accounts and contract usage across NEAR. |
+| "A pull from the NEAR Intents Explorer API for swap volume" | Done after the read | That API needs a key from the partner dashboard, so the five tests do not use it: in them Intents' swap volume is NearStats' published figure, as reported, used only as a reference. A key was issued to the author on Nov 13, after the counted read. With it the 90 days to T0 were read in one pull, to a plan hashed and submitted to OpenTimestamps before the first counted request (`explorer/PLAN.md`); the result is `THESIS.md` §4.8 and changes no test. |
+| "Never invent numbers. If a metric can't be computed from these sources, write that in THESIS.md." | Met | Every number is filled from the results by `publish/fill.py`, or is a count that `publish/check_thesis.py` re-derives and checks. Readings that rest on a window that did not finish are printed "not completed". |
+
 ## What is where
+
+<details>
+<summary>Every folder and file, and what it is</summary>
 
 | Path | What it is |
 |---|---|
@@ -117,7 +143,12 @@ Python 3, standard library only. No key, no install. Steps 1 to 6 run offline, e
 | `tests/`, `rebuild.py`, `verify.py`, `run.sh`, `stage1_manifest.py`, `stage2_manifest.py` | The tests of the frozen code; the rebuild and re-pull commands; the scripts that ran the collection and wrote the two Nov 10 manifests. |
 | `check.sh` | One command for steps 1 to 6 of "Reproduce it". Written after the read. |
 
+</details>
+
 ## What is timestamped, and what is not
+
+<details>
+<summary>What was stamped before the read, what after, and what a receipt shows</summary>
 
 Timestamped before the first read of any counted result: the method, the sampling plan, the collectors, the analysis code, the five tests, the rule for readings not completed, the write-up's template with its numbers as placeholders, the claim's sentence and the holder's read. The first section above says which of these were in a Bitcoin block before collection ended and which after. These files are published byte for byte, which is why a few of them carry a local path or a working note. `POST-FREEZE.md` says three copies under `deadline/` are held back for that reason. They were held back at first, because they carry a local path, a process id and a first name, and are now published on the author's ruling, so that the `deadline/` manifest checks 4 of 4 and all 59 tests pass in a clone (`AFTER-READ.md`).
 
@@ -130,6 +161,8 @@ Written after the read, and listed in `AFTER-READ.md`: the sentences of the writ
 The look was added on Nov 14, also after the read: one dark look for the two pages, the banner and the charts shown on them and in `THESIS.md`. The charts as the timestamped code wrote them are unchanged in `out/published/` and are copied byte for byte into `docs/`. Each recoloured copy (`docs/chart1-routes-grid.svg`, `docs/chart2-callers-cost-grid.svg`) differs from its chart in the style block only, and `publish/dashboard.py` stops the build if it differs anywhere else. No typeface, image or script is loaded from elsewhere.
 
 The saved rows in `data/` are in no manifest either: the manifests fix how the sample was to be drawn and read, not what came back. What ties the rows to the plan is the list of windows in `frozen/instants.json`, each page's own record of the request it answers, and the re-pull in step 7.
+
+</details>
 
 ## Who and what made this
 

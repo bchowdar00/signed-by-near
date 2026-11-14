@@ -8,17 +8,17 @@ Bhargav Chowdary · version 1 · Data cutoff (T0): 2026-11-10T11:00:00.000000Z �
 
 ## Summary
 
-**Narrow today: the claim held on breadth. The next reads are dated.** Chain Signatures is NEAR's signer. It signs the withdrawals of Omni, NEAR's own bridge. NEAR Intents is NEAR's cross-chain swap product.
+**Narrow today.** Chain Signatures is NEAR's signer; it signs the withdrawals of Omni, NEAR's own bridge. This sample can read 8 chains, and Omni is shown to be the main route for the flow of NEAR Intents, NEAR's cross-chain swap product, on 1 of them: Bitcoin. Five tests were fixed before any counted result was read, each naming a result that would have gone against this reading on one point. None of the five was shown.
 
-- **On Bitcoin the flow runs on the signer's bridge.** Nearly all of the bitcoin that moves through Intents moves on Omni: [99.7%, 100.0%] of it over the 90 days to T0. NEAR's own sentence about Bitcoin holds on chain.
-- **Beyond Bitcoin it is not shown.** This sample can read 8 chains, and Omni is shown to be the main route on 1 of them. On Solana and Zcash Omni carried most of the sampled flow, but the intervals are too wide to call. On Arbitrum, Base, Ethereum, Tron and XRP every sampled dollar moved on a custodial bridge that does not use the signer. Found after the read: the Intents team's own SDK lists SOL and ZEC tokens among those it now sends through Omni, and no EVM, Tron or XRP token. That is a list in its code, not a measurement of flow (§5).
+- **On Bitcoin the flow runs on the signer's bridge.** Omni carried [99.7%, 100.0%] of the bitcoin that moved through Intents over the 90 days to T0. NEAR's own sentence about Bitcoin holds on chain.
+- **Beyond Bitcoin it is not shown.** On Solana and Zcash Omni carried most of the sampled flow, but the intervals are too wide to call. On Arbitrum, Base, Ethereum, Tron and XRP every sampled dollar moved on a custodial bridge that does not use the signer. Found after the read: the Intents team's own SDK lists SOL and ZEC tokens among those it now sends through Omni, and no EVM, Tron or XRP token. That is a list in its code, not a measurement of flow (§5).
 - **The call count overstates adoption.** The signer took 14,046 calls a day in October. 34.0% of them came from one app, Sweat Wallet, signing in through a login service, and that app ends in its present form on Dec 30, 2026. Apps beyond NEAR's own infrastructure, leaving Sweat out, made 3.5% [1.7%, 17.4%].
-- **It is a cost, and it is not falling.** The signer charges no fee. NEAR pays its operators from its treasury: 0.1065 NEAR per request in September, and by the frozen test it did not fall from July. Written after the read: at October's proposed payout the programme runs at 922,374.24 NEAR a year, equal to 2.8% of the most NEAR the protocol can issue in a year (a comparison of size, not a share of issuance; §7.2).
+- **It is a cost, and it is not falling.** The signer charges no fee. NEAR pays its operators from its treasury: 0.1065 NEAR per request in September, and by the frozen test it did not fall from July. Written after the read: at October's proposed payout the programme runs at 922,374.24 NEAR a year (§7.2).
 - **What a holder watches next.** January 2027, the first full month without Sweat; October's payout, when it is executed; and the next complete reading of Solana and Zcash. Each has a threshold and an expectation, written after the read and timestamped before this page was published (§7.2).
 
 **The claim under test:** "On the chains this sample can measure, Chain Signatures is a narrow route, not a broad one."
 
-**Table 1. The five tests and how each came out.** Each test is a result that would have gone against this page's reading on one point. "Met if" gives the test in short; §7.1 gives it in full.
+**Table 1. The five tests and how each came out.** Each test names a result that would have gone against this page's reading on one point. "Not met" means that result was not shown. "Met if" gives the test in short; §7.1 gives it in full.
 
 | | Test | Met if (in short) | Found | Result |
 |---|---|---|---|---|
@@ -28,7 +28,7 @@ Bhargav Chowdary · version 1 · Data cutoff (T0): 2026-11-10T11:00:00.000000Z �
 | T4 | Falling spend per request | what NEAR pays per request falling from July to September while calls grow | it did not fall, and total calls did not grow | not met |
 | T5 | No migration | no move to Omni for SOL, ZEC or BTC | Bitcoin moved, by the frozen test; for SOL and ZEC the comparison could not be made | not met |
 
-T1 to T3 would have shown a broad moat; T4 and T5 would have changed the read on cost and on direction. All five frozen tests read not met; none was met and none is undecided.
+T1 to T3 would have shown a broad moat; T4 and T5 would have changed the read on cost and on direction. All five frozen tests read not met; none was met and none is undecided. So no test went against the claim. The tests are one-sided: "not met" means not shown, never disproved (§7.1).
 
 The one sign of widening, Bitcoin's move to Omni, rests on two intervals that are only 3.4 points apart (96.3% against 99.7%), and Omni's share of all bridged BTC on NEAR, by token supply, is about where it was in July 2025 (66.3% then, 64.9% at T0). On value the sample cannot tell: Omni's share of the measured value is [21.1%, 89.5%], wide enough that the truth may sit near its top.
 
@@ -38,6 +38,7 @@ The tests were written after an uncounted pilot that their author had seen (§3.
 
 ## How to read this page
 
+- *Short on time*: the Summary stands alone. §5 gives the evidence against this reading and §7.2 the dated reads that would change it; §3 and §4 are the record behind each number.
 - *[a, b]*: a 95% interval.
 - *Reported*: stated by a source and not confirmed here.
 - *Charts*: drawn by the timestamped code and shown in this entry's colours. Only the style block differs from the files that code wrote, `out/published/chart1-routes.svg` and `out/published/chart2-callers-cost.svg`.
@@ -71,6 +72,9 @@ A swap on NEAR Intents can move an asset in over one bridge route and out over a
 | POA, the Intents team's custodial bridge | the bridge itself | no | yes |
 | HOT, a separate bridge | its own MPC network | no | no |
 
+<details>
+<summary>The terms used on this page</summary>
+
 - *Chain Signatures*: NEAR's signer, the contract `v1.signer`; one signature is one `sign` call.
 - *POA* ("Proof of Authority"): the Intents team's custodial bridge, which holds its own keys.
 - *HOT*: a separate bridge that runs its own MPC network, not NEAR's signer; its flow cannot be read through these sources.
@@ -79,6 +83,8 @@ A swap on NEAR Intents can move an asset in over one bridge route and out over a
 - *NEAR's own infrastructure*: contracts built by NEAR, Near One or the Intents team, such as the Omni bridge and its Bitcoin and Zcash connectors.
 - *Window*: one randomly placed stretch of time, read completely.
 - *Claim window*: the 28 days around NEAR's blog post of Oct 23, from Oct 9 to Nov 6, 2026.
+
+</details>
 
 ## 3. Data and method
 
@@ -90,12 +96,17 @@ All sources of the five tests are keyless: NearBlocks' public API (FT events, `s
 
 ### 3.2 Sampling and intervals
 
+<details>
+<summary>How the sample was drawn and how the intervals are built</summary>
+
 The design is fixed in `METHOD.md`.
 - Time windows are placed at random within strata (calendar months for the signer; for each of 15 Intents tokens on 8 chains, the 28-day window around the post and the rest of the 90 days to T0). Each window is read completely, page by page, and weighted by the inverse of its inclusion probability, so a total is unbiased where every window of its stratum is read. A share, the ratio of two totals, is not, and its interval is built as the next two points describe.
 - A transfer's route comes from the counterparties of Intents' own legs: **Omni** (NEAR's bridge, whose withdrawals Chain Signatures signs), **POA** (the Intents team's custodial bridge) or **unknown**. Every share is computed twice, with unknowns counted against Omni and for it, and the interval read spans both.
 - Intervals count windows, not transfers: transfers inside one window are not independent, so a stratum's bound uses Kish's effective number of windows. Three all-Omni windows give a lower bound of 29%, not 99%.
 - Interval ends that come from the bootstrap are printed as computed at the frozen seed and carry Monte Carlo error: in an independent re-derivation (`rederive/mc-seeds/`), over 40 seeds the non-Omni lower end ran from $1.11B to $1.17B, and over 60 seeds Bitcoin's 90-day lower end ran from 99.68% to 99.77%. Ends set by the window-level or Garwood bound are exact. T1 to T4 are far from their thresholds: T1 reads the lower end of Omni's share, 21.1% against the 90% it needed. T5 is not: it rests on the gap between two interval ends (§4.5), though that gap is many times the seed-to-seed movement shown here.
 - Every verdict was checked, before the draw, to be reachable both ways. Where it was not, the claim gets estimates and no verdict. That is why Solana has none: at this sample size the Solana half could not be confirmed even by an all-Omni sample, so the absence of a verdict is not evidence against the claim.
+
+</details>
 
 ### 3.3 The five tests
 
@@ -114,9 +125,14 @@ All times are 2026, UTC.
 
 The claim and the tests were both written after an uncounted pilot that their author had seen. On Nov 9, with one window per token, SOL, ZEC and BTC transfers went through Omni, and ETH, USDC on Ethereum, Arbitrum and Base, Tron USDT and XRP went through POA; and 49 of 103 sampled `sign` calls were Sweat's (METHOD, sections 4 and 7). That pilot had already shown five of the eight readable chains on POA and Sweat with about half of the sampled calls, so T2 and T3 could hardly have been met; it did not measure value, cost or change over time, which the other three test. So the claim was not a blind guess. What the stamps show is that the tests, their thresholds and the claim were not changed after the counted results were read.
 
+<details>
+<summary>Checked again after the read: a second implementation, and what was added</summary>
+
 **Checked again after the read.** AI sessions wrote a second implementation from `METHOD.md`, told not to read the analysis code or any result, and it recomputes this page's numbers from the same saved rows. From a clone it compares 570 numbers: 553 agree (bootstrap ends within a stated tolerance), 9 need a source file this repository does not ship, 6 are not recomputed and 2 differ, both explained (`rederive/`). It was run after the read, so it shows that the numbers follow from the method and the rows, not that the method was fixed in advance.
 
-Everything written or added after the counted results were read is listed in `AFTER-READ.md`. The additions that bear on a reading are marked where they appear: the Intents team's SDK list (§5), the size of the programme against issuance and the three dated next reads (§7.2, from `afterread/NEXT-READS.md`, timestamped before publication), the correction to one word of the stamped read (§6), the second implementation above, and the Explorer read (§4.8), whose plan was hashed and submitted to OpenTimestamps before its first counted request.
+Everything written or added after the counted results were read is listed in `AFTER-READ.md`, and each addition that bears on a reading is marked where it appears: the Intents team's SDK list (§5), the three dated next reads and the size of the programme (§7.2), the correction to one word of the stamped read (§6), the second implementation above, and the Explorer read (§4.8).
+
+</details>
 
 ## 4. Results
 
@@ -124,10 +140,15 @@ Everything written or added after the counted results were read is listed in `AF
 
 **T1, not met.** The lower end of Omni's share of the measured value is 21.1%; the test needed 90% or more.
 
+<details>
+<summary>The readings behind this result</summary>
+
 - Omni's share of all measured value over the 90 days: [21.1%, 89.5%]. The part Chain Signatures signs, Omni's withdrawals: [6.2%, 78.6%].
 - Measured value: $3,072.6M per 30 days, at fixed reference prices. Measured non-Omni value: $1,163.2M to $2,586.2M per 30 days. These dollar ranges are bootstrap intervals of totals. The share's interval is built differently and is wider: both its ends come from the window-level bound, which counts each window, not each transfer, as one trial (the bootstrap alone gives [25.2%, 57.3%]). So the share's ends cannot be recomputed from the dollar ranges.
 - How much of Intents this covers: not known from these sources. The method's coverage figure sets the measured value against twice NearStats' 30-day swap volume V (V = $831.3M; twice, because one cross-chain swap can move value in on one route and out on another). It reads 100.0% only because it is capped there: the measured value is 3.70 times V. The two are different populations. The measured value is bridge transfers into and out of Intents at prices fixed on Nov 9, per 30 days of the 90, while V counts each swap once over NearStats' 30 days (METHOD M9). So V is not a ceiling on bridge transfers, and this sample does not establish why the measured value is larger.
 - Two labelled scenarios, not bounds: if every unmeasured dollar (HOT's included) were Omni, Omni's share would be 89.5%; if none were, 21.1%. These equal the interval's ends because coverage is capped at 100%, which leaves no dollar to count as unmeasured. The method's second scenario, by chain, is not capped: it weights each measured chain's share by NearStats' 30-day volume for that chain, the measured chains cover 88.3% of V, and the two scenarios read 88.2% and 14.0% (METHOD M9).
+
+</details>
 
 Against "all the network's cross-chain volume": of the value this sample measured, Omni carried 41.3% [21.1%, 89.5%] over the 90 days, and the part Chain Signatures signs, Omni's withdrawals, 19.2% [6.2%, 78.6%]. Deposits on Omni are verified by light clients or Wormhole; the signer signs only what leaves. The measured value is 3.70 times NearStats' 30-day swap volume V [2.62, 4.95], and the measured non-Omni value alone reaches 1.56 times 2V at its upper end. For context only, against NEAR's headline 30-day total ($3,714.7M: revenue.near.org's series, as carried in NearStats' summary feed of Nov 9, 2026; reported) the measured value is 82.7% [58.6%, 110.7%]. Of the measured value, $1,163.2M to $2,586.2M per 30 days moved without NEAR's bridge.
 
@@ -141,11 +162,16 @@ Against "all the network's cross-chain volume": of the value this sample measure
 
 Of the 28 chains the partner names, this sample can read the flow on 8, and Omni is the dominant route on 1 of those 8. Across all 28, counting the census of Intents' own legs, Omni is seen in use on 7. NEAR's own Omni overview documents 10 of the 28, which is a statement of capability, not a ceiling. The other 20, HOT's included, cannot have their flow measured through these sources. Four of them (Aptos, BNB, Polygon, Starknet) appear in the census of Intents' own legs; the rest are shown by their documented route only. NearStats listed 39 supported chains for Intents on Nov 9, 2026 (its summary feed; reported), so the 28 is already a snapshot.
 
+<details>
+<summary>The intervals, chain by chain</summary>
+
 Bitcoin is the one measured chain where Omni is shown to be the dominant route (Figure 1), with [99.7%, 100.0%] of its measured flow by amount. Bitcoin's interval is built by a different rule from the others, frozen with the method: the window-level bound applies where a token can take either route, but Bitcoin's Omni token can only be Omni or unknown and its POA token is read whole, so the interval comes only from a bootstrap of the Omni token's total (METHOD, sections 4 and 7).
 
 A bootstrap over few windows holds the truth less often than its nominal 95%: for the claim window's six windows, the method's replays on synthetic data held it in 30 of 40, each miss within 0.005 points (`DEVIATIONS.md`). The 90-day interval printed here rests on twelve windows of the Omni token, six inside the claim window and six outside it; the replays were run at six only, so its coverage at twelve was not measured. That makes it the weakest interval on this page by coverage.
 
 On Solana and Zcash Omni carried most of the measured flow, 100.0% of SOL and 94.3% of ZEC, but over the 90 days their intervals reach down to 32.1% and 16.8%, so the sample cannot call Omni dominant there. On the measured chains of EVM, Tron and XRP tokens (Arbitrum, Base, Ethereum, Tron and XRP), none of the measured value moved on Omni: in this sample the custodial POA bridge carried all of it. These five chains have six readings, one for each chain's dollar tokens or its own coin (Ethereum has both), and their upper ends, 73.1% to 94.0%, reflect how few effective windows each reading had, between one and three, not any Omni flow: each reading rests on 10 to 20 windows, but most of its amount sat in a few of them.
+
+</details>
 
 Omni is seen in use on Bitcoin, Solana and Zcash among the measured chains, and on Aptos, BNB, Polygon and Starknet in the census of Intents' own legs. So "28 blockchains via NEAR's chain signature architecture" holds as documented capability on some chains and as measured use on a few.
 
@@ -161,21 +187,31 @@ Omni is seen in use on Bitcoin, Solana and Zcash among the measured chains, and 
 - Apps beyond NEAR's own infrastructure, leaving out Sweat Wallet (which ends in its present form on Dec 30, 2026): 3.5% of October's calls [1.7%, 17.4%]. With Sweat: 37.5%.
 - The largest single caller had 34.0% of October's calls.
 
+<details>
+<summary>What the calls sign, and the largest callers</summary>
+
 What the calls sign: a call's arguments can be read only from whole blocks, and the design reads 150 random blocks a month for that; October's held 12 `sign` calls. (The deposits in §4.4 come from NearBlocks' receipt rows instead, which cover every sampled call of every month.) Of the 12, 58.3% [30.0%, 87.5%] were Ed25519 signatures on FastAuth login paths, most likely NEAR account control rather than signing for another chain, and 41.7% [12.5%, 70.0%] were secp256k1, the key type for EVM, Bitcoin and Zcash, so cross-chain capable (METHOD M6). With so few calls both shares are wide.
 
 October's three largest callers were Sweat through FastAuth (34.0%), Omni's bridge contract (25.1%) and Omni's BTC connector (21.3%). Relay, an independent cross-chain intents protocol, appears to be among the users beyond NEAR's own infrastructure (reported): its docs place its Allocator, which generates MPC withdrawal payloads, on Aurora, and contracts there with verified Relay names call this signer (`registry/callers.json`; each contract's tie to Relay is reported).
 
 Apps calling directly, the class Relay is in, made 3.5% [1.7%, 5.9%] of October's calls. That is the same point as the line above that leaves Sweat out, with a narrower interval: it leaves out apps other than Sweat that sign in through FastAuth, of which the sample of FastAuth's signers saw none, while the line above adds the bound on how many of FastAuth's calls that sample could have missed.
 
+</details>
+
 ### 4.4 T4. What does NEAR pay, and is it falling?
 
 **T4, not met.** What NEAR pays per request did not fall from July to September, and total calls did not grow. In September NEAR paid 0.1065 NEAR [0.0884, 0.1324] per request, from emissions held in NEAR's treasury (NEAR emitted earlier, which diluted holders then; the programme adds no new supply); the signer charges no fee.
+
+<details>
+<summary>The ledger, month by month</summary>
 
 NEAR pays the signer's operators from emissions under HSP-007. The execution thread's ledger rows sum to 338,436.08 NEAR executed from 2026-03 to 2026-09, plus 8,436.40 pending; 76,864.52 NEAR for 2026-10 is in a proposed report. Of these, 10,317.00 NEAR executed and 1,536.40 pending are testnet rows (June to August); the rest is mainnet. Per `sign` request, that was 0.1065 NEAR in September [0.0884, 0.1324]. A `sign` call must attach at least 1 yoctoNEAR (4,013 of 4,058 sampled calls attached exactly that), a spam guard, so the signer charges no fee for a signature. The minimum is in the signer contract's source (`SIGN_DEPOSIT_YOCTONEAR = 1`, github.com/near/mpc at commit `cfa4b83`, read Nov 8, 2026); the deployed contract was not compared with that source.
 
 On mainnet rows alone NEAR paid 0.0618 NEAR per `sign` request in July, 0.0782 in August and 0.1065 in September (executed plus pending). With the testnet rows of those months pooled in, as the frozen test computed it, the figures are 0.0702, 0.0820 and 0.1065. The tables and Figure 2, made by the frozen command, show the pooled figures (`TABLE-NOTES.md`, note 1). Either way the points rose, but the intervals overlap, so the rise itself is not established.
 
 Over the same months total calls fell, from 744,017 to 688,516 a month, and the paid operator set grew from 10 nodes to 17. October's total was lower again, 435,432 calls [335,044, 544,604]; its payout is only proposed, so October has no cost figure here (`TABLE-NOTES.md`, note 2). What the spend buys is a signer with no single custodian for withdrawals to chains without smart contracts, Bitcoin and Zcash among them.
+
+</details>
 
 ### 4.5 T5. Is the route widening?
 
@@ -192,11 +228,16 @@ Over the same months total calls fell, from 744,017 to 688,516 a month, and the 
 
 No pass ran after the deadline. A series whose early or late windows were not all completed at the deadline reads "not completed" above, with no interval (`POST-FREEZE.md`).
 
+<details>
+<summary>The series behind this result</summary>
+
 SOL's share over the 90 days is complete and is in the tables ([32.1%, 100.0%]); the comparison needs the early-2025 windows too, and 2 of SOL's 8 did not finish. ZEC is the same: its share over the 90 days is complete (its interval reaches down to 16.8%, §4.2), and 3 of its 8 early-2025 windows did not finish.
 
 Omni's share of bridged BTC on all of NEAR, by token supply, did not climb steadily: 0.0% at the start of 2025, 66.3% in July 2025, 10.1% in March 2026, 69.8% on Nov 1, 2026 and 64.9% at T0.
 
 By the frozen test, Intents' Bitcoin flow moved to Omni: Omni's share of Intents' bridged BTC went from [0.0%, 96.3%] in early 2025 to [99.7%, 100.0%] in the 90 days to T0. The test reads "moving" (Table 3) because the two intervals do not overlap, and they are only 3.4 points apart (96.3% against 99.7%). The early interval is wide for a plain reason. The sample holds 45 early BTC transfers in 6 of the 16 early windows, none of them on Omni, but most of their amount sat in one window (an effective 1.1 windows), so the window-level bound cannot rule out a high Omni share.
+
+</details>
 
 So "moving" holds for Intents' flow by the frozen test, on a narrow gap, and does not show in the supply share since July 2025. For SOL, ZEC and the ETH control the before-and-after comparison could not be made: a window each rests on did not finish before the deadline, so this sample cannot say whether they moved. The thesis sketch of Nov 10 (`preread/THESIS-b-SKETCH.copy.md`, written before the counted sample) expected SOL and ZEC to have moved to Omni, and that stays unshown. A moat that is narrow today can still be widening; this sample shows that for Intents' Bitcoin flow only, and by that margin.
 
@@ -212,9 +253,14 @@ So "moving" holds for Intents' flow by the frozen test, on a narrow gap, and doe
 | SOL (in SOL) | [24.7%, 100.0%] | estimate only |
 | Solana USDC and USDT (in USD) | [43.2%, 100.0%] | estimate only |
 
-On Bitcoin the post's sentence holds on chain. Omni carried [100.0%, 100.0%] of Intents' bridged BTC in the claim window by amount, and every sensitivity reads the same: consistent at thresholds of 80% and 95%, by count as well as amount, in each direction, and over the whole 90 days ([99.7%, 100.0%]). Solana gets estimates only, for the reason given in §3.2: Omni carried [24.7%, 100.0%] of bridged SOL and [43.2%, 100.0%] of Solana USDC and USDT, both consistent with "virtually all" and with much less. Each sensitivity is in `out/published/tables.md`; notes to read beside the tables and charts are in `TABLE-NOTES.md`.
+Every Bitcoin sensitivity reads the same: consistent at thresholds of 80% and 95%, by count as well as amount, in each direction, and over the whole 90 days ([99.7%, 100.0%]). Solana gets estimates only, for the reason given in §3.2: Omni carried [24.7%, 100.0%] of bridged SOL and [43.2%, 100.0%] of Solana USDC and USDT, both consistent with "virtually all" and with much less. Each sensitivity is in `out/published/tables.md`; notes to read beside the tables and charts are in `TABLE-NOTES.md`.
 
 ### 4.7 Does the signer work?
+
+In the run this entry read, 252 of the 255 `sign` requests it evaluated were paired with a successful response and 3 had none by its end (censored, not failed), and every Bitcoin withdrawal the audit looked up was spent from the address the signer's key controls.
+
+<details>
+<summary>The run and the destination audit</summary>
 
 In the contiguous run of 2,000 blocks ending at T0, 252 of the 255 `sign` requests evaluated (98.8%) were paired with a successful response, and 3 had none by the end of the run, which counts as censored, not failed. Each of the 3 is the second of two identical requests (same payload, tweak and domain): two in the same block as the first, the third five blocks after it. For each, a node's later response for that payload failed with the contract's message "This sign request has timed out, was completed, or never existed"; whether the duplicate got its own signature was not checked. 11 of the pairs are between identical requests, paired in order, so they are not proven one by one. Over the matched pairs the median delay was 2.9 s and the longest 5.5 s.
 
@@ -224,9 +270,14 @@ In the contiguous run of 2,000 blocks ending at T0, 252 of the 255 `sign` reques
 
   The Bitcoin picks are separate transactions but were confirmed at only 3 distinct times, 7 of them at one, so they are fewer independent checks than their number. On 4 of the Zcash withdrawals no value went to another transparent address: their payout is not visible on the transparent chain, which does not mean nothing was paid (most plausibly it went to a shielded address, which these lookups cannot see; not confirmed).
 
+</details>
+
 ### 4.8 The same question on Intents' own records (added after the read)
 
 **Added after the read; it changes no test.** The five tests could not use the Intents Explorer API, which needs a key (§3.1). A key was issued to the author on Nov 13, after the counted read. With it, all 90 of the 24-hour blocks were read: 1,934,126 completed swaps, worth $3,850.7M by the API's own USD figures, a count and not a sample. The plan was hashed and submitted to OpenTimestamps before the first request inside the 90 days. The rules that sort tokens into bridges, and the sentences that carry this read's figures, were submitted while the pull ran and before any pulled sum was read (`explorer/PLAN.md`, `explorer/STAGE2.md`, `explorer/sentences.py`). Those times, and their order, are this entry's own record (`AFTER-READ.md`). What the receipts show is that Bitcoin holds all three hashes in one block, number 975729, which is dated Nov 14, 00:54Z. By this entry's record the pull ended at 02:46Z.
+
+<details>
+<summary>How this read sorts value, and its figures by token family and by chain</summary>
 
 This is a different measure from the tests'. It covers one channel, 1Click swaps. It sorts value by whose token was delivered, since a token's ID names its bridge, and not by the leg a transfer was seen to take on chain, which is how the tests label a route. The USD figures are the API's. Native BTC is the one token placed by a label and not by its ID: the operator's own token list calls it `BTC(OMNI)` (`explorer/STAGE2.md`). It is nearly all of the Omni-form value below, and no other way of counting it would raise Omni's side.
 
@@ -235,6 +286,8 @@ This is a different measure from the tests'. It covers one channel, 1Click swaps
 **Deposits.** Of the $3,263.3M that came in through a bridge, Omni-form tokens carried 14.6%, POA-form tokens that the SDK lists as moved to Omni 16.6%, other POA-form tokens 61.2%, HOT's tokens 7.4%, and 0.2% is unclassified.
 
 **The chains the keyless sample could not read.** On the 29 chains here that the keyless sample could not read, $272.5M left through a bridge: Omni-form tokens 0.3%, SDK-listed 0.3%, other POA-form 16.3%, HOT's 73.7%, unclassified 9.4%. On the 8 here that it could read, $3,240.9M left through a bridge: Omni-form tokens 15.1%, SDK-listed 18.1%, other POA-form 66.2%, HOT's 0.0%, unclassified 0.5%. Each chain has its own line in `explorer/RESULTS.md`. The chains it could not read are the other 20 of §4.2 and chains the partner's page does not name.
+
+</details>
 
 **Against T1 and against the expectation.** On this channel Omni's side of the bridged withdrawals lies between 30.7% and 31.9%, counting the unclassified value against it and for it: under half, and so under T1's 90%. The expectation written before the pull (POA-form tokens over half of withdrawal value, Omni's side under half, HOT under 10%) held on all three counts, whether or not the tokens delivered on NEAR are in the denominator. Over the 30 days to T0 the completed swaps come to $1,054.7M. NearStats' figure for Intents' 30-day swap volume, V (§4.1), is $831.3M, from its summary feed of Nov 9. That is less than this one channel's figure, and this entry does not explain the gap. Of 3 blocks read a second time after the pull, 3 gave the same sums cell for cell. 0 of the swaps had no USD figure on the way out and count for nothing in these sums.
 
@@ -298,7 +351,7 @@ If all three read as expected, the signer is a route that widens by chain while 
 
 The same stamped file sets the cost against issuance: at October's proposed payout the programme runs at 922,374.24 NEAR a year, equal to 2.8% of the most NEAR the protocol can issue in a year. It is a comparison of size, not a share of issuance (`afterread/NEXT-READS.md`).
 
-**Reading it again.** The five tests are thresholds on public data, and one command re-pulls the sample without an API key, so anyone can read them again. The dates that matter: January 2027 for broad adoption (the first full month after 2026-12-30), and each month's HSP-007 report for falling spend per request. Beyond those three reads, what would move a reading:
+**Reading it again.** The five tests are thresholds on public data, and one command re-pulls the sample without an API key, so anyone can read them again. Beyond those three reads, what would move a reading:
 - Two Bitcoin series, kept apart: Omni's share of Intents' bridged BTC, the frozen test's series ([99.7%, 100.0%] over the 90 days), and Omni's share of all bridged BTC on NEAR by token supply (64.9% at T0). A rise in the second would show the move beyond Intents.
 - The SOL and ZEC monthly points: a clear move to Omni in either would widen the route beyond Bitcoin.
 - Chains added to Omni's overview: capability only, until a readable token shows flow on them.
@@ -315,13 +368,22 @@ This page does not cover:
 
 ## 9. Reproduce it
 
-The repository is https://github.com/bchowdar00/signed-by-near. It needs Python 3 and nothing outside the standard library (numpy only for the second implementation in `rederive/`). `data/` holds the saved rows: the NearBlocks pages, the neardata blocks and the RPC answers collected for this entry (`data/README.md` says what each file is and credits its sources). The two commands below and the manifest check run offline; the receipt check needs the network.
+The repository is https://github.com/bchowdar00/signed-by-near. It needs Python 3 and nothing outside the standard library (numpy only for the second implementation in `rederive/`). `data/` holds the saved rows: the NearBlocks pages, the neardata blocks and the RPC answers collected for this entry (`data/README.md` says what each file is and credits its sources). Everything below runs offline except the receipt check, which needs the network.
+
+```bash
+sh check.sh
+```
+runs every offline check in one go and ends with `ALL OK`. Two of its steps,
 
 ```bash
 python3 -I rebuild.py data --draft
 python3 -I publish/written.py data
 ```
 recompute every number, table and chart here from the saved rows, offline, in a few seconds each.
+
+<details>
+<summary>What each command does, and how to check the freeze</summary>
+
 - The first runs the frozen command (`analysis/recompute.py`, whose output in `out/` is published unchanged), applies the rule for readings not completed (`out/published/`) and combines those results with the saved destination-audit lookups (`audit/`). It runs with `--draft` because `THESIS.tmpl.md` is kept as it was timestamped, with its sentences still to write. When it worked, it ends by printing the sha256 of each file it wrote: `out/published/tables.md` should read `cd05cf5f0eec33295f6a5272e049d324ee715182cd9ee1e0d66ed44795afdd76`.
 - The second fills this page from `THESIS.written.tmpl.md`, the same template with its sentences written after the counted read (`AFTER-READ.md` lists each change), checks the counts stated in words against the results and the saved rows, and writes the dashboard, `docs/index.html` (each chart, the query behind it and one sentence on what it shows). When it worked, its last line starts with `ok:` and gives this page's sha256, the same as `shasum -a 256 THESIS.md` prints. If a check fails it stops and leaves this page as it was.
 
@@ -333,6 +395,8 @@ check the freeze. The first, offline and at once, prints 16 lines that each end 
 
 `README.md` gives the other commands with what each prints or writes: the destination audit and the keyless re-pull of the sample, which need the network; the second implementation; the tests; and the Explorer read, whose pull needs a key and whose arithmetic does not.
 
+</details>
+
 ## Disclosure
 
 HSP-007's authors are SVRN's CEO and the founder of Proximity Labs, and SVRN runs one of the paid nodes, onboarded on June 22, 2026 by the thread's own report (SVRN's release says July). SVRN's report that makes the 28-chain claim predates the node. These are stated as facts; nothing is inferred from them.
@@ -342,6 +406,9 @@ Data: "Powered by Nearblocks.io APIs". NearStats' figures are free to use with a
 ## References
 
 Each source is named where it is used; this list gathers them, with the date it was read where the page gives one.
+
+<details>
+<summary>The list of sources</summary>
 
 - SVRN Research, "NEAR Protocol: The Bottom-Up Investment Case", March 2026. https://svrn.net/research/near-protocol (read Nov 9, 2026).
 - NEAR blog, Oct 23, 2026. https://www.near.org/blog/chain-signatures-tee (read Nov 9, 2026).
@@ -358,3 +425,5 @@ Each source is named where it is used; this list gathers them, with the date it 
 - The NEAR Intents Explorer API, its specification. https://explorer.near-intents.org/api/v0/openapi.yaml (read Nov 13, 2026).
 - 1Click's public token list, https://1click.chaindefuser.com/v0/tokens, and its terms of service, docs.near-intents.org (read Nov 13, 2026).
 - The Omni Bridge repository's README, github.com/Near-One/omni-bridge, and HOT's documentation, docs.hotdao.ai/omni-tokens (read Nov 13, 2026): the sources of the family rules in `explorer/STAGE2.md`.
+
+</details>

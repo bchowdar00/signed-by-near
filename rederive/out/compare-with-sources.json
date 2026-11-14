@@ -210,7 +210,7 @@
     "Omni carried [100.0%, 100.0%] of Intents' bridged BTC in the claim window"
    ],
    "row": 6,
-   "section": "4.6 NEAR's own sentence on Bitcoin and Solana; 6. What this means for a NEAR holder",
+   "section": "6. What this means for a NEAR holder",
    "status": "agree"
   },
   {
@@ -7190,6 +7190,6 @@
   "web-docs.near.org_omnibridge_overview.html",
   "web-update.swe.at_.html"
  ],
- "thesis_sha256": "a5e9b139fd722228553f077eac6239d23c86b018cb1885f73338c96832e2714b",
+ "thesis_sha256": "89e9603a927b7bbcf170ce89074577a0901596878293c6e0604c250766831bb9",
  "total_rows": 63
 }

@@ -371,6 +371,9 @@ header{border-bottom:1px solid var(--omni);box-shadow:0 14px 26px -24px var(--om
 code{background:#07202d;color:#aef1ff;border:1px solid var(--line);border-radius:2px}
 pre.q{background:#041019;border:1px solid var(--line);border-left:2px solid var(--omni);border-radius:0;color:#bfeeff}
 pre.q code{background:none;border:0}
+details.fold{margin:10px 0 16px;padding:0 0 0 14px;border-left:2px solid var(--edge)}
+details.fold>summary{cursor:pointer;color:var(--omni);font-family:var(--disp);font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:4px 0}
+details.fold[open]>summary{margin-bottom:8px}
 .cell,.panel,.box{background:rgba(6,19,28,.74);border:1px solid var(--edge);border-radius:2px;box-shadow:inset 0 0 24px rgba(110,231,255,.05)}
 .g-dom{border-color:var(--omni);box-shadow:0 0 16px rgba(110,231,255,.3),inset 0 0 24px rgba(110,231,255,.09)}
 .chip{border-radius:2px;border-color:var(--omni);color:var(--omni);font-family:var(--disp);font-size:11px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 0 8px rgba(110,231,255,.25)}
@@ -446,7 +449,7 @@ def page(R, thesis, D, notes_text, chart_sha):
 
 <section aria-labelledby="h-tests">
 <h2 id="h-tests">The five tests</h2>
-<p class="lede">Each row is what a test needed against what was found. {md(count)}</p>
+<p class="lede">Each row is what a test needed against what was found. A test is met only when the result that would have gone against this page's reading occurred, so "not met" here means that result was not shown. {md(count)}</p>
 <table class="tests"><thead><tr><th>Test</th><th>Needed</th><th>Found</th><th>Result</th></tr></thead><tbody>{rows}</tbody></table>
 </section>
 
@@ -609,7 +612,8 @@ def _cells(line):
     return cells + [cur.strip()]
 
 
-_BLOCK = re.compile(r'#{1,3} |\||- |```|!\[|<!--')
+_BLOCK = re.compile(r'#{1,3} |\||- |```|!\[|<!--|</?details>$')
+_FOLD = re.compile(r'<summary>([^<]+)</summary>$')
 _IMG = re.compile(r'!\[([^\]]*)\]\(([^)]+)\)$')
 
 
@@ -620,6 +624,14 @@ def thesis_body(text, files):
     while i < n:
         l = L[i]
         if not l.strip() or l.startswith('<!--'):
+            i += 1
+        elif l == '<details>':                      # a folded block: its label, then the blocks inside it as they come
+            if i + 1 >= n or not _FOLD.match(L[i + 1]):
+                raise SystemExit(f'thesis page: a folded block without its label near line {i + 1}')
+            out.append('<details class="fold"><summary>' + inline(_FOLD.match(L[i + 1]).group(1)) + '</summary>')
+            i += 2
+        elif l == '</details>':
+            out.append('</details>')
             i += 1
         elif re.match(r'#{1,3} ', l):
             k, head = l.index(' '), l[l.index(' ') + 1:]
@@ -679,9 +691,12 @@ def thesis_page(thesis, files):
     """docs/thesis.html: THESIS.md set as a page. Its words must be THESIS.md's words, in order."""
     body = thesis_body(thesis, files)
     shown = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<figure>.*?</figure>', ' ', body)))
-    source = '\n'.join(l for l in thesis.split('\n')
+    source = '\n'.join(_FOLD.sub(r'\1', l) for l in thesis.split('\n')
                        if not (l.startswith('<!--') or l.startswith('```') or _IMG.match(l)
+                               or l in ('<details>', '</details>')
                                or (l.startswith('|') and not set(l) - set('|-: '))))
+    if body.count('<details class="fold">') != body.count('</details>') or thesis.count('\n<details>\n') != body.count('</details>'):
+        raise SystemExit('thesis page: a folded block is not closed')
     if _words(shown) != _words(source):
         raise SystemExit('thesis page: the page does not carry the words of THESIS.md in order')
     title = thesis.split('\n', 1)[0].lstrip('# ').strip()
