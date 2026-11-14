@@ -1,4 +1,5 @@
-"""Writes docs/: the static dashboard page, with byte copies of the two charts beside it.
+"""Writes docs/: the static dashboard page, the write-up as a page in the same colours, a title banner, and the
+two charts as byte copies with a recoloured copy of each.
 
   python3 -I publish/written.py <data_dir>      (calls this after its checks pass)
   python3 -I publish/dashboard.py <data_dir>    (the page alone, after the same checks)
@@ -8,8 +9,10 @@ behind it and one sentence on what it shows. Nothing on it is typed: every figur
 out/combined.json with the formatter the write-up uses (publish/fill.py), the five tests' lines and the
 answer are lifted from THESIS.md, the counts stated in words come from publish/check_thesis.py, and the notes
 are TABLE-NOTES.md's. A reading that was not completed stops the build; none is drawn as if it were known.
-The two charts are copied unchanged from out/published/, where the timestamped code wrote them. The grid of
-28 chains is drawn here, after the counted read, from M1's rows.
+The two charts are copied unchanged from out/published/, where the timestamped code wrote them; the recoloured
+copies differ from them in the style block only, which is checked. The grid of 28 chains is drawn here, after
+the counted read, from M1's rows. docs/thesis.html is THESIS.md set as a page: the same words in the same
+order, which is checked too.
 
 It makes no network call, needs no script to read, and is in no manifest. The page carries no build time, so
 the same inputs give the same bytes.
@@ -285,8 +288,7 @@ def panels(R, D, N):
 
 
 CSS = """
-:root{--bg:#fcfcfb;--surf:#f3f2ed;--ink:#0b0b0b;--ink2:#52514e;--line:#e1e0d9;--edge:#c3c2b7;--omni:#2a78d6;--poa:#eb6834;--unk:#b5b3ab;color-scheme:light dark}
-@media (prefers-color-scheme: dark){:root{--bg:#1a1a19;--surf:#232321;--ink:#f0efec;--ink2:#c3c2b7;--line:#2c2c2a;--edge:#383835;--omni:#3987e5;--poa:#d95926;--unk:#5a5955}}
+:root{--bg:#02070c;--surf:#06131c;--ink:#dff6ff;--ink2:#8db4c4;--line:#0f2c3d;--edge:#1e5a75;--omni:#6ee7ff;--poa:#ff8a1f;--unk:#4b6676;--glow:rgba(110,231,255,.45);--disp:"Eurostile","Microgramma D Extended","Bank Gothic","Avenir Next","Futura","Segoe UI",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:1040px;margin:0 auto;padding:40px 20px 72px}
@@ -354,6 +356,47 @@ table.t td{padding:5px 10px 5px 0;border-bottom:1px solid var(--line)}
 .sha{word-break:break-all}
 footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
 @media (max-width:640px){.tests thead{display:none}.tests td{display:block;width:auto!important;padding:4px 0;border:0}.tests tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+/* the grid theme: one dark look, luminous cyan for NEAR's own route and orange for the custodial one */
+body{background:linear-gradient(rgba(110,231,255,.045) 1px,transparent 1px) 0 0/100% 56px,linear-gradient(90deg,rgba(110,231,255,.045) 1px,transparent 1px) 0 0/56px 100%,radial-gradient(1200px 520px at 50% -140px,rgba(110,231,255,.16),transparent 70%),var(--bg);background-attachment:fixed;font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif}
+h1,h2,h3,h4,.tests th,table.t caption,table.t th{font-family:var(--disp);text-transform:uppercase}
+h1{font-weight:300;letter-spacing:.2em;color:#f4fdff;text-shadow:0 0 22px var(--glow),0 0 2px #fff}
+h2{font-size:19px;font-weight:500;letter-spacing:.16em;color:var(--omni);text-shadow:0 0 14px var(--glow);border-bottom:1px solid var(--edge);padding-bottom:9px;position:relative}
+h2::after{content:"";position:absolute;left:0;bottom:-1px;width:132px;height:1px;background:var(--omni);box-shadow:0 0 10px var(--omni),0 0 2px #fff}
+h3{font-size:14px;font-weight:500;letter-spacing:.12em;color:#f4fdff}
+h4{letter-spacing:.16em;color:var(--omni)}
+header{border-bottom:1px solid var(--omni);box-shadow:0 14px 26px -24px var(--omni);padding-bottom:20px}
+.sub{letter-spacing:.02em}
+.answer strong{color:var(--omni);text-shadow:0 0 12px var(--glow)}
+.claim{border-left:2px solid var(--omni);box-shadow:-10px 0 18px -14px var(--omni)}
+code{background:#07202d;color:#aef1ff;border:1px solid var(--line);border-radius:2px}
+pre.q{background:#041019;border:1px solid var(--line);border-left:2px solid var(--omni);border-radius:0;color:#bfeeff}
+pre.q code{background:none;border:0}
+.cell,.panel,.box{background:rgba(6,19,28,.74);border:1px solid var(--edge);border-radius:2px;box-shadow:inset 0 0 24px rgba(110,231,255,.05)}
+.g-dom{border-color:var(--omni);box-shadow:0 0 16px rgba(110,231,255,.3),inset 0 0 24px rgba(110,231,255,.09)}
+.chip{border-radius:2px;border-color:var(--omni);color:var(--omni);font-family:var(--disp);font-size:11px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 0 8px rgba(110,231,255,.25)}
+.sw{border-radius:0}.sw-dom{box-shadow:0 0 8px var(--omni)}.sw-poa{box-shadow:0 0 8px var(--poa)}
+.pt{box-shadow:0 0 10px var(--omni)}.rng{background:var(--edge)}
+figure img{border:1px solid var(--edge);border-radius:2px;box-shadow:0 0 28px rgba(110,231,255,.14)}
+.tests td:first-child{color:#f4fdff}
+.tests tr.grp td{color:var(--poa);font-family:var(--disp);letter-spacing:.12em;text-transform:uppercase;font-size:12px;text-shadow:0 0 10px rgba(255,138,31,.45)}
+.tests th,table.t th,table.t caption{letter-spacing:.14em;color:var(--omni)}
+a{color:var(--omni)}
+footer{border-top:1px solid var(--edge)}
+::selection{background:var(--omni);color:#02070c}
+nav.top{display:flex;gap:22px;align-items:center;flex-wrap:wrap;font-family:var(--disp);text-transform:uppercase;letter-spacing:.16em;font-size:12px;margin:0 0 34px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+nav.top a{color:var(--ink2);text-decoration:none}
+nav.top a[aria-current]{color:var(--omni);text-shadow:0 0 10px var(--glow)}
+nav.top .mark{color:#f4fdff;margin-right:auto}
+article h3{margin:32px 0 8px}
+article p,article li{max-width:47em}
+article ul{padding-left:1.2em;margin:8px 0 14px}
+article li{margin:0 0 8px}
+article li p{margin:8px 0 0}
+article strong{color:#f4fdff}
+article em{color:var(--ink2)}
+article .wrap{overflow-x:auto;margin:14px 0 18px}
+article table.t td,article table.t th{vertical-align:top;padding-right:14px}
+article a{overflow-wrap:anywhere}
 """
 
 
@@ -385,6 +428,7 @@ def page(R, thesis, D, notes_text, chart_sha):
 </head>
 <body>
 <main>
+{NAV.format(a=CUR, b="")}
 <header>
 <h1>{html.escape(title)}</h1>
 <p class="sub">{md(sub)}</p>
@@ -417,20 +461,20 @@ def page(R, thesis, D, notes_text, chart_sha):
 <h2 id="h-grid">The 28 chains, one by one</h2>
 <p class="lede">The partner's report names a "28-chain moat". This is where each of the 28 stands in this sample: Omni is the dominant route on {by['dom']}, seen in use on {by['dom'] + by['use']}, and {by['unk']} cannot be read at all.</p>
 {grid_html}
-<p class="key">Each line runs from 0% at the left to 100% at the right. The blue dot is Omni's share of the chain's measured flow by amount; the grey bar is its interval, which is wide where few windows were read. Drawn here after the counted read, from the rows of <code>M1</code> in <code>out/combined.json</code>; <code>THESIS.md</code> section 2 has the same readings in words.</p>
+<p class="key">Each line runs from 0% at the left to 100% at the right. The bright dot is Omni's share of the chain's measured flow by amount; the bar behind it is its interval, which is wide where few windows were read. Drawn here after the counted read, from the rows of <code>M1</code> in <code>out/combined.json</code>; <code>THESIS.md</code> section 2 has the same readings in words.</p>
 </section>
 
 <section aria-labelledby="h-c1">
 <h2 id="h-c1">Chart 1. Where Intents' measured cross-chain flow runs</h2>
-<figure><img src="{CHARTS[0]}" alt="Chart 1, three panels: measured value by chain and route; Omni's share early and late for four series; Omni's share of bridged BTC on NEAR by month. Each panel is described below.">
-<figcaption>Written by the timestamped code and copied here unchanged (sha256 <span class="sha">{chart_sha[CHARTS[0]]}</span>).</figcaption></figure>
+<figure><img src="{grid_name(CHARTS[0])}" alt="Chart 1, three panels: measured value by chain and route; Omni's share early and late for four series; Omni's share of bridged BTC on NEAR by month. Each panel is described below.">
+<figcaption>The timestamped code's chart, shown in this page's colours: only its style block differs. The chart as written is beside this page, unchanged: <a href="{CHARTS[0]}"><code>{CHARTS[0]}</code></a> (sha256 <span class="sha">{chart_sha[CHARTS[0]]}</span>).</figcaption></figure>
 <div class="panels">{one}</div>
 </section>
 
 <section aria-labelledby="h-c2">
 <h2 id="h-c2">Chart 2. Who calls the signer, and what the program costs</h2>
-<figure><img src="{CHARTS[1]}" alt="Chart 2, two panels: sign calls per day by caller class, by month; NEAR paid per sign request, by month. Each panel is described below.">
-<figcaption>Written by the timestamped code and copied here unchanged (sha256 <span class="sha">{chart_sha[CHARTS[1]]}</span>).</figcaption></figure>
+<figure><img src="{grid_name(CHARTS[1])}" alt="Chart 2, two panels: sign calls per day by caller class, by month; NEAR paid per sign request, by month. Each panel is described below.">
+<figcaption>The timestamped code's chart, shown in this page's colours: only its style block differs. The chart as written is beside this page, unchanged: <a href="{CHARTS[1]}"><code>{CHARTS[1]}</code></a> (sha256 <span class="sha">{chart_sha[CHARTS[1]]}</span>).</figcaption></figure>
 <div class="panels">{two}</div>
 </section>
 
@@ -447,16 +491,216 @@ def page(R, thesis, D, notes_text, chart_sha):
 <h3>Two commands, offline</h3>
 <pre class="q">python3 -I rebuild.py data --draft
 python3 -I publish/written.py data</pre>
-<p class="small">The first recomputes every number, table and chart from the saved rows. The second fills <code>THESIS.md</code>, checks it against the results, and writes this page. Neither makes a network call. When they worked:</p>
+<p class="small"><code>sh check.sh</code> runs both, then the comparisons, the tests and the manifests, and ends <code>ALL OK</code>. The first recomputes every number, table and chart from the saved rows. The second fills <code>THESIS.md</code>, checks it against the results, and writes this page. Neither makes a network call. When they worked:</p>
 <p class="small"><code>out/published/tables.md</code> sha256 <span class="sha">{D['tables_sha']}</span><br>
 <code>THESIS.md</code> sha256 <span class="sha">{_sha(thesis.encode())}</span></p>
-<p class="small">The full write-up is <code>THESIS.md</code>; the method, hashed before collection began, is <code>METHOD.md</code>; what changed after the counted read is in <code>AFTER-READ.md</code>.</p>
+<p class="small">The full write-up is <code>THESIS.md</code>, set as a page <a href="thesis.html">here</a>; the method, hashed before collection began, is <code>METHOD.md</code>; what changed after the counted read is in <code>AFTER-READ.md</code>.</p>
 </div>
 </div>
 </section>
 
 <footer>
-<p>This page is written by <code>publish/dashboard.py</code> from <code>out/combined.json</code>, <code>THESIS.md</code> and <code>TABLE-NOTES.md</code>. It was made after the counted read and is not one of the timestamped files; the two charts and every reading on it are.</p>
+<p>This page is written by <code>publish/dashboard.py</code> from <code>out/combined.json</code>, <code>THESIS.md</code> and <code>TABLE-NOTES.md</code>. It was made after the counted read and is not one of the timestamped files; the two charts and every reading on it are. The charts are shown recoloured; the files as the timestamped code wrote them are beside this page. No colour or typeface is loaded from elsewhere.</p>
+</footer>
+</main>
+</body>
+</html>
+"""
+
+
+GRID_STYLE = """
+text{font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif}
+.bg{fill:#02070c}
+.ink{fill:#eafaff}
+.ink2{fill:#9cc7d6}
+.mut{fill:#7397a6}
+.grid{stroke:#0f2c3d;stroke-width:1}
+.axis{stroke:#1e5a75;stroke-width:1}
+.surf{fill:#02070c}
+.ring{stroke:#02070c;stroke-width:2}
+.con{stroke:#1e5a75;stroke-width:1.5}
+.s1{fill:#6ee7ff}.s2{fill:#ff8a1f}.s3{fill:#2f6bff}.s4{fill:#ffd23f}
+.s5{fill:#ff4d4d}.s6{fill:#e9fbff}.s7{fill:#7f9aa8}.sU{fill:#4b6676}
+.k1{stroke:#6ee7ff}.k2{stroke:#ff8a1f}.k3{stroke:#2f6bff}.k4{stroke:#ffd23f}
+.k5{stroke:#ff4d4d}.k6{stroke:#e9fbff}.k7{stroke:#7f9aa8}.kU{stroke:#4b6676}
+.s1{filter:drop-shadow(0 0 3px rgba(110,231,255,.7))}.s2{filter:drop-shadow(0 0 3px rgba(255,138,31,.7))}
+.ln{fill:none;stroke:#6ee7ff;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;filter:drop-shadow(0 0 4px rgba(110,231,255,.85))}
+"""
+_STYLE = re.compile(r'<style>.*?</style>', re.S)
+
+
+def grid_name(name):
+    return name[:-len('.svg')] + '-grid.svg'
+
+
+def recolour(svg):
+    """The timestamped chart in the page's colours: its one style block is replaced and nothing else."""
+    s = svg.decode()
+    if len(_STYLE.findall(s)) != 1:
+        raise SystemExit('a chart must have exactly one style block')
+    out = _STYLE.sub(lambda m: '<style>' + GRID_STYLE + '</style>', s)
+    if _STYLE.sub('', out) != _STYLE.sub('', s):
+        raise SystemExit('recolouring changed more than the style block')
+    return out.encode()
+
+
+NAV = ('<nav class="top" aria-label="Pages"><span class="mark">Signed by NEAR?</span>'
+       '<a href="index.html"{a}>Dashboard</a><a href="thesis.html"{b}>Write-up</a></nav>')
+CUR = ' aria-current="page"'
+BANNER = 'banner-grid.svg'
+DISP = 'Eurostile,Microgramma D Extended,Bank Gothic,Avenir Next,Futura,Segoe UI,system-ui,sans-serif'
+
+
+def banner(title, sub):
+    """The title as an image for the repository's front page, in the page's colours. It carries no figure."""
+    W, H, Y0 = 1280, 300, 196
+    cx = W / 2
+    fan = ''.join(f'<line x1="{cx + k * 20:.1f}" y1="{Y0}" x2="{cx + k * 168:.1f}" y2="{H}"/>' for k in range(-16, 17))
+    rows = ''.join(f'<line x1="0" y1="{Y0 + (H - Y0) * (t / 6) ** 2:.1f}" x2="{W}" y2="{Y0 + (H - Y0) * (t / 6) ** 2:.1f}"/>'
+                   for t in range(1, 6))
+    words = sub.rstrip('.').split(': ')
+    words = [w + ':' for w in words[:-1]] + words[-1:]
+    lines = ''.join(f'<text x="64" y="{150 + 26 * i}" font-size="19" fill="#8db4c4" letter-spacing=".4">{html.escape(w, quote=False)}</text>'
+                    for i, w in enumerate(words))
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{html.escape(title)}">
+<defs>
+<radialGradient id="sky" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#6ee7ff" stop-opacity=".2"/><stop offset="1" stop-color="#6ee7ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="floor" gradientUnits="userSpaceOnUse" x1="0" y1="{Y0}" x2="0" y2="{H}"><stop offset="0" stop-color="#6ee7ff" stop-opacity=".5"/><stop offset="1" stop-color="#6ee7ff" stop-opacity=".12"/></linearGradient>
+<filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="{W}" height="{H}" fill="#02070c"/>
+<rect width="{W}" height="{H}" fill="url(#sky)"/>
+<g stroke="url(#floor)" stroke-width="1" fill="none">{fan}{rows}</g>
+<line x1="0" y1="{Y0}" x2="{W}" y2="{Y0}" stroke="#6ee7ff" stroke-width="1.5" filter="url(#glow)"/>
+<line x1="64" y1="{Y0}" x2="244" y2="{Y0}" stroke="#ff8a1f" stroke-width="3" filter="url(#glow)"/>
+<text x="64" y="104" font-family="{DISP}" font-size="62" font-weight="300" letter-spacing="13" fill="#f4fdff" filter="url(#glow)">{html.escape(title.upper(), quote=False)}</text>
+<g font-family="Avenir Next,Segoe UI,system-ui,sans-serif">{lines}</g>
+</svg>
+"""
+
+
+def inline(s):
+    """The inline Markdown THESIS.md uses: `code`, **bold**, *emphasis* and bare links. Anything else stops the build."""
+    out = []
+    for part in re.split(r'(`[^`]+`)', s):
+        if len(part) > 2 and part[0] == '`' == part[-1]:
+            out.append('<code>' + html.escape(part[1:-1], quote=False) + '</code>')
+            continue
+        part = html.escape(part, quote=False)
+        part = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', part)
+        part = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', part)
+        if '*' in part or '`' in part:
+            raise SystemExit(f'thesis page: markup not understood in: {s[:80]}')
+        out.append(re.sub(r'(https?://[^\s<>()]*[^\s<>().,;:])', r'<a href="\1">\1</a>', part))
+    return ''.join(out)
+
+
+def _cells(line):
+    """A table row's cells; a bar inside `code` does not split."""
+    cells, cur, code = [], '', False
+    for ch in line.strip()[1:-1]:
+        if ch == '`':
+            code = not code
+        if ch == '|' and not code:
+            cells.append(cur.strip())
+            cur = ''
+        else:
+            cur += ch
+    return cells + [cur.strip()]
+
+
+_BLOCK = re.compile(r'#{1,3} |\||- |```|!\[|<!--')
+_IMG = re.compile(r'!\[([^\]]*)\]\(([^)]+)\)$')
+
+
+def thesis_body(text, files):
+    """THESIS.md's blocks as HTML: headings, paragraphs, lists, tables, command blocks and the two charts."""
+    L = text.split('\n')
+    out, i, n = [], 0, len(L)
+    while i < n:
+        l = L[i]
+        if not l.strip() or l.startswith('<!--'):
+            i += 1
+        elif re.match(r'#{1,3} ', l):
+            k, head = l.index(' '), l[l.index(' ') + 1:]
+            out.append(f'<h{k} id="{re.sub("[^a-z0-9]+", "-", head.lower()).strip("-")}">{inline(head)}</h{k}>')
+            i += 1
+        elif l.startswith('```'):
+            j = L.index('```', i + 1)
+            out.append('<pre class="q">' + html.escape('\n'.join(L[i + 1:j]), quote=False) + '</pre>')
+            i = j + 1
+        elif l.startswith('|'):
+            j = i
+            while j < n and L[j].startswith('|'):
+                j += 1
+            rows = [_cells(x) for x in L[i:j]]
+            if len({len(r) for r in rows}) != 1 or set(''.join(rows[1])) - set('-: '):
+                raise SystemExit(f'thesis page: a table is not regular near: {l[:60]}')
+            out.append('<div class="wrap"><table class="t"><thead><tr>' + ''.join(f'<th>{inline(c)}</th>' for c in rows[0])
+                       + '</tr></thead><tbody>'
+                       + ''.join('<tr>' + ''.join(f'<td>{inline(c)}</td>' for c in r) + '</tr>' for r in rows[2:])
+                       + '</tbody></table></div>')
+            i = j
+        elif l.startswith('- '):
+            items = []
+            while i < n and (L[i].startswith('- ') or L[i].startswith('  ')
+                             or (not L[i].strip() and i + 1 < n and L[i + 1].startswith('  '))):
+                if L[i].startswith('- '):
+                    items.append([L[i][2:]])
+                elif L[i].strip():
+                    items[-1].append(L[i].strip())
+                i += 1
+            out.append('<ul>' + ''.join('<li>' + inline(it[0]) + ''.join(f'<p>{inline(x)}</p>' for x in it[1:]) + '</li>'
+                                        for it in items) + '</ul>')
+        elif _IMG.match(l):
+            alt, src = _IMG.match(l).groups()
+            base = os.path.basename(src)
+            plain = base.replace('-grid.svg', '.svg')
+            if plain not in CHARTS or grid_name(plain) not in files:
+                raise SystemExit(f'thesis page: an image that is not one of the two charts: {src}')
+            out.append(f'<figure><img src="{grid_name(plain)}" alt="{html.escape(alt)}"><figcaption>{html.escape(alt, quote=False)}. '
+                       f'Shown in this page\'s colours; the chart as the timestamped code wrote it: '
+                       f'<a href="{plain}"><code>{plain}</code></a>.</figcaption></figure>')
+            i += 1
+        else:
+            j = i
+            while j < n and L[j].strip() and not _BLOCK.match(L[j]):
+                j += 1
+            out.append('<p>' + inline(' '.join(L[i:j])) + '</p>')
+            i = j
+    return '\n'.join(out)
+
+
+def _words(s):
+    return re.findall(r'\w+', s)
+
+
+def thesis_page(thesis, files):
+    """docs/thesis.html: THESIS.md set as a page. Its words must be THESIS.md's words, in order."""
+    body = thesis_body(thesis, files)
+    shown = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<figure>.*?</figure>', ' ', body)))
+    source = '\n'.join(l for l in thesis.split('\n')
+                       if not (l.startswith('<!--') or l.startswith('```') or _IMG.match(l)
+                               or (l.startswith('|') and not set(l) - set('|-: '))))
+    if _words(shown) != _words(source):
+        raise SystemExit('thesis page: the page does not carry the words of THESIS.md in order')
+    title = thesis.split('\n', 1)[0].lstrip('# ').strip()
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(title)} The write-up</title>
+<style>{CSS}</style>
+</head>
+<body>
+<main>
+{NAV.format(a="", b=CUR)}
+<article>
+{body}
+</article>
+<footer>
+<p>This page is <code>THESIS.md</code> (sha256 <span class="sha">{_sha(thesis.encode())}</span>) set in this entry's colours by <code>publish/dashboard.py</code>, which checks that it carries the same words in the same order. The two charts are shown recoloured; the files as the timestamped code wrote them are beside this page. It was made after the counted read and is not one of the timestamped files.</p>
 </footer>
 </main>
 </body>
@@ -472,7 +716,11 @@ def render(R, thesis, D):
     for name in CHARTS:
         with open(os.path.join(ROOT, 'out', 'published', name), 'rb') as f:
             files[name] = f.read()
+        files[grid_name(name)] = recolour(files[name])
     files['index.html'] = page(R, thesis, D, notes_text, {n: _sha(b) for n, b in files.items()}).encode()
+    files['thesis.html'] = thesis_page(thesis, files).encode()
+    title, sub = lifted(thesis)[:2]
+    files[BANNER] = banner(title, sub).encode()
     return files
 
 

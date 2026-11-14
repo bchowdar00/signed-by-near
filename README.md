@@ -1,6 +1,8 @@
 # Signed by NEAR?
 
-An evidence-first investment thesis on Chain Signatures, NEAR's MPC signer (`v1.signer`), for the Investment Thesis track of NEAR Hackathon 2026. It asks how much of NEAR's cross-chain flow needs NEAR's signer, whether that reach is widening, and what NEAR pays for it.
+![Signed by NEAR? How much of NEAR's cross-chain flow needs NEAR's signer: five tests, fixed before any counted result was read](docs/banner-grid.svg)
+
+An evidence-first investment thesis on Chain Signatures, NEAR's MPC signer (`v1.signer`), for the Investment Thesis track of NEAR Hackathon 2026. It asks how much of NEAR's cross-chain flow needs NEAR's signer, whether that reach is widening, and what NEAR pays for it. It is research, not investment advice.
 
 **The answer.** Narrow today. Nearly all of NEAR Intents' Bitcoin flow runs on Omni, the NEAR bridge whose withdrawals Chain Signatures signs, and by the frozen test that flow moved there, on a gap of 3.4 points between two intervals; Omni's share of all bridged BTC on NEAR is about where it was in July 2025. On the other chains this sample can read, Omni is not shown to be the main route.
 
@@ -10,11 +12,11 @@ An evidence-first investment thesis on Chain Signatures, NEAR's MPC signer (`v1.
 - Nov 10 to Nov 13, 00:00Z: collection.
 - Nov 13: the claim's sentence and the read for a NEAR holder were stamped (in a Bitcoin block at 07:25Z), after collection ended and before the first read of any counted result at 11:00:30Z.
 
-The claim and the tests were written after an uncounted pilot that their author had seen; `THESIS.md` says what it showed. Every number in the write-up is recomputed by two offline commands.
+The claim and the tests were written after an uncounted pilot that their author had seen; `THESIS.md` says what it showed. Every number in the write-up is recomputed by two offline commands, and one command, `sh check.sh`, runs them with every check that follows.
 
 What a NEAR holder watches next is dated: three readings, each with the threshold it has to clear and what this entry expects, written after the read and timestamped before publication ([`afterread/NEXT-READS.md`](afterread/NEXT-READS.md)).
 
-- The write-up: [`THESIS.md`](THESIS.md)
+- The write-up: [`THESIS.md`](THESIS.md), and the same words as a page: [`docs/thesis.html`](docs/thesis.html)
 - The dashboard: [`docs/index.html`](docs/index.html) (static; open it in a browser)
 - For judges and screening agents: [`JUDGES.md`](JUDGES.md)
 
@@ -24,8 +26,8 @@ The track's own prompt lists five things to build and one rule.
 
 | The prompt asks for | Here | How |
 |---|---|---|
-| "One command that rebuilds every chart from raw data." | Met | `python3 -I rebuild.py data --draft` recomputes every number, table and chart from the saved rows (step 2 below). |
-| "A static dashboard page: each chart, the query behind it, and one plain sentence on what it shows." | Met | `docs/index.html`, written by `python3 -I publish/written.py data` (step 3). No script is needed to read it. |
+| "One command that rebuilds every chart from raw data." | Met | `python3 -I rebuild.py data --draft` recomputes every number, table and chart from the saved rows (step 2 below). `sh check.sh` runs it, then fills the write-up and runs every offline check, and ends `ALL OK`. |
+| "A static dashboard page: each chart, the query behind it, and one plain sentence on what it shows." | Met | `docs/index.html`, written by `python3 -I publish/written.py data` (step 3). No script is needed to read it, and it loads nothing from elsewhere. |
 | "THESIS.md with the claim, the evidence for it, the evidence against it, and what result would change my mind." | Met | `THESIS.md`: "Summary" (the claim and Table 1), "4. Results", "5. Evidence against this reading", "7. What would change my mind". |
 | "SQL queries against the NEAR BigQuery public dataset" | Done differently | BigQuery needs a cloud account. The five tests use sources anyone can query with no account or key (NearBlocks' public API, neardata.xyz, FastNEAR's archival RPC, the HSP-007 thread, NearStats). `THESIS.md`, "8. Limitations", lists what that rules out: daily active accounts and contract usage across NEAR. |
 | "A pull from the NEAR Intents Explorer API for swap volume" | Done after the read | That API needs a key from the partner dashboard, so the five tests do not use it: in them Intents' swap volume is NearStats' published figure, as reported, used only as a reference. A key was issued to the author on Nov 13, after the counted read. With it the 90 days to T0 were read in one pull, to a plan hashed and submitted to OpenTimestamps before the first counted request (`explorer/PLAN.md`); the result is `THESIS.md` §4.8 and changes no test. |
@@ -34,6 +36,8 @@ The track's own prompt lists five things to build and one rule.
 ## Reproduce it
 
 Python 3, standard library only. No key, no install. Steps 1 to 6 run offline, except the one command in step 6 marked "with network". The saved rows are in `data/`: 773 files, 15 MB ([`data/README.md`](data/README.md) says what each is and credits its sources).
+
+**One command.** `sh check.sh` runs steps 1 to 6 in order, with the Explorer read's offline checks from step 7. It takes about three minutes, stops at the first step that fails, and ends with a line that starts `ALL OK`. The steps, one by one:
 
 1. **Keep the committed outputs to compare with.**
    Do: `cp -R out out-committed`
@@ -93,7 +97,7 @@ Python 3, standard library only. No key, no install. Steps 1 to 6 run offline, e
 | Path | What it is |
 |---|---|
 | `THESIS.md` | The write-up. Generated; not edited by hand. |
-| `docs/` | The dashboard page and byte copies of the two charts. Generated. |
+| `docs/` | The dashboard page; the write-up as a page (`thesis.html`: the words of `THESIS.md` in the same order, which the build checks); the title banner above; and the two charts, as byte copies and as recoloured copies. Generated. |
 | `METHOD.md` | The method, hashed before collection began. |
 | `data/` | The saved rows every number is computed from: NearBlocks' pages, neardata blocks and RPC answers, with a sha256 list. `data/README.md` says what each file is. |
 | `frozen/`, `postfreeze/`, `preread/` | The manifests of the timestamped files and their OpenTimestamps receipts (`.ots`). |
@@ -111,6 +115,7 @@ Python 3, standard library only. No key, no install. Steps 1 to 6 run offline, e
 | `DEVIATIONS.md`, `POST-FREEZE.md`, `AFTER-READ.md` | Every departure from the method, in order: before the freeze, after it, and after the counted read. |
 | `TABLE-NOTES.md` | Notes to read beside the tables and charts. |
 | `tests/`, `rebuild.py`, `verify.py`, `run.sh`, `stage1_manifest.py`, `stage2_manifest.py` | The tests of the frozen code; the rebuild and re-pull commands; the scripts that ran the collection and wrote the two Nov 10 manifests. |
+| `check.sh` | One command for steps 1 to 6 of "Reproduce it". Written after the read. |
 
 ## What is timestamped, and what is not
 
@@ -121,6 +126,8 @@ Timestamped after the read and before publication: `afterread/NEXT-READS.md` and
 Also hashed and submitted to OpenTimestamps after the read, on Nov 13: the Explorer read's plan and collector at 23:35Z, before its first request for a time inside the 90 days; its family rules and analysis at 23:41Z, while the pull ran and before any pulled sum was read (the collector's progress log had shown counts of pages and rows); and the sentences that carry its figures on the page (`explorer/sentences.py`) at 23:47Z, revised after a code audit and submitted again at 23:59Z, before the pull finished and before any pulled sum was read (`explorer/MANIFEST-explorer-stage1.txt`, `-stage2.txt`, `-stage3.txt`, each with its receipt). Those times and their order are this entry's own record (`AFTER-READ.md`). What the receipts show is less: Bitcoin holds all three hashes in one block, 975729, of 2026-11-14T00:54:22Z, which by the same record is before the pull ended at 02:46Z. These stamps fix no test either.
 
 Written after the read, and listed in `AFTER-READ.md`: the sentences of the write-up (`THESIS.written.tmpl.md`), the checks, `TABLE-NOTES.md`, the dashboard, `JUDGES.md`, the second implementation in `rederive/` and this file. None of them changes a reading.
+
+The look was added on Nov 14, also after the read: one dark look for the two pages, the banner and the charts shown on them and in `THESIS.md`. The charts as the timestamped code wrote them are unchanged in `out/published/` and are copied byte for byte into `docs/`. Each recoloured copy (`docs/chart1-routes-grid.svg`, `docs/chart2-callers-cost-grid.svg`) differs from its chart in the style block only, and `publish/dashboard.py` stops the build if it differs anywhere else. No typeface, image or script is loaded from elsewhere.
 
 The saved rows in `data/` are in no manifest either: the manifests fix how the sample was to be drawn and read, not what came back. What ties the rows to the plan is the list of windows in `frozen/instants.json`, each page's own record of the request it answers, and the re-pull in step 7.
 

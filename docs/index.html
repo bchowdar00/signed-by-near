@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Signed by NEAR? Dashboard</title>
 <style>
-:root{--bg:#fcfcfb;--surf:#f3f2ed;--ink:#0b0b0b;--ink2:#52514e;--line:#e1e0d9;--edge:#c3c2b7;--omni:#2a78d6;--poa:#eb6834;--unk:#b5b3ab;color-scheme:light dark}
-@media (prefers-color-scheme: dark){:root{--bg:#1a1a19;--surf:#232321;--ink:#f0efec;--ink2:#c3c2b7;--line:#2c2c2a;--edge:#383835;--omni:#3987e5;--poa:#d95926;--unk:#5a5955}}
+:root{--bg:#02070c;--surf:#06131c;--ink:#dff6ff;--ink2:#8db4c4;--line:#0f2c3d;--edge:#1e5a75;--omni:#6ee7ff;--poa:#ff8a1f;--unk:#4b6676;--glow:rgba(110,231,255,.45);--disp:"Eurostile","Microgramma D Extended","Bank Gothic","Avenir Next","Futura","Segoe UI",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:1040px;margin:0 auto;padding:40px 20px 72px}
@@ -74,10 +73,52 @@ table.t td{padding:5px 10px 5px 0;border-bottom:1px solid var(--line)}
 .sha{word-break:break-all}
 footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
 @media (max-width:640px){.tests thead{display:none}.tests td{display:block;width:auto!important;padding:4px 0;border:0}.tests tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+/* the grid theme: one dark look, luminous cyan for NEAR's own route and orange for the custodial one */
+body{background:linear-gradient(rgba(110,231,255,.045) 1px,transparent 1px) 0 0/100% 56px,linear-gradient(90deg,rgba(110,231,255,.045) 1px,transparent 1px) 0 0/56px 100%,radial-gradient(1200px 520px at 50% -140px,rgba(110,231,255,.16),transparent 70%),var(--bg);background-attachment:fixed;font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif}
+h1,h2,h3,h4,.tests th,table.t caption,table.t th{font-family:var(--disp);text-transform:uppercase}
+h1{font-weight:300;letter-spacing:.2em;color:#f4fdff;text-shadow:0 0 22px var(--glow),0 0 2px #fff}
+h2{font-size:19px;font-weight:500;letter-spacing:.16em;color:var(--omni);text-shadow:0 0 14px var(--glow);border-bottom:1px solid var(--edge);padding-bottom:9px;position:relative}
+h2::after{content:"";position:absolute;left:0;bottom:-1px;width:132px;height:1px;background:var(--omni);box-shadow:0 0 10px var(--omni),0 0 2px #fff}
+h3{font-size:14px;font-weight:500;letter-spacing:.12em;color:#f4fdff}
+h4{letter-spacing:.16em;color:var(--omni)}
+header{border-bottom:1px solid var(--omni);box-shadow:0 14px 26px -24px var(--omni);padding-bottom:20px}
+.sub{letter-spacing:.02em}
+.answer strong{color:var(--omni);text-shadow:0 0 12px var(--glow)}
+.claim{border-left:2px solid var(--omni);box-shadow:-10px 0 18px -14px var(--omni)}
+code{background:#07202d;color:#aef1ff;border:1px solid var(--line);border-radius:2px}
+pre.q{background:#041019;border:1px solid var(--line);border-left:2px solid var(--omni);border-radius:0;color:#bfeeff}
+pre.q code{background:none;border:0}
+.cell,.panel,.box{background:rgba(6,19,28,.74);border:1px solid var(--edge);border-radius:2px;box-shadow:inset 0 0 24px rgba(110,231,255,.05)}
+.g-dom{border-color:var(--omni);box-shadow:0 0 16px rgba(110,231,255,.3),inset 0 0 24px rgba(110,231,255,.09)}
+.chip{border-radius:2px;border-color:var(--omni);color:var(--omni);font-family:var(--disp);font-size:11px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 0 8px rgba(110,231,255,.25)}
+.sw{border-radius:0}.sw-dom{box-shadow:0 0 8px var(--omni)}.sw-poa{box-shadow:0 0 8px var(--poa)}
+.pt{box-shadow:0 0 10px var(--omni)}.rng{background:var(--edge)}
+figure img{border:1px solid var(--edge);border-radius:2px;box-shadow:0 0 28px rgba(110,231,255,.14)}
+.tests td:first-child{color:#f4fdff}
+.tests tr.grp td{color:var(--poa);font-family:var(--disp);letter-spacing:.12em;text-transform:uppercase;font-size:12px;text-shadow:0 0 10px rgba(255,138,31,.45)}
+.tests th,table.t th,table.t caption{letter-spacing:.14em;color:var(--omni)}
+a{color:var(--omni)}
+footer{border-top:1px solid var(--edge)}
+::selection{background:var(--omni);color:#02070c}
+nav.top{display:flex;gap:22px;align-items:center;flex-wrap:wrap;font-family:var(--disp);text-transform:uppercase;letter-spacing:.16em;font-size:12px;margin:0 0 34px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+nav.top a{color:var(--ink2);text-decoration:none}
+nav.top a[aria-current]{color:var(--omni);text-shadow:0 0 10px var(--glow)}
+nav.top .mark{color:#f4fdff;margin-right:auto}
+article h3{margin:32px 0 8px}
+article p,article li{max-width:47em}
+article ul{padding-left:1.2em;margin:8px 0 14px}
+article li{margin:0 0 8px}
+article li p{margin:8px 0 0}
+article strong{color:#f4fdff}
+article em{color:var(--ink2)}
+article .wrap{overflow-x:auto;margin:14px 0 18px}
+article table.t td,article table.t th{vertical-align:top;padding-right:14px}
+article a{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
 <main>
+<nav class="top" aria-label="Pages"><span class="mark">Signed by NEAR?</span><a href="index.html" aria-current="page">Dashboard</a><a href="thesis.html">Write-up</a></nav>
 <header>
 <h1>Signed by NEAR?</h1>
 <p class="sub">How much of NEAR's cross-chain flow needs NEAR's signer: five tests, fixed before any counted result was read.</p>
@@ -110,13 +151,13 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 <h2 id="h-grid">The 28 chains, one by one</h2>
 <p class="lede">The partner's report names a "28-chain moat". This is where each of the 28 stands in this sample: Omni is the dominant route on 1, seen in use on 7, and 16 cannot be read at all.</p>
 <section class="grp"><h3><span class="sw sw-dom" aria-hidden="true"></span>Omni is the dominant route <span class="ct">1 of 28</span></h3><p class="what">The lower end of Omni's share is above half, by count and by amount (the rule fixed in <code>METHOD.md</code>, M1).</p><ul class="cells"><li class="cell g-dom"><div class="cn"><span class="sw sw-dom" aria-hidden="true"></span>Bitcoin</div><div class="track" role="img" aria-label="Omni's share of measured BTC by amount: BTC 99.9% [99.7%, 100.0%]"><span class="rng" style="left:min(99.71%, calc(100% - 4px));width:0.26%"></span><span class="pt" style="left:calc(99.94% - 5px)"></span></div><div class="cv">BTC 99.9% [99.7%, 100.0%]</div><div class="cv">census: 89 Omni legs with Intents</div><div class="cd">documented route: omni, poa</div></li></ul></section><section class="grp"><h3><span class="sw sw-use" aria-hidden="true"></span>Omni seen in use, not shown dominant <span class="ct">6 of 28</span></h3><p class="what">At least one Omni transfer was seen, in the measured flow or in the census of Omni's own legs with Intents.</p><ul class="cells"><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Aptos</div><div class="cv">census: 4 Omni legs with Intents</div><div class="cd">documented route: poa</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>BNB</div><div class="cv">census: 1 Omni leg with Intents</div><div class="cd">documented route: omni, hot</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Polygon</div><div class="cv">census: 2 Omni legs with Intents</div><div class="cd">documented route: hot</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Solana</div><div class="track" role="img" aria-label="Omni's share of measured SOL by amount: SOL 100.0% [32.1%, 100.0%]"><span class="rng" style="left:min(32.05%, calc(100% - 4px));width:67.95%"></span><span class="pt" style="left:calc(100.00% - 5px)"></span></div><div class="cv">SOL 100.0% [32.1%, 100.0%]</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 100.0% [26.4%, 100.0%]"><span class="rng" style="left:min(26.39%, calc(100% - 4px));width:73.61%"></span><span class="pt" style="left:calc(100.00% - 5px)"></span></div><div class="cv">USD 100.0% [26.4%, 100.0%]</div><div class="cv">census: 881 Omni legs with Intents</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Starknet</div><div class="cv">census: 2 Omni legs with Intents</div><div class="cd">documented route: poa</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Zcash</div><div class="track" role="img" aria-label="Omni's share of measured ZEC by amount: ZEC 94.3% [16.8%, 100.0%]"><span class="rng" style="left:min(16.81%, calc(100% - 4px));width:83.19%"></span><span class="pt" style="left:calc(94.34% - 5px)"></span></div><div class="cv">ZEC 94.3% [16.8%, 100.0%]</div><div class="cv">census: 49 Omni legs with Intents</div><div class="cd">documented route: poa</div></li></ul></section><section class="grp"><h3><span class="sw sw-poa" aria-hidden="true"></span>Measured, no Omni transfer seen <span class="ct">5 of 28</span></h3><p class="what">Every measured transfer moved on the custodial POA bridge. The method calls Omni's place here unknown, not absent: the interval's upper end reflects how few windows were read.</p><ul class="cells"><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Arbitrum</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 73.1%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:73.08%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 73.1%]</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Base</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 80.2%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:80.18%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 80.2%]</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Ethereum</div><div class="track" role="img" aria-label="Omni's share of measured ETH by amount: ETH 0.0% [0.0%, 78.7%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:78.74%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">ETH 0.0% [0.0%, 78.7%]</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 85.3%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:85.27%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 85.3%]</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Tron</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 73.9%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:73.95%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 73.9%]</div><div class="cd">documented route: poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>XRP</div><div class="track" role="img" aria-label="Omni's share of measured XRP by amount: XRP 0.0% [0.0%, 94.0%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:93.99%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">XRP 0.0% [0.0%, 94.0%]</div><div class="cd">documented route: poa</div></li></ul></section><section class="grp"><h3><span class="sw sw-unk" aria-hidden="true"></span>Not read by this sample <span class="ct">16 of 28</span></h3><p class="what">No token of the chain can be read through these sources, so only its documented route is shown. Not seen is not the same as absent.</p><ul class="cells"><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Adi</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Avalanche</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>BCH</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Berachain</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Cardano</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Dogecoin</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Gnosis</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>LayerX</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Litecoin</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Monad</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Optimism</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Plasma</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Scroll</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Stellar</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Sui</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>TON</div><div class="cd">documented route: hot</div></li></ul></section>
-<p class="key">Each line runs from 0% at the left to 100% at the right. The blue dot is Omni's share of the chain's measured flow by amount; the grey bar is its interval, which is wide where few windows were read. Drawn here after the counted read, from the rows of <code>M1</code> in <code>out/combined.json</code>; <code>THESIS.md</code> section 2 has the same readings in words.</p>
+<p class="key">Each line runs from 0% at the left to 100% at the right. The bright dot is Omni's share of the chain's measured flow by amount; the bar behind it is its interval, which is wide where few windows were read. Drawn here after the counted read, from the rows of <code>M1</code> in <code>out/combined.json</code>; <code>THESIS.md</code> section 2 has the same readings in words.</p>
 </section>
 
 <section aria-labelledby="h-c1">
 <h2 id="h-c1">Chart 1. Where Intents' measured cross-chain flow runs</h2>
-<figure><img src="chart1-routes.svg" alt="Chart 1, three panels: measured value by chain and route; Omni's share early and late for four series; Omni's share of bridged BTC on NEAR by month. Each panel is described below.">
-<figcaption>Written by the timestamped code and copied here unchanged (sha256 <span class="sha">0a5424c56b960983c6e4310253f6945706eed9dcc1a4648149ef1128fd0337d9</span>).</figcaption></figure>
+<figure><img src="chart1-routes-grid.svg" alt="Chart 1, three panels: measured value by chain and route; Omni's share early and late for four series; Omni's share of bridged BTC on NEAR by month. Each panel is described below.">
+<figcaption>The timestamped code's chart, shown in this page's colours: only its style block differs. The chart as written is beside this page, unchanged: <a href="chart1-routes.svg"><code>chart1-routes.svg</code></a> (sha256 <span class="sha">0a5424c56b960983c6e4310253f6945706eed9dcc1a4648149ef1128fd0337d9</span>).</figcaption></figure>
 <div class="panels"><article class="panel"><h3><span class="pl">1a</span>Routes by chain</h3><p class="shows">Of the value this sample measured, Omni carried 41.3% [21.1%, 89.5%] over the 90 days; on Arbitrum, Base, Ethereum, Tron and XRP none of the measured value moved on Omni.</p><h4>The query behind it</h4><pre class="q">GET https://api.nearblocks.io/v3/fts/&lt;token&gt;/txns?limit=25&amp;before_ts=&lt;window end&gt;
     newest first; later pages follow the API&#x27;s own cursor, back to the start of each window
     15 tokens on 8 chains; the windows were drawn by seed before collection began (frozen/instants.json)</pre><p class="how">A transfer's route is read from the counterparties of Intents' legs in it (<code>METHOD.md</code> §3). Computed by <code>chart1_flows</code>, <code>m1</code> and <code>m9</code> in <code>analysis/measures.py</code>.</p></article><article class="panel"><h3><span class="pl">1b</span>Migration, early to late</h3><p class="shows">Bitcoin is the one series with both readings: Omni's share of Intents' bridged BTC went from [0.0%, 96.3%] in early 2025 to [99.7%, 100.0%] in the 90 days to T0. For ETH (POA control), SOL and ZEC the comparison could not be made, because windows it rests on did not finish before the deadline, so they are not drawn.</p><h4>The query behind it</h4><pre class="q">GET https://api.nearblocks.io/v3/fts/&lt;token&gt;/txns?limit=25&amp;before_ts=&lt;window end&gt;
@@ -128,8 +169,8 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 
 <section aria-labelledby="h-c2">
 <h2 id="h-c2">Chart 2. Who calls the signer, and what the program costs</h2>
-<figure><img src="chart2-callers-cost.svg" alt="Chart 2, two panels: sign calls per day by caller class, by month; NEAR paid per sign request, by month. Each panel is described below.">
-<figcaption>Written by the timestamped code and copied here unchanged (sha256 <span class="sha">12b606868d67ee1967b2e0bd9d6783c44f330adcfa8dc5c7b8a78c369240b7ca</span>).</figcaption></figure>
+<figure><img src="chart2-callers-cost-grid.svg" alt="Chart 2, two panels: sign calls per day by caller class, by month; NEAR paid per sign request, by month. Each panel is described below.">
+<figcaption>The timestamped code's chart, shown in this page's colours: only its style block differs. The chart as written is beside this page, unchanged: <a href="chart2-callers-cost.svg"><code>chart2-callers-cost.svg</code></a> (sha256 <span class="sha">12b606868d67ee1967b2e0bd9d6783c44f330adcfa8dc5c7b8a78c369240b7ca</span>).</figcaption></figure>
 <div class="panels"><article class="panel"><h3><span class="pl">2a</span>Calls per day, by who calls</h3><p class="shows"><code>sign</code> calls ran at 14,046 a day in October 2026; the largest single caller made 34.0% of them, and apps beyond NEAR's own infrastructure, leaving Sweat out, made 3.5% [1.7%, 17.4%].</p><h4>The query behind it</h4><pre class="q">GET https://api.nearblocks.io/v3/accounts/v1.signer/receipts?method=sign&amp;limit=25
     in windows drawn by seed before collection began (frozen/instants.json)
 GET https://mainnet.neardata.xyz/v0/block/&lt;height&gt;
@@ -151,16 +192,16 @@ GET https://mainnet.neardata.xyz/v0/block/&lt;height&gt;
 <h3>Two commands, offline</h3>
 <pre class="q">python3 -I rebuild.py data --draft
 python3 -I publish/written.py data</pre>
-<p class="small">The first recomputes every number, table and chart from the saved rows. The second fills <code>THESIS.md</code>, checks it against the results, and writes this page. Neither makes a network call. When they worked:</p>
+<p class="small"><code>sh check.sh</code> runs both, then the comparisons, the tests and the manifests, and ends <code>ALL OK</code>. The first recomputes every number, table and chart from the saved rows. The second fills <code>THESIS.md</code>, checks it against the results, and writes this page. Neither makes a network call. When they worked:</p>
 <p class="small"><code>out/published/tables.md</code> sha256 <span class="sha">cd05cf5f0eec33295f6a5272e049d324ee715182cd9ee1e0d66ed44795afdd76</span><br>
-<code>THESIS.md</code> sha256 <span class="sha">fc8842e9928cc9c09535f55bf63206756c1ee32ac7cb08fb63155f0f1e9a9cc5</span></p>
-<p class="small">The full write-up is <code>THESIS.md</code>; the method, hashed before collection began, is <code>METHOD.md</code>; what changed after the counted read is in <code>AFTER-READ.md</code>.</p>
+<code>THESIS.md</code> sha256 <span class="sha">a5e9b139fd722228553f077eac6239d23c86b018cb1885f73338c96832e2714b</span></p>
+<p class="small">The full write-up is <code>THESIS.md</code>, set as a page <a href="thesis.html">here</a>; the method, hashed before collection began, is <code>METHOD.md</code>; what changed after the counted read is in <code>AFTER-READ.md</code>.</p>
 </div>
 </div>
 </section>
 
 <footer>
-<p>This page is written by <code>publish/dashboard.py</code> from <code>out/combined.json</code>, <code>THESIS.md</code> and <code>TABLE-NOTES.md</code>. It was made after the counted read and is not one of the timestamped files; the two charts and every reading on it are.</p>
+<p>This page is written by <code>publish/dashboard.py</code> from <code>out/combined.json</code>, <code>THESIS.md</code> and <code>TABLE-NOTES.md</code>. It was made after the counted read and is not one of the timestamped files; the two charts and every reading on it are. The charts are shown recoloured; the files as the timestamped code wrote them are beside this page. No colour or typeface is loaded from elsewhere.</p>
 </footer>
 </main>
 </body>

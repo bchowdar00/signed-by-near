@@ -40,6 +40,7 @@ The tests were written after an uncounted pilot that their author had seen (§3.
 
 - *[a, b]*: a 95% interval.
 - *Reported*: stated by a source and not confirmed here.
+- *Charts*: drawn by the timestamped code and shown in this entry's colours. Only the style block differs from the files that code wrote, `out/published/chart1-routes.svg` and `out/published/chart2-callers-cost.svg`.
 - *Met, not met, undecided*: a test is met when the result that would have gone against this page's reading on that point occurred, not met when it did not, and undecided when a reading it needs was not completed.
 
 ## 1. The question
@@ -138,7 +139,7 @@ Against "all the network's cross-chain volume": of the value this sample measure
 
 **T2, not met.** Omni is shown dominant on {{mind/omni_dominant_widely/dominant_yes::int}} of {{mind/omni_dominant_widely/of_measured::int}}, Bitcoin. On the other 7 it is not shown: on 2 (Solana and Zcash) the intervals are too wide, and on 5 (Arbitrum, Base, Ethereum, Tron and XRP) the sample holds no Omni value. Counting Solana and Zcash as dominant too would make 3 of {{mind/omni_dominant_widely/of_measured::int}}, still under the 5 needed.
 
-![Where Intents' measured cross-chain flow runs](out/published/chart1-routes.svg)
+![Where Intents' measured cross-chain flow runs](docs/chart1-routes-grid.svg)
 
 **Figure 1.** Where Intents' measured cross-chain flow runs, in three panels: measured value by chain and route; Omni's share early and late for four series; Omni's share of bridged BTC on NEAR, by token supply, by month. Drawn by the timestamped code; the files and the dashboard call it chart 1.
 
@@ -160,7 +161,7 @@ Omni is seen in use on Bitcoin, Solana and Zcash among the measured chains, and 
 
 **T3, not met.** Apps beyond NEAR's own infrastructure, leaving Sweat out, made {{by_month/M4/2026-10/main_without_sweat/point::pct1}} [{{by_month/M4/2026-10/main_without_sweat/lo::pct1}}, {{by_month/M4/2026-10/main_without_sweat/hi::pct1}}] of `sign` calls in October, and less before; the test needed at least 25% in each of August, September and October.
 
-![Who calls the signer, and what the programme costs](out/published/chart2-callers-cost.svg)
+![Who calls the signer, and what the programme costs](docs/chart2-callers-cost-grid.svg)
 
 **Figure 2.** Who calls the signer, and what the programme costs, in two panels: `sign` calls per day by caller class, by month; NEAR paid per `sign` request, by month. Drawn by the timestamped code; the files and the dashboard call it chart 2.
 
@@ -286,7 +287,7 @@ What is measured: Omni is shown dominant on {{mind/omni_dominant_widely/dominant
 
 The read quoted in this section is `preread/HOLDER-READ.md`, checked by `preread/MANIFEST-preread.txt` and its receipt; §3.4 gives when it was stamped.
 
-**What this page does not give.** No price target and no valuation of NEAR: the signer charges no fee for a signature, so any value reaches the token through Intents' fees and gas, which this sample does not measure.
+**What this page does not give.** No price target and no valuation of NEAR: the signer charges no fee for a signature, so any value reaches the token through Intents' fees and gas, which this sample does not measure. Nothing on this page is investment advice.
 
 **What would make the other 20 chains readable.** If NEAR or the Intents team published, with no sign-up, each bridge leg's chain, route and amount, HOT's legs included, the same five tests could run on all 28.
 
