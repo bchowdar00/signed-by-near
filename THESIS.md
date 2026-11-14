@@ -8,7 +8,7 @@ Bhargav Chowdary · version 1 · Data cutoff (T0): 2026-11-10T11:00:00.000000Z �
 
 ## Summary
 
-**Narrow today.** Chain Signatures is NEAR's signer; it signs the withdrawals of Omni, NEAR's own bridge. This sample can read 8 chains, and Omni is shown to be the main route for the flow of NEAR Intents, NEAR's cross-chain swap product, on 1 of them: Bitcoin. Five tests were fixed before any counted result was read, each naming a result that would have gone against this reading on one point. None of the five was shown.
+**Narrow today.** Chain Signatures is NEAR's signer; it signs the withdrawals of Omni, NEAR's own bridge. This sample can read 8 chains, and Omni is shown to be the main route for the flow of NEAR Intents, NEAR's cross-chain swap product, on 1 of them: Bitcoin. Five tests were fixed before any counted result was read, each naming a result that would have gone against this reading on one point. No test went against it.
 
 - **On Bitcoin the flow runs on the signer's bridge.** Omni carried [99.7%, 100.0%] of the bitcoin that moved through Intents over the 90 days to T0. NEAR's own sentence about Bitcoin holds on chain.
 - **Beyond Bitcoin it is not shown.** On Solana and Zcash Omni carried most of the sampled flow, but the intervals are too wide to call. On Arbitrum, Base, Ethereum, Tron and XRP every sampled dollar moved on a custodial bridge that does not use the signer. Found after the read: the Intents team's own SDK lists SOL and ZEC tokens among those it now sends through Omni, and no EVM, Tron or XRP token. That is a list in its code, not a measurement of flow (§5).

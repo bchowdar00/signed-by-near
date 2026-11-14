@@ -4,13 +4,15 @@
 
 **On Bitcoin, the flow runs on the bridge that NEAR's signer signs for. On the other seven chains this sample can read, that is not shown.** An evidence-first investment thesis on Chain Signatures, NEAR's MPC signer (`v1.signer`), for the Investment Thesis track of NEAR Hackathon 2026. It is research, not investment advice.
 
+> **What this means for a NEAR holder: not yet shown to be a broad moat.** Of the eight chains this sample can read, the flow is shown to run on the signer's bridge on one, Bitcoin. On Arbitrum, Base, Ethereum, Tron and XRP, what keeps the sampled flow on NEAR is Intents' own network, not Chain Signatures. The signer charges no fee and is paid for with treasury NEAR, at a cost per request that by the frozen test did not fall from July to September. A holder who counts Chain Signatures as a broad moat is ahead of this evidence; the three dated reads under the finding say what would change that.
+
 - **Dashboard, live:** https://bchowdar00.github.io/signed-by-near/ (in this repository: [`docs/index.html`](docs/index.html))
 - **The write-up:** [`THESIS.md`](THESIS.md), and the same words as a page: https://bchowdar00.github.io/signed-by-near/thesis.html
 - **For judges and screening agents:** [`JUDGES.md`](JUDGES.md)
 
 ## The finding
 
-**Narrow today.** Five tests were fixed before any counted result was read, each naming a result that would have gone against this reading on one point. None of the five was shown.
+**Narrow today.** Five tests were fixed before any counted result was read. Each names a result that would have gone against this reading on one point, and a test is "met" only if that result is shown. All five read "not met": no test went against the reading. The tests are one-sided: "not met" means not shown, never disproved.
 
 - **Bitcoin runs on the signer's bridge.** Omni, the NEAR bridge whose withdrawals Chain Signatures signs, carried [99.7%, 100.0%] of the bitcoin that moved through NEAR Intents over the 90 days measured. NEAR's own sentence about Bitcoin holds on chain.
 - **Beyond Bitcoin it is not shown.** This sample can read 8 chains, and Omni is shown to be the main route on 1 of them. On Arbitrum, Base, Ethereum, Tron and XRP every sampled dollar moved on a custodial bridge that does not use the signer.
@@ -27,7 +29,7 @@
 sh check.sh
 ```
 
-Python 3, standard library only. No key, no install, no network. It recomputes every number, table and chart from the saved rows in `data/` (773 files, 15 MB; [`data/README.md`](data/README.md) says what each is and credits its sources), checks that the write-up and the pages come out as the committed bytes, runs the tests and checks the manifests. It runs steps 1 to 6 below in order (all but the one command in step 6 marked "with network"), with the Explorer read's offline checks from step 7, takes about three minutes, stops at the first step that fails, and ends with a line that starts `ALL OK`.
+Python 3, standard library only. No key, no install, no network. It recomputes every number, table and chart from the saved rows in `data/` (773 files, 15 MB; [`data/README.md`](data/README.md) says what each is and credits its sources), checks that the write-up and the pages come out as the committed bytes, runs the tests and checks the manifests. It runs steps 1 to 6 below in order (all but the one command in step 6 marked "with network"), with the Explorer read's offline checks from step 7, takes about three minutes, stops at the first step that fails, and ends with a line that starts `ALL OK`. It passes on a fresh clone as it is: nothing in it depends on the author's machine.
 
 <details>
 <summary>The steps, one by one, with what each prints</summary>
@@ -60,7 +62,7 @@ Python 3, standard library only. No key, no install, no network. It recomputes e
    Do: `python3 -I -m unittest discover -s publish`
    See: `Ran 59 tests` and `OK` (about a minute and a half).
    Do: `H=$(mktemp -d) && mkdir -p "$H/Data/hackathons/near-2026/b-collect/pilot" && cp tests/fixtures/stage1-local/rates-plan-draft.json "$H/Data/hackathons/near-2026/b-collect/pilot/" && HOME="$H" python3 -I -m unittest discover -s tests`
-   See: `Ran 149 tests` and `OK (skipped=2)` (about 20 seconds). Two frozen tests read a draft pilot file from a data folder under the home folder, so this command gives them the shipped copy of that file (same sha256) in a temporary home folder. Run without it on a clone, the suite ends `FAILED (errors=2, skipped=2)`, because those two tests cannot find the file (`DEVIATIONS.md`, "Stale text in stage-1 files"). The two skipped tests need the OpenTimestamps reference example and a saved source file named by an environment variable.
+   See: `Ran 149 tests` and `OK (skipped=2)` (about 20 seconds). `sh check.sh` runs this command. Two frozen tests read a draft pilot file from a data folder under the home folder. Frozen files are not edited, so the repository ships that file (same sha256) and this command gives it to them in a temporary home folder. Run on a clone without that folder, the plain `python3 -I -m unittest discover -s tests` ends `FAILED (errors=2, skipped=2)`, because those two tests cannot find the file (`DEVIATIONS.md`, "Stale text in stage-1 files"). The two skipped tests need the OpenTimestamps reference example and a saved source file named by an environment variable.
 6. **Check that the frozen files are the ones that were timestamped.**
    Do: `shasum -a 256 -c postfreeze/MANIFEST-postfreeze.txt`
    See: 16 lines, each `OK`.
@@ -77,7 +79,7 @@ Python 3, standard library only. No key, no install, no network. It recomputes e
    See: 773 lines, each `OK`: the saved rows are the ones published. This list was written after the read and is not timestamped.
    With network: `python3 -I collector/ots.py verify frozen/MANIFEST-stage1.txt.ots frozen/MANIFEST-stage1.txt` looks up each Bitcoin block the receipt names and prints its height, its time and `"merkle_root_matches": true`. Every `.ots` file here checks the same way against the file it is named after.
 7. **Optional.**
-   Offline, with numpy: `python3 -I rederive/run.py data` runs the second implementation and compares it with the published results, in about 15 seconds. From a clone its last line is `49 rows agree, recomputed by code; 0 checked against a source file; 7 need a source file not shipped; 6 not recomputed; 1 differ` ([`rederive/README.md`](rederive/README.md) says what each count means and why one row differs).
+   Offline, with numpy: `python3 -I rederive/run.py data` runs the second implementation and compares it with the published results, in about 15 seconds. From a clone its last line is `49 rows agree, recomputed by code; 0 checked against a source file; 7 need a source file not shipped; 6 not recomputed; 1 differ` ([`rederive/README.md`](rederive/README.md) says what each count means; the one row that differs holds the two numbers `THESIS.md` §3.5 counts as "2 differ, both explained").
    Offline: `python3 -I explorer/analyse.py explorer/data/blocks.jsonl explorer/data/assets.json explorer --check` recomputes every figure of the Explorer read (`THESIS.md` §4.8) from its published sums; its last line is `explorer results match`. `python3 -I -m unittest discover -s explorer` runs that code's tests on made-up cells (`Ran 10 tests`, `OK`). `python3 -I rederive/explorer/compare.py explorer/results.json rederive/explorer/out/rederived.json` sets those results beside a second implementation's, written from the plan and the rules without the analysis code or its results; its last line is `155 values compared; 0 differ` ([`rederive/README.md`](rederive/README.md), "The Explorer read"). The pull itself cannot be repeated without an Explorer API key; with one, `EXPLORER_HDR=<a file holding the Authorization header> python3 -I explorer/pull.py run <a new file>` reads the same 90 blocks in the same order, one request every 5.3 seconds.
    Do: `shasum -a 256 -c explorer/MANIFEST-explorer-stage1.txt`, then the same for `stage2` and `stage3`.
    See: 2 lines, 5 lines and 1 line, each `OK`: the Explorer read's plan and collector, its family rules and analysis, and the sentences the page carries.
@@ -172,6 +174,6 @@ The same author has one other entry in this hackathon, Boomerang (https://github
 
 ## Sources and credits
 
-Data: "Powered by Nearblocks.io APIs". The pages under `data/nb/` are NearBlocks' answers, published as the sample behind these numbers and removed on NearBlocks' request (`data/README.md`). NearStats' figures are free to use with attribution (nearstats.org). Blocks from neardata.xyz, token supplies from FastNEAR's archival RPC, payouts from the HSP-007 thread on gov.near.org, explorer lookups from mempool.space and Blockchair.
+Data: "Powered by Nearblocks.io APIs". The pages under `data/nb/` are NearBlocks' answers, published as the sample behind these numbers; they will be removed if NearBlocks asks (`data/README.md`). NearStats' figures are free to use with attribution (nearstats.org). Blocks from neardata.xyz, token supplies from FastNEAR's archival RPC, payouts from the HSP-007 thread on gov.near.org, explorer lookups from mempool.space and Blockchair.
 
 Code: Python 3 standard library; numpy for `rederive/` only. Licence: MIT (`LICENSE`).
