@@ -1,0 +1,104 @@
+{
+ "meta": {
+  "T0_utc": "shakedown",
+  "note": "uncounted shakedown windows, not in the frozen list"
+ },
+ "windows": [
+  {
+   "id": "sd-sign-busy",
+   "key": "shakedown:sd-sign-busy",
+   "family": "sign",
+   "tier": 1,
+   "order": 0,
+   "stratum": "shakedown",
+   "i": 0,
+   "segments_ns": [
+    [
+     1794139200000000000,
+     1794140280000000000
+    ]
+   ],
+   "cost_plan": 1.0
+  },
+  {
+   "id": "sd-sign-zero",
+   "key": "shakedown:sd-sign-zero",
+   "family": "sign",
+   "tier": 1,
+   "order": 1,
+   "stratum": "shakedown",
+   "i": 0,
+   "segments_ns": [
+    [
+     1724122800000000000,
+     1724122860000000000
+    ]
+   ],
+   "cost_plan": 1.0
+  },
+  {
+   "id": "sd-flow-sol",
+   "key": "shakedown:sd-flow-sol",
+   "family": "flow",
+   "tier": 1,
+   "order": 2,
+   "stratum": "shakedown",
+   "i": 0,
+   "segments_ns": [
+    [
+     1794139200000000000,
+     1794139440000000000
+    ]
+   ],
+   "cost_plan": 1.0,
+   "token": "sol.omft.near",
+   "guard_s": 30.0
+  },
+  {
+   "id": "sd-flow-eth",
+   "key": "shakedown:sd-flow-eth",
+   "family": "flow",
+   "tier": 1,
+   "order": 3,
+   "stratum": "shakedown",
+   "i": 0,
+   "segments_ns": [
+    [
+     1794139200000000000,
+     1794139440000000000
+    ]
+   ],
+   "cost_plan": 1.0,
+   "token": "eth.omft.near",
+   "guard_s": 30.0
+  },
+  {
+   "id": "sd-census",
+   "key": "shakedown:sd-census",
+   "family": "census",
+   "tier": 1,
+   "order": 4,
+   "stratum": "shakedown",
+   "i": 0,
+   "segments_ns": [
+    [
+     1794139200000000000,
+     1794139380000000000
+    ]
+   ],
+   "cost_plan": 1.0
+  },
+  {
+   "id": "sd-index",
+   "key": "shakedown:sd-index",
+   "family": "index",
+   "tier": 1,
+   "order": 5,
+   "stratum": "shakedown",
+   "i": 0,
+   "segments_ns": [],
+   "instant_ns": 1794139200000000000,
+   "cost_plan": 1.0
+  }
+ ]
+}

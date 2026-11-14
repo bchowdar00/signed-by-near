@@ -1,0 +1,1 @@
+c78947dfa6361991f8d3e9776e6052ea3cc40f858a9780287ea89ce590f60ac5  explorer/sentences.py

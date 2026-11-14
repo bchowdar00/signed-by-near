@@ -1,0 +1,2408 @@
+{
+"source": "NearBlocks v3 keyless, saved 2026-11-09 (pilot, uncounted); meta.icon stripped",
+"meta": {
+"next_page": "eyJpbmRleCI6Mywic2hhcmQiOjEzLCJ0aW1lc3RhbXAiOiIxNzk0MjE0MDE5NzMwMjY0NzA0IiwidHlwZSI6MX0="
+},
+"data": [
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "J4fuGZQwpS2zz946PoL4NWagrvbU5RACETEPLvPgVGRU",
+"block_height": "223752374",
+"block_timestamp": "1794218800148974673"
+},
+"block_timestamp": "1794218802320140877",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-40851514",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "7LEtnJFGw8Tc39CkkjLGUrYXEwZVCyiwHcek4Zt5nWnk",
+"shard_id": 13,
+"transaction_hash": "6A9rqVED2HwdnxKYAaDTrCGmrkVjFwjU82eqrubzydvT"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "J4fuGZQwpS2zz946PoL4NWagrvbU5RACETEPLvPgVGRU",
+"block_height": "223752374",
+"block_timestamp": "1794218800148974673"
+},
+"block_timestamp": "1794218802320140877",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "7LEtnJFGw8Tc39CkkjLGUrYXEwZVCyiwHcek4Zt5nWnk",
+"shard_id": 13,
+"transaction_hash": "6A9rqVED2HwdnxKYAaDTrCGmrkVjFwjU82eqrubzydvT"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4JfYQiWnPsZayMnFTrSubCZnztwSZyUFd4ehb5wz16gJ",
+"block_height": "223752212",
+"block_timestamp": "1794218709550061526"
+},
+"block_timestamp": "1794218711671452276",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-24887697",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2P8vL2uvLomsvnpEx19tGMTr7v1TozooanWoCig6b3RW",
+"shard_id": 13,
+"transaction_hash": "5u1Ub7rE2yhL7wDQqcBV7Wy6gZZTdK8gFveCQAV3psak"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "4JfYQiWnPsZayMnFTrSubCZnztwSZyUFd4ehb5wz16gJ",
+"block_height": "223752212",
+"block_timestamp": "1794218709550061526"
+},
+"block_timestamp": "1794218711671452276",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2P8vL2uvLomsvnpEx19tGMTr7v1TozooanWoCig6b3RW",
+"shard_id": 13,
+"transaction_hash": "5u1Ub7rE2yhL7wDQqcBV7Wy6gZZTdK8gFveCQAV3psak"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "4JfYQiWnPsZayMnFTrSubCZnztwSZyUFd4ehb5wz16gJ",
+"block_height": "223752212",
+"block_timestamp": "1794218709550061526"
+},
+"block_timestamp": "1794218711671452276",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "1270723",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Ht9KSqomA9uUzstVAaxG8iujdYojrunD3wtTKcy4RpEE",
+"shard_id": 13,
+"transaction_hash": "GrdQmiP4svHwDTWjUmmf3HHJp6VURB6hKBCLnXZbAJUJ"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "HEgx3BtRMe24b6wB6Tn7rw5D4m57vyohhrH5Pp1wNTMJ",
+"block_height": "223751857",
+"block_timestamp": "1794218497115918807"
+},
+"block_timestamp": "1794218498252264091",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "40861514",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2uQmkjyA9DUcam9ZnT5hAbU2D78xFAiDsi4PSdMut5HP",
+"shard_id": 13,
+"transaction_hash": "CXQrhowhSH8ozAhSsKWvizBrpgfG13L9CgLeFKGd6FAM"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "9J45arJmsAHbkfkCdw2EPVCgDBn3q8yG3JoiTHJzk7Pe",
+"block_height": "223751766",
+"block_timestamp": "1794218444858266232"
+},
+"block_timestamp": "1794218445926180601",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "24897697",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "5RMMGy6Q8NxRkAjPPi38bVZhRj5J3c11vEW7GP4XJoJC",
+"shard_id": 13,
+"transaction_hash": "s3BC8kScbK3Qbu1RMAkaV6mA5vrfgY35vGW5cDJ6494"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "AxSb2mmy7hmrrGXijbo5xDTSyqNKAd5s9BJq4881e2ay",
+"block_height": "223751748",
+"block_timestamp": "1794218434492479141"
+},
+"block_timestamp": "1794218435120295421",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "40861514",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "C957EY5XfMcuG9zaTxNdVRFdyKsMNWWTZjc42QaVcswR",
+"shard_id": 13,
+"transaction_hash": "CeWbGSuR7qLGXzJ6Pyy5VTcPiWoHQ85u2RpRu2t83cho"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CD8xb4g68a5nKsNajJ7qGx3ULj6kmmysKQSdkWvHbfg",
+"block_height": "223751644",
+"block_timestamp": "1794218375731875980"
+},
+"block_timestamp": "1794218376173259428",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "24897697",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "8QeWZ4fvLKMkcV2GcHUTyyS2LeZBHsvKTANaSZoW96SS",
+"shard_id": 13,
+"transaction_hash": "GYPbsRCVf3fDyEswwkjLxrH7vDMT54CxamUaMNhecqe2"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "HqSdghqeU2pxz3xn3nZsrDvQKhdwDmAapnGTuieLzr78",
+"block_height": "223751554",
+"block_timestamp": "1794218324028194012"
+},
+"block_timestamp": "1794218326232465227",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "145640",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "5yaN1jVsj7AAkHyAE7H2XmfpnGyL25hiavxse6ciBFJT",
+"shard_id": 13,
+"transaction_hash": "HEBXQo41SKAGbexDivwLRtTH9YVpoHUHXJjTMXXGU6wx"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "Bw4XxERca4zzJ6KsgpVgYWW3BZE2HdjFBkkKtRdog1E1",
+"block_height": "223751517",
+"block_timestamp": "1794218303559719493"
+},
+"block_timestamp": "1794218304016154200",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "93314",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DZqWVQvaRZwaLiwAaYEv9nf72d9UzvgUuUBXGJq9pW4U",
+"shard_id": 13,
+"transaction_hash": "GNhQrpLjcQYRT9P19EsASQ4edv2VT4sbuK4cspfuUYoM"
+},
+{
+"affected_account_id": "v2.ref-finance.near",
+"block": {
+"block_hash": "CZ1fxhNHWEhjcpM4JeHbcyh1TW4MmgC2aNMw81Ki4vp3",
+"block_height": "223751220",
+"block_timestamp": "1794218138210972931"
+},
+"block_timestamp": "1794218138714279285",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "199797",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "ifgeqoLqcnSBtQGTFDuT4eNCxvGL4bvyAdg32TSY58b",
+"shard_id": 13,
+"transaction_hash": "7TeZA3QwCh5TT1HhRQaVxrmVWrvjGJZUwxefEwQtb1YM"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "8aN4JACFJqirxkyt4xVenBt484wyySoDnz4hMPPMSJAR",
+"block_height": "223750856",
+"block_timestamp": "1794217929544879753"
+},
+"block_timestamp": "1794217931734032851",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "1000000000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FgPU28UFuBusxu4NyrzqSPnyybdoauAyxFHrrVfXbiAG",
+"shard_id": 13,
+"transaction_hash": "BCi89EssAemeECyKuGfeBYRZcQDZsdTNyF7WGzubVxo7"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "8aN4JACFJqirxkyt4xVenBt484wyySoDnz4hMPPMSJAR",
+"block_height": "223750856",
+"block_timestamp": "1794217929544879753"
+},
+"block_timestamp": "1794217931734032851",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "15000000000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "GT48iiqhXrJEk1naUpXQ12p4sEZHANCX2muumoxN7vRT",
+"shard_id": 13,
+"transaction_hash": "2CsYGVhjYiKMquVXUyx4tufVUWPBvpKysgxSH1oBxiFp"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "AwiJnxpDsW28eFg9vt57fLKvBf9mKysHiVqj2u45hVQU",
+"block_height": "223750731",
+"block_timestamp": "1794217858711515875"
+},
+"block_timestamp": "1794217861894197810",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "111700",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "JBA8VswUSAiarr6rP9537SHw2TW3UxLsFF276imYE16E",
+"shard_id": 13,
+"transaction_hash": "4xWWQUKpPSCYohJ7f3r1fsZUStP5zzxBBwuWSguwvSTE"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "HU6XWFh1iTnQfkUzxmMRnhrxZEafoLoenwJ5hz2SePXq",
+"block_height": "223750461",
+"block_timestamp": "1794217706654259842"
+},
+"block_timestamp": "1794217708600113887",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "134000000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AcNdCCKFxfWpFD7qFjRUSMCL4YBSExrAsppuvM6f1u1Z",
+"shard_id": 13,
+"transaction_hash": "25cnmPtYzwMBxaiNKzDm3cSg95y61qMMVp4a2aySFBc9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "9dPks8ntVfE9yK2d2WaSkbb1yqyPj8nDGXcLcvoemybQ",
+"block_height": "223750012",
+"block_timestamp": "1794217453007265164"
+},
+"block_timestamp": "1794217455421297885",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-975000",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AegZdxxRXuoiqTub6stTkTK2eJccoi6qKpLaqYMYVKfx",
+"shard_id": 13,
+"transaction_hash": "3owr8sQto9qCcztCisu6YYuVBYJ9uj6SBTLjA8e7qygd"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "9dPks8ntVfE9yK2d2WaSkbb1yqyPj8nDGXcLcvoemybQ",
+"block_height": "223750012",
+"block_timestamp": "1794217453007265164"
+},
+"block_timestamp": "1794217455421297885",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AegZdxxRXuoiqTub6stTkTK2eJccoi6qKpLaqYMYVKfx",
+"shard_id": 13,
+"transaction_hash": "3owr8sQto9qCcztCisu6YYuVBYJ9uj6SBTLjA8e7qygd"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "2xBWGH3nSinEgCb1m1n49NwsPVQ6Y8d2FpXhmvhv7frb",
+"block_height": "223749587",
+"block_timestamp": "1794217211864387351"
+},
+"block_timestamp": "1794217212949958221",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "985000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "C8v3RSxzcN9aqrT5qTKBuLgrkDWRo7QMgzbuWUEUbMdc",
+"shard_id": 13,
+"transaction_hash": "FfHU8iu19hWMjJtatNsuWe2W6yBRrLgxm5hBJcK1Ct3X"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "6iSJAUs4R1EUa6jYeeT8MBEQoefwafNntYme5zFhvW2e",
+"block_height": "223749475",
+"block_timestamp": "1794217149219207725"
+},
+"block_timestamp": "1794217149728387481",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "985000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "GCZyYU433mu1TfmiTbd8S4kWBHWqvNGJcvYypvSu4bGj",
+"shard_id": 13,
+"transaction_hash": "E1f7cK5oFzeF7mTDKuQCGn9mSPJcdTqYpAhHJ3LW8oah"
+},
+{
+"affected_account_id": "b1aa6ee2ad3432c8db6f0b4ab003eeb02ab7b4af8adf3233d3566e5500b258be",
+"block": {
+"block_hash": "5KGmcFVEmFNDFdXBENxCVRuG8sM6D4AFAxR3buvU32RC",
+"block_height": "223749374",
+"block_timestamp": "1794217090691285205"
+},
+"block_timestamp": "1794217096964429203",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "604547",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "aggregatedex.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "H6gvCU8f2zvJV87RN8AENbqjaumtC8pWd7w68Y6zvQVv",
+"shard_id": 13,
+"transaction_hash": "EDpiXYG87abN4YxVU487T1VSqexKNa4k7J9Arahk1W7n"
+},
+{
+"affected_account_id": "aggregatedex.near",
+"block": {
+"block_hash": "5KGmcFVEmFNDFdXBENxCVRuG8sM6D4AFAxR3buvU32RC",
+"block_height": "223749374",
+"block_timestamp": "1794217090691285205"
+},
+"block_timestamp": "1794217095942981134",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "604547",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "v2.ref-finance.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "5trLavxknkFvZrKuZGLKG3gC1ezZVwA7V2bJDKDg5zGF",
+"shard_id": 13,
+"transaction_hash": "EDpiXYG87abN4YxVU487T1VSqexKNa4k7J9Arahk1W7n"
+},
+{
+"affected_account_id": "b1aa6ee2ad3432c8db6f0b4ab003eeb02ab7b4af8adf3233d3566e5500b258be",
+"block": {
+"block_hash": "MqnTZxc83xgTX1xB7EaByaaWwBZwGiC5MnAQ4pNac9y",
+"block_height": "223749172",
+"block_timestamp": "1794216973834552673"
+},
+"block_timestamp": "1794216977878902576",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "640646",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "aggregatedex.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "3eL12MutfTVYpW59NAQWSFgwEyhpxL9cphrt6Faa8tFg",
+"shard_id": 13,
+"transaction_hash": "BuHfJEnszqkDJTEzHyY4nJ3VXELx7bFnLCTnEfre1U6B"
+},
+{
+"affected_account_id": "aggregatedex.near",
+"block": {
+"block_hash": "MqnTZxc83xgTX1xB7EaByaaWwBZwGiC5MnAQ4pNac9y",
+"block_height": "223749172",
+"block_timestamp": "1794216973834552673"
+},
+"block_timestamp": "1794216976857097691",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "640646",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "v2.ref-finance.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "9eP4jQFuvXQVi6DcFRiQS8aYRUwk367p6GLBADhAMhGo",
+"shard_id": 13,
+"transaction_hash": "BuHfJEnszqkDJTEzHyY4nJ3VXELx7bFnLCTnEfre1U6B"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "Hruy9shD1Bk435hg1s2LcNY57v1aUeuvbsvnGBTgKn4u",
+"block_height": "223748961",
+"block_timestamp": "1794216855900528428"
+},
+"block_timestamp": "1794216857996953151",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "100000000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "6VWDvqfPojbHN7L6g7ZYW4Fxh4sBb4nyx8u6CUd3ciZi",
+"shard_id": 13,
+"transaction_hash": "9HaZpB8ZVVPJWSRU4iQvALTGwfekjadMC3XXBbsWrpLZ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CfLfJXSFa7rP9QbSZZLeWvfgxeZvDXLds8G3cYtAn6MM",
+"block_height": "223748818",
+"block_timestamp": "1794216775373125436"
+},
+"block_timestamp": "1794216777852779999",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-97892728",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DTW931GnGgRznurdRLHSAeTsotmpCU8h9vbKW1yaz1o",
+"shard_id": 13,
+"transaction_hash": "Gs2Kz6nFtEyYRPYqduSjZjgVdURiVCQ65VdNeTxsi5zS"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "CfLfJXSFa7rP9QbSZZLeWvfgxeZvDXLds8G3cYtAn6MM",
+"block_height": "223748818",
+"block_timestamp": "1794216775373125436"
+},
+"block_timestamp": "1794216777852779999",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DTW931GnGgRznurdRLHSAeTsotmpCU8h9vbKW1yaz1o",
+"shard_id": 13,
+"transaction_hash": "Gs2Kz6nFtEyYRPYqduSjZjgVdURiVCQ65VdNeTxsi5zS"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "F2QsjoYeFCpm1zo7zh1mjkZPw4dywnrDGyq5fCaJp3n4",
+"block_height": "223748748",
+"block_timestamp": "1794216735180376999"
+},
+"block_timestamp": "1794216737553934777",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "200000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "9KMBXsa6EC8e62yHUEjm4EoHbM22yefb1vsLYiXY1P6w",
+"shard_id": 13,
+"transaction_hash": "Eiu922SJtbuwZk8VK2vgnHFuoxp4UzcHnEmxFDkegabx"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "w6Vii2L7jc7wu9YUZFviZSoiQ2jVmKzxwPmUSq8wEFT",
+"block_height": "223748627",
+"block_timestamp": "1794216664753188038"
+},
+"block_timestamp": "1794216667015849926",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "26452670",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DmrbG6cZgGAkPH8E1ciqRe5h2YTraUTG3ZS4vZVcyrzM",
+"shard_id": 13,
+"transaction_hash": "2aQ9JTh6cjGHsWXcEs1zcwFt2eqfrDZnW4Qtukvr7hrG"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "9uuMu7AniEHDumu9xQuBgjFWEjNXVGqyUrSZkioj1t5n",
+"block_height": "223748626",
+"block_timestamp": "1794216664091300808"
+},
+"block_timestamp": "1794216666530630468",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "157043",
+"event_index": 6,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2MsJWbfHUBJEdZMXKiNBYEtAzA7CVT2jx2wVej75cmQT",
+"shard_id": 13,
+"transaction_hash": "6Wk8VXKuxXGaggnhvXwCyBLbzoGxnZYgBn99ps569bqs"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "9uuMu7AniEHDumu9xQuBgjFWEjNXVGqyUrSZkioj1t5n",
+"block_height": "223748626",
+"block_timestamp": "1794216664091300808"
+},
+"block_timestamp": "1794216666530630468",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-29872984799",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2XKcjxE3vwp4iN1VtNF2YgNiFVFMUHBaxm2qG6KypgDz",
+"shard_id": 13,
+"transaction_hash": "8SqzSftPY1pW8ZsGAq8mSey8MGLBUx8rBck1ZjyBDLj5"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "9uuMu7AniEHDumu9xQuBgjFWEjNXVGqyUrSZkioj1t5n",
+"block_height": "223748626",
+"block_timestamp": "1794216664091300808"
+},
+"block_timestamp": "1794216666530630468",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2XKcjxE3vwp4iN1VtNF2YgNiFVFMUHBaxm2qG6KypgDz",
+"shard_id": 13,
+"transaction_hash": "8SqzSftPY1pW8ZsGAq8mSey8MGLBUx8rBck1ZjyBDLj5"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "9uuMu7AniEHDumu9xQuBgjFWEjNXVGqyUrSZkioj1t5n",
+"block_height": "223748626",
+"block_timestamp": "1794216664091300808"
+},
+"block_timestamp": "1794216666530630468",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "4999960000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AqxzPPDH1REjicSnQMj4GAUXBgx1yksnV9T3tAERyQvf",
+"shard_id": 13,
+"transaction_hash": "8st2wL5ySDAL9HZcy8DcY2cT6ACKiqwJQ7LsTEQpfuG5"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "B9W8Ra2BSetKBefm2gBc4is33dnVN2dynMK9rbs4ndCk",
+"block_height": "223748506",
+"block_timestamp": "1794216595281814446"
+},
+"block_timestamp": "1794216596284694938",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "97902728",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "ANAuNncVaTNqqbfAEJ42BzrXGnmJgGyHM3PsWnmXHJvp",
+"shard_id": 13,
+"transaction_hash": "5XyRN99Uy5smSthybzj65ZJ2gVxBEewfxeCW4wS59o6w"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CQmvJAQDXpJnGzkCdSGfGxTSeuiV6tDMWitwJ5xkQNsf",
+"block_height": "223748395",
+"block_timestamp": "1794216532445933717"
+},
+"block_timestamp": "1794216533027544267",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "97902728",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "4gmrP4aVXVm3PWwxmc8zykXjf7rVxJs3Jo9HxUo4rJaf",
+"shard_id": 13,
+"transaction_hash": "BGrrg1QkRpPcaYaMhGfdx5iFfiHoq2FrGyf5qVPrpkZ7"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "HENnpfSKrvShpbCNf792XbX4nnsaXDB3uQBvARfvQSbE",
+"block_height": "223748358",
+"block_timestamp": "1794216511890635534"
+},
+"block_timestamp": "1794216514033383715",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "2750000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "3nH6jwmorytm4DAUX3hkEDG83ngn7QapnYmYrKbstuwa",
+"shard_id": 13,
+"transaction_hash": "Hp7Jfd8DS79MaJgHxLdWHqouceLzJVeo4Yvog4GJzD68"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "EqUZ4YYp772rdQnAmdMceUaXGeevkwakXidpHfePL2Zo",
+"block_height": "223748160",
+"block_timestamp": "1794216400066754549"
+},
+"block_timestamp": "1794216401209949576",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "29872994799",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DrE8wWdcLJSzpvgMma6ViV7c22GGmKeSVTKBvieqBWx",
+"shard_id": 13,
+"transaction_hash": "8mCWKf4p2dieLxYbrJieVnv9w3AfqkNSSN7S8RNWUnft"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "E9Th8Z3rGpMD7Qfpqn4zaTpkJqouZLRYaRcBFzHPwjSc",
+"block_height": "223748035",
+"block_timestamp": "1794216330339126449"
+},
+"block_timestamp": "1794216330936877219",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "29872994799",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "YbkWDynpzAeaoUbySbAns9PqNmiPy4Mu6d6JPgSecb2",
+"shard_id": 13,
+"transaction_hash": "CcKVbBg8KHoSWX8QieWmubgNeermQUrzUCiLtApJTn1"
+},
+{
+"affected_account_id": "2c4f7ae147d9ccf84ff5fe53d0eed63faf459b3d935046031843683abfadeaf9",
+"block": {
+"block_hash": "J9qZQZrgTYE2ta5yMLBDGe62FnpaG89GFFmVwQFWMMjJ",
+"block_height": "223747912",
+"block_timestamp": "1794216260674908904"
+},
+"block_timestamp": "1794216261291815797",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "28047407",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "qrBMm2fF93d1LL8c96vdUoAHAL51FeC3m7J1pFpGmHN",
+"shard_id": 13,
+"transaction_hash": "5kF3JXRCVsN9B6byxphB9XZy7fhESPdartcixeSm9A4h"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "9EUjqeHLQGuz8wv8mAVbTjZQ6AGeddbnLZKfFTBP7D4q",
+"block_height": "223747620",
+"block_timestamp": "1794216094076499774"
+},
+"block_timestamp": "1794216096608643539",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "1000000000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "GXiBFd6nBk4jGQWxHVrjmvwVfFaJMrRLYYPL4TVvNYqu",
+"shard_id": 13,
+"transaction_hash": "5HHEjBoPv2LpaNPC2nvVkm6bLEXpc1L67RFiJ491yT5v"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "9k9mDngaeoFV72UrgUdNYm7HwWJkCqDJACDZRwvfm7KQ",
+"block_height": "223747550",
+"block_timestamp": "1794216053686924258"
+},
+"block_timestamp": "1794216056270580146",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "3426344",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "5xDXTz48X9ogzmjChB9FGAjHtysLPqXPzTRW1XgBSbib",
+"shard_id": 13,
+"transaction_hash": "2nAvcKTy3deGgfmFd1FunNgfHB4HqxwNHasmc6ZgbV5B"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "CG8UdWYk2yBjqHJdzgi5gDm1R4Rk89TD4rF36cVS7NzR",
+"block_height": "223747460",
+"block_timestamp": "1794216002864949434"
+},
+"block_timestamp": "1794216005004748679",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "4240610",
+"event_index": 5,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "tbekQSV2xhBZCRHEcHzNmSS8HKRoD26CerMt6cCZ2px",
+"shard_id": 13,
+"transaction_hash": "3iVrtTJ95CiHQWcs39YksjvUMVKgVJSN9WKVkdnV8paa"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "CG8UdWYk2yBjqHJdzgi5gDm1R4Rk89TD4rF36cVS7NzR",
+"block_height": "223747460",
+"block_timestamp": "1794216002864949434"
+},
+"block_timestamp": "1794216005004748679",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "78000000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "BjuV3cNuGBfYCE1UHf8YoBfY5C9Yjs5nHUgNCnZKR2MM",
+"shard_id": 13,
+"transaction_hash": "Ey9Et37Xr9TcTUyiMs4fVKuTLm397Hm75bxD7CBMfD8Q"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "CG8UdWYk2yBjqHJdzgi5gDm1R4Rk89TD4rF36cVS7NzR",
+"block_height": "223747460",
+"block_timestamp": "1794216002864949434"
+},
+"block_timestamp": "1794216005004748679",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "132000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "CE9B8ftphUahxE69MCNAvKZVhtRYUFbFs6CfCHadXa1y",
+"shard_id": 13,
+"transaction_hash": "CnYLAUPrhrpmPeiwpz1XKs1DKNSQdaWrZ96P3WQ3nQ8K"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "EAdXZ29iVE12cHATYynvGeyPCLTGa3enHS9jNs4Dbi17",
+"block_height": "223747050",
+"block_timestamp": "1794215770818089243"
+},
+"block_timestamp": "1794215772829098883",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "950000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "u6AFH2PuhJ1NfbNQjfsaQBiEk3REhiRUcXvYWDY7T36",
+"shard_id": 13,
+"transaction_hash": "7JvhtPrS9m9pJjxACpNWwAdf9dNa8dtJFwYaMYFxePSH"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "EAdXZ29iVE12cHATYynvGeyPCLTGa3enHS9jNs4Dbi17",
+"block_height": "223747050",
+"block_timestamp": "1794215770818089243"
+},
+"block_timestamp": "1794215772829098883",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "11685000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "97W2QL3DnMqYC6XhQfbk4G1sgfQEXvPNQqwJFZY7mZkN",
+"shard_id": 13,
+"transaction_hash": "BTnBM46uvPewW6SKGKeH35iuLgjTFxR6JBc1BDk8zZxe"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "BxZGvWew76ASKYfnSqjmFFBB3SxbbAEFYNmZtcYjCbah",
+"block_height": "223746696",
+"block_timestamp": "1794215568296401043"
+},
+"block_timestamp": "1794215570547547170",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-505181754",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AWMH4tsk2Zyn64PiemiT9pxeqxqQXZDe7PktTQ9eUzHG",
+"shard_id": 13,
+"transaction_hash": "3pxukruf1ERPGZYHTUawiYJD56jvJj6ZiMt9qMJMAm73"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "BxZGvWew76ASKYfnSqjmFFBB3SxbbAEFYNmZtcYjCbah",
+"block_height": "223746696",
+"block_timestamp": "1794215568296401043"
+},
+"block_timestamp": "1794215570547547170",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AWMH4tsk2Zyn64PiemiT9pxeqxqQXZDe7PktTQ9eUzHG",
+"shard_id": 13,
+"transaction_hash": "3pxukruf1ERPGZYHTUawiYJD56jvJj6ZiMt9qMJMAm73"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "BxZGvWew76ASKYfnSqjmFFBB3SxbbAEFYNmZtcYjCbah",
+"block_height": "223746696",
+"block_timestamp": "1794215568296401043"
+},
+"block_timestamp": "1794215570547547170",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "145656",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "CcdVPAxZSxayXNxKwwbTZF7fz9jyB6ymb4h5se4mm9gT",
+"shard_id": 13,
+"transaction_hash": "BDuGDAPtoxoWMNubyp61JpUnCKisiBHRKea9cekZ9SoZ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "BpLk3JSodjYvgC9ZXYrLKiSJXnxKTQF6D2J2zAVGmKfE",
+"block_height": "223746555",
+"block_timestamp": "1794215487984007542"
+},
+"block_timestamp": "1794215490505333983",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-4023835",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "3KK1sqnfW1P64ec7teoPn44SRkTmZ2QMnqEZpbTd3MsY",
+"shard_id": 13,
+"transaction_hash": "827dbAGT5dzt6htpHSSVTN6nMLLNTtqNt1TQ6jX4Xwq8"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "BpLk3JSodjYvgC9ZXYrLKiSJXnxKTQF6D2J2zAVGmKfE",
+"block_height": "223746555",
+"block_timestamp": "1794215487984007542"
+},
+"block_timestamp": "1794215490505333983",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "3KK1sqnfW1P64ec7teoPn44SRkTmZ2QMnqEZpbTd3MsY",
+"shard_id": 13,
+"transaction_hash": "827dbAGT5dzt6htpHSSVTN6nMLLNTtqNt1TQ6jX4Xwq8"
+},
+{
+"affected_account_id": "v2.ref-finance.near",
+"block": {
+"block_hash": "GhGzzMoQiVDCfr76V5NijAkUCfS7Y67TZVgqjCt7Jg42",
+"block_height": "223746455",
+"block_timestamp": "1794215432108266962"
+},
+"block_timestamp": "1794215432704029262",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "35388894",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "lolr.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "6cRQuwn53ZZwNFMrGtfeTJiEUYQLDqLYzxsx2YwqmcMQ",
+"shard_id": 13,
+"transaction_hash": "GATFzjXMp94woNPDTdjubWRgpu4KQxr3MmkJcTj3j7hs"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "Ep8JRqq5AePWuueQSL4mbCe9Lb31AZ6ew9XVqAUL4DUY",
+"block_height": "223746372",
+"block_timestamp": "1794215385042658745"
+},
+"block_timestamp": "1794215386231652250",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "505191754",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "8kmxb8NjyGk6fEoMkaVCzGGZoYcK17R9QtTHuRCnEYiS",
+"shard_id": 13,
+"transaction_hash": "7yh6FAvsTHum7kBw2vUeRX6cF39UVgiJi82uXoaFVBnb"
+},
+{
+"affected_account_id": "lolr.near",
+"block": {
+"block_hash": "4rDfPLQFcRyZ1KvQRwkmuyP1cMnMti4FYT7Tr3ZjCvtq",
+"block_height": "223746312",
+"block_timestamp": "1794215351234026645"
+},
+"block_timestamp": "1794215354833302104",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "35388894",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "D7uJQvAnH6ABYwrdtassh7FFr1bRLVUHaJfGnp6QZgsZ",
+"shard_id": 13,
+"transaction_hash": "BBrsoihvLprHc2biYsBDAFK3pJ6M2HDycp1NXDJBuAa1"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "3dYYTqbDi9zPryBkYH3Gxdt6YMQU8puYtsE2XPhVTzpC",
+"block_height": "223746250",
+"block_timestamp": "1794215315352124156"
+},
+"block_timestamp": "1794215315868398759",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "505191754",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FQN263D3F22UkrRJEsDxxv6aRtjpyiWnkqvVbTiUEy18",
+"shard_id": 13,
+"transaction_hash": "9XBk4sbJ38QYfc6s7zZCBVWBW6fCNLqXp4VxwW57RNDZ"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "J8iamGAXuwjUTyQp6gcPkwJbZxZNookFoNW987qqQsQx",
+"block_height": "223745982",
+"block_timestamp": "1794215162396338411"
+},
+"block_timestamp": "1794215164547487505",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "47127000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "4KQshZh1bKkqxdxoBKNxSs6SAZx5ZSHH8BsRFTYQPQ9e",
+"shard_id": 13,
+"transaction_hash": "YY4NyEFzxzG4UkW6GsihTHBYb2bceSMju4BF4hof7FF"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "J8iamGAXuwjUTyQp6gcPkwJbZxZNookFoNW987qqQsQx",
+"block_height": "223745982",
+"block_timestamp": "1794215162396338411"
+},
+"block_timestamp": "1794215164547487505",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "100000000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "e1W5wmTi3ipTxsnB3dXwT1Ew2xYNaEPbpPKXeQH2iH3",
+"shard_id": 13,
+"transaction_hash": "FzdeLuYyWdzhABzQeqbZFeASYAc4gApxeVgXrzW9SmBs"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "8evPYoUo3A3po7yTP86tE5SQCfdVJfPf4SU3L8ziNws7",
+"block_height": "223745809",
+"block_timestamp": "1794215056273765110"
+},
+"block_timestamp": "1794215057721727600",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "4033835",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "GYp1mtUJBvGsW8jBBnqMTprzuN231S8PAsBxQKo4k8XG",
+"shard_id": 13,
+"transaction_hash": "4zpRJVmLvtpNioefYZABVJqhG224iLdjDGUExg1DViLE"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "5J4ALHhumZeTcueg3RorMz3TJprfuBhjD18QCULP4duc",
+"block_height": "223745706",
+"block_timestamp": "1794214992304386785"
+},
+"block_timestamp": "1794214992900650026",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "4033835",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "KXuPsdBxfJFqjSjY2dE759E7ZZTB2x9S2F3E7QuCwtU",
+"shard_id": 13,
+"transaction_hash": "2d74vapnPQQpWNEnCjcxaS4L5EmQt8QbVp4bJ8tRbfro"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CH1R9LTaVgHVTK2SkaeZfkVx8WtRdCZ1jebL9FxcfeNH",
+"block_height": "223745211",
+"block_timestamp": "1794214694524614831"
+},
+"block_timestamp": "1794214696883373937",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-3044541",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Hjmy4BSaD7NkD88XuCQLUyLiWqcL7HehuFiq8rpRst4v",
+"shard_id": 13,
+"transaction_hash": "4u9HUmg7fM4D7YSCHjeMCG4KGg6sFeuTrwB34FDMPRKt"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "CH1R9LTaVgHVTK2SkaeZfkVx8WtRdCZ1jebL9FxcfeNH",
+"block_height": "223745211",
+"block_timestamp": "1794214694524614831"
+},
+"block_timestamp": "1794214696883373937",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Hjmy4BSaD7NkD88XuCQLUyLiWqcL7HehuFiq8rpRst4v",
+"shard_id": 13,
+"transaction_hash": "4u9HUmg7fM4D7YSCHjeMCG4KGg6sFeuTrwB34FDMPRKt"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "6orAuUD4NpETHRcdWansq5BLNvQzNzbYELoXHePXgDrV",
+"block_height": "223745209",
+"block_timestamp": "1794214693505599099"
+},
+"block_timestamp": "1794214695690478015",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "14989000000",
+"event_index": 6,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2jrcAAMun5ziqaA1VqnyXZETPVdVRhCD3t5djV8nyrE5",
+"shard_id": 13,
+"transaction_hash": "2mp1jypYcLjWtobzM9BF87kmEzDjLU73WWGvYDeEZ6fn"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "6orAuUD4NpETHRcdWansq5BLNvQzNzbYELoXHePXgDrV",
+"block_height": "223745209",
+"block_timestamp": "1794214693505599099"
+},
+"block_timestamp": "1794214695690478015",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-5106350205",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "6MTGu3zvCSSKrBrHdHSFLAqoguxkNLjhECm4PqBDcawo",
+"shard_id": 13,
+"transaction_hash": "GV3oCKEfc5T8mhfLTgJCobJ5LW5TPmY4rQjWWS8SS6Aa"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "6orAuUD4NpETHRcdWansq5BLNvQzNzbYELoXHePXgDrV",
+"block_height": "223745209",
+"block_timestamp": "1794214693505599099"
+},
+"block_timestamp": "1794214695690478015",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "6MTGu3zvCSSKrBrHdHSFLAqoguxkNLjhECm4PqBDcawo",
+"shard_id": 13,
+"transaction_hash": "GV3oCKEfc5T8mhfLTgJCobJ5LW5TPmY4rQjWWS8SS6Aa"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "6orAuUD4NpETHRcdWansq5BLNvQzNzbYELoXHePXgDrV",
+"block_height": "223745209",
+"block_timestamp": "1794214693505599099"
+},
+"block_timestamp": "1794214695690478015",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "200000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DEnVxUmrTNGLoDJyhr7fqkLPJVMDwQsnQwmFSatxFoGR",
+"shard_id": 13,
+"transaction_hash": "D3tRfbxKUwiL9QmHpmUtj19V1Zh8DHt3WuAHz7maNojn"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "HaFBs9vV5t1VpjU7V9Hsy67uEdLJFqk2G6xWMYtVVvvg",
+"block_height": "223745208",
+"block_timestamp": "1794214692914755409"
+},
+"block_timestamp": "1794214695118140971",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "4300000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "B6jWs8EsBb8oA2hWviaTnyYYGmKNg9YrqRvNaUEWMwLc",
+"shard_id": 13,
+"transaction_hash": "5o3vakKtVGF12p3rpLdk1Ayj378RqF5zbcJnWBNM2EH9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "6GGcmcrSRysc5PHYjiaShi7nAUCAkRTCFAA6AzReQZsu",
+"block_height": "223745180",
+"block_timestamp": "1794214676982822425"
+},
+"block_timestamp": "1794214679379491138",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-28705524266",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "6CgaWWFt1BybtKnNwByNRmwrS9kC17u7nwKWFcFaEmmM",
+"shard_id": 13,
+"transaction_hash": "37UYm9qpkjgr7ngBXBB1FRS4aYzmQzxWZvPsUShHRGkn"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "6GGcmcrSRysc5PHYjiaShi7nAUCAkRTCFAA6AzReQZsu",
+"block_height": "223745180",
+"block_timestamp": "1794214676982822425"
+},
+"block_timestamp": "1794214679379491138",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "6CgaWWFt1BybtKnNwByNRmwrS9kC17u7nwKWFcFaEmmM",
+"shard_id": 13,
+"transaction_hash": "37UYm9qpkjgr7ngBXBB1FRS4aYzmQzxWZvPsUShHRGkn"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "6fgpWf7cDqhGfABxA47orXYEF8tNTKVdhycuzuPNHWCr",
+"block_height": "223744978",
+"block_timestamp": "1794214553882420523"
+},
+"block_timestamp": "1794214555404446685",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "3054541",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "4CTtcmr61VvLpUT9iEncFgppC1PstCx9rQJrxbotzdaa",
+"shard_id": 13,
+"transaction_hash": "Ft5irHofaP56aEGekYzoyQjUuYsRnVqyp7pJLw475hDf"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CqveR7iSt5hKJiqFZZZ6rkq4CBoQAeK5vpkVLjBmZwYV",
+"block_height": "223744918",
+"block_timestamp": "1794214520942681045"
+},
+"block_timestamp": "1794214523322144185",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-488363",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "9AjjA2EcXKQoe2W7Z9dm5yJxoS9pWwmkYNBMtTFQ1pGq",
+"shard_id": 13,
+"transaction_hash": "9ZPn3tnFFJJ8k896gxS2NnAvFfk41DzAcjG7vnf5sdD4"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "CqveR7iSt5hKJiqFZZZ6rkq4CBoQAeK5vpkVLjBmZwYV",
+"block_height": "223744918",
+"block_timestamp": "1794214520942681045"
+},
+"block_timestamp": "1794214523322144185",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "9AjjA2EcXKQoe2W7Z9dm5yJxoS9pWwmkYNBMtTFQ1pGq",
+"shard_id": 13,
+"transaction_hash": "9ZPn3tnFFJJ8k896gxS2NnAvFfk41DzAcjG7vnf5sdD4"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "FXxprSLoy2j3MfkkUnqzoubivFQYwzVqeESdj49dLdBr",
+"block_height": "223744857",
+"block_timestamp": "1794214485652583632"
+},
+"block_timestamp": "1794214486321334549",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "3054541",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "HtNJupnBbvRLByQapDBiy7xVPaiDfisvwhucPvBuafLZ",
+"shard_id": 13,
+"transaction_hash": "5SwGy1ZQ7iJdUMPBaNBwSeNFW6SHTCwftxaUJPnbehSA"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "BvH4uLPbV8DDzYRcbZwrtsVQFyrPbKfJ7SWVZyzGLWho",
+"block_height": "223744761",
+"block_timestamp": "1794214426502105483"
+},
+"block_timestamp": "1794214427704491922",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "5106360205",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "8C1o5kuZVG9oXrZgWkLFa8gNNmNJjn8RET37JQ7Km9T1",
+"shard_id": 13,
+"transaction_hash": "E3rn5SEbVFqeoRNRNPysymZZDkX45HsZCKuxRWHDq8e5"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "2NnBqApd95jc22rSeLAofFhRWudrGFaD6SBTGBjuPkFh",
+"block_height": "223744730",
+"block_timestamp": "1794214408819241264"
+},
+"block_timestamp": "1794214410021431432",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "28705534266",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "9zEdVK16rHeMJ4Ysu5QJQC27kCUv14Z9kFELi8ZGLPCD",
+"shard_id": 13,
+"transaction_hash": "4N8h2GzUQKTmfLeSbTNbniUPRXvMjXCMiRBYaK7v3zZC"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "7p2W4FNcnTYoBioF8BaLGkVhQia99WcUutFvi9zfbYvr",
+"block_height": "223744648",
+"block_timestamp": "1794214362855601248"
+},
+"block_timestamp": "1794214363512348057",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "5106360205",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "GYy6hirHweez9zp11mb4eUrYZA2y9jWxnK4McmBjJR39",
+"shard_id": 13,
+"transaction_hash": "AnzFiNh4dNKcdr7Tc1XcJ72srKrFdiDXJvgBpihnncX9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "2afvEse6B16T55biRc2bXkHjoSWfGAsJtpnRc5FH9Eu9",
+"block_height": "223744606",
+"block_timestamp": "1794214339049148659"
+},
+"block_timestamp": "1794214339612127455",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "28705534266",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "AqNrAjP5B7km48Z2eVAHjQUypfSRyueYom1AvRZuPPnR",
+"shard_id": 13,
+"transaction_hash": "4JRD5YGzPhgQvE9GMECcpMVNaxBhQ2HgzhJJaE5YP3KG"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DGdFcpBgbQPX6qp7ZkE8jdtVysP6M1wKbqh6xTByjpTT",
+"block_height": "223744526",
+"block_timestamp": "1794214294844473183"
+},
+"block_timestamp": "1794214297012905328",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-332564231",
+"event_index": 5,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Hvx7JFBJhGDZmoiuzaRyCHox9SBFbFJ26PMcmfiFskyP",
+"shard_id": 13,
+"transaction_hash": "Gn6KAhjohGq716pWrVBiXDUzzCP8WpL6zitz8EBQSmMK"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "DGdFcpBgbQPX6qp7ZkE8jdtVysP6M1wKbqh6xTByjpTT",
+"block_height": "223744526",
+"block_timestamp": "1794214294844473183"
+},
+"block_timestamp": "1794214297012905328",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Hvx7JFBJhGDZmoiuzaRyCHox9SBFbFJ26PMcmfiFskyP",
+"shard_id": 13,
+"transaction_hash": "Gn6KAhjohGq716pWrVBiXDUzzCP8WpL6zitz8EBQSmMK"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DGdFcpBgbQPX6qp7ZkE8jdtVysP6M1wKbqh6xTByjpTT",
+"block_height": "223744526",
+"block_timestamp": "1794214294844473183"
+},
+"block_timestamp": "1794214297012905328",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-79172346",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FY3v7XQ6oq6yWcQCvZuVgQsZw33h8cNVMhta3R4aiyE2",
+"shard_id": 13,
+"transaction_hash": "CFhsqiouhRGPFmaKpYZBG2PxwpHbs56AVQUfcCxQ5KkL"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "DGdFcpBgbQPX6qp7ZkE8jdtVysP6M1wKbqh6xTByjpTT",
+"block_height": "223744526",
+"block_timestamp": "1794214294844473183"
+},
+"block_timestamp": "1794214297012905328",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FY3v7XQ6oq6yWcQCvZuVgQsZw33h8cNVMhta3R4aiyE2",
+"shard_id": 13,
+"transaction_hash": "CFhsqiouhRGPFmaKpYZBG2PxwpHbs56AVQUfcCxQ5KkL"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "YJxQar2w5uY1VJWL2Ro2FAiQ5e98Syi3jx2f2PxQbEg",
+"block_height": "223744521",
+"block_timestamp": "1794214291925372496"
+},
+"block_timestamp": "1794214294231244840",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "950000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "CKAEcTBA1YqCW5mzAMWg6sxhBNHR635MNX8pJMBw6nJ3",
+"shard_id": 13,
+"transaction_hash": "73KCx18pkfj7NGFAHVRAZdFQ2qEsp2GuARxVPTAPTAxn"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "NhfM2vHiN43au6qZFKqY6nfMGu78QoeDMH8yaf61hms",
+"block_height": "223744467",
+"block_timestamp": "1794214261991533609"
+},
+"block_timestamp": "1794214263978098099",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-351769476",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "EiknYSRiqiqf6gXoeL1qZSJAEHNxcDYqxNJdkURmuycz",
+"shard_id": 13,
+"transaction_hash": "9XGFfNDJxTYSDuh5Zdocqmdpb1NxHwbU1sxwuNQr47Yo"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "NhfM2vHiN43au6qZFKqY6nfMGu78QoeDMH8yaf61hms",
+"block_height": "223744467",
+"block_timestamp": "1794214261991533609"
+},
+"block_timestamp": "1794214263978098099",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "EiknYSRiqiqf6gXoeL1qZSJAEHNxcDYqxNJdkURmuycz",
+"shard_id": 13,
+"transaction_hash": "9XGFfNDJxTYSDuh5Zdocqmdpb1NxHwbU1sxwuNQr47Yo"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "BsG61g6UCG4VuxzoSNjvhnbYUV9ef25ZtSkCZQBEe8t",
+"block_height": "223744359",
+"block_timestamp": "1794214200371201109"
+},
+"block_timestamp": "1794214201459388618",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "498363",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "HfQoLmeetvPTj48TngDD4YCmrTiBtVyVRbgQccnRdXtG",
+"shard_id": 13,
+"transaction_hash": "GykSYH3Zy9Wxz7BcaK29RuZpeHEmVXmj1tyUvsVVaBqL"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "47R6qHZampo2qRquMTENVwCyb1FMb5ertqJSzYVpggsL",
+"block_height": "223744285",
+"block_timestamp": "1794214159073947301"
+},
+"block_timestamp": "1794214161285223838",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "200000",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "4UzFWG3WACxiJjQPx1CZybBefv7AHT4AiTEq85SzRAgc",
+"shard_id": 13,
+"transaction_hash": "7baH4WS69EC8rPQea22Dv2fDX4Hy9PgxdusNbPoB2hkp"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "yXrfJBY7r2HvcChsyYn9x33CRpv5r4GVQeEdajZbVay",
+"block_height": "223744255",
+"block_timestamp": "1794214141794946114"
+},
+"block_timestamp": "1794214142981836787",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "332574231",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "7VrSHs4vcB9mpX4ziPY6PG6pLYBEr8GA9LFKtRgtAih6",
+"shard_id": 13,
+"transaction_hash": "EDrCHLc1gyvc498Er6twcCadDm5qH7NLkTYQoVnqXgJz"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DDa3XNPxwCUJr7BiwWZnCYLRn1tdBz3wHdrXsxiUD3kB",
+"block_height": "223744235",
+"block_timestamp": "1794214130377890891"
+},
+"block_timestamp": "1794214130997778497",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "498363",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "qGPMAXcagMejA5CYjTPZz3EJ6fG8Riahhk2mXx2F5BL",
+"shard_id": 13,
+"transaction_hash": "Gtw5v4uYjFMZPf1PszXRE6y6zkBLdiL1x74u1ch259zQ"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "AoxVetvX4x5tRD51CWJSXsZD7uZbYj6bqub5KgmtwsZP",
+"block_height": "223744197",
+"block_timestamp": "1794214108262492484"
+},
+"block_timestamp": "1794214110605380081",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "157329",
+"event_index": 6,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2JBkwRoFFGnqwuXnaT1vdMmcRc6suWXKnn2wE65i2ayx",
+"shard_id": 13,
+"transaction_hash": "797aAoaBuZuXF1GMpq99jPcABjThKWEL3KPwp2A3heVX"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "AoxVetvX4x5tRD51CWJSXsZD7uZbYj6bqub5KgmtwsZP",
+"block_height": "223744197",
+"block_timestamp": "1794214108262492484"
+},
+"block_timestamp": "1794214110605380081",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-5494127",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FZf3RdqvMmshmJ8eZPDDU2AsdyZDokXSuATwzkHvJva2",
+"shard_id": 13,
+"transaction_hash": "JD1kauT3k9LNiwomwRQSrBQ2rv2BRBpH9ituxfWLdEan"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "AoxVetvX4x5tRD51CWJSXsZD7uZbYj6bqub5KgmtwsZP",
+"block_height": "223744197",
+"block_timestamp": "1794214108262492484"
+},
+"block_timestamp": "1794214110605380081",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FZf3RdqvMmshmJ8eZPDDU2AsdyZDokXSuATwzkHvJva2",
+"shard_id": 13,
+"transaction_hash": "JD1kauT3k9LNiwomwRQSrBQ2rv2BRBpH9ituxfWLdEan"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "AoxVetvX4x5tRD51CWJSXsZD7uZbYj6bqub5KgmtwsZP",
+"block_height": "223744197",
+"block_timestamp": "1794214108262492484"
+},
+"block_timestamp": "1794214110605380081",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "490222865",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "8Wz7ReoyevwS3aJwspMF8Sp2d92C9wBLi4iQN86GKgGp",
+"shard_id": 13,
+"transaction_hash": "CHq9WpcJ6wE8RQjA6sW7aYbzCJ8JtvJhRMB1wpbLndJ3"
+},
+{
+"affected_account_id": "zcash-connector.bridge.near",
+"block": {
+"block_hash": "7F7L3k7A6ad9ywRHtgWCg2YYwHa7esGt4hBHd6MZv3bA",
+"block_height": "223744153",
+"block_timestamp": "1794214083276727818"
+},
+"block_timestamp": "1794214084387912156",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "79182346",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "omni.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "BWf9mTYMEDsDcSCWYpFeJfw7dtazfuTd4a45ehLBXZZ5",
+"shard_id": 13,
+"transaction_hash": "BXo42QEkZpBVxZBCW67Drse6Q7yGrdeS5WGZMAwjMjjd"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "ED11AqrT99ch5Swon6LkpcSbsWtLmNFFMcQwzay2Q5wo",
+"block_height": "223744144",
+"block_timestamp": "1794214078201125230"
+},
+"block_timestamp": "1794214078754071090",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "332574231",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "J94mURXkXXVd58tD1Gct9D8qUXuzUjwkxkeTo4szr1Bc",
+"shard_id": 13,
+"transaction_hash": "6y161SfkcFsZHGDw4YhxXYRQPqH4NRBiXVN8CnCAFpM"
+},
+{
+"affected_account_id": "v2.ref-finance.near",
+"block": {
+"block_hash": "Gv2Va8zx1TVvEboRvq9P2rvhgRTP4qLsQB3W3E8iVd1j",
+"block_height": "223744143",
+"block_timestamp": "1794214077717902781"
+},
+"block_timestamp": "1794214078201125230",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "2171",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "3oUZGVoMPk96yzpdRe6NJyuxKWyHcTSQdsaLS3WCvyFf",
+"shard_id": 13,
+"transaction_hash": "8xrk6A4hwjmpnXaVAR8UrsmzWLGkwLmoqfQPZZeEjUzp"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "dMAXLaxux5SQP9VsJNCZXccvWb9PtipBwJ2wspmHqBH",
+"block_height": "223744053",
+"block_timestamp": "1794214027650069510"
+},
+"block_timestamp": "1794214029878135723",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-48530025",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Db6TvEje7fUmietmdC5JRMuesAa5VTXqs6Mj2WVqoDsu",
+"shard_id": 13,
+"transaction_hash": "DJfZnvaJCcvPvQqhLC8FvQca5WAAG47hAFdqfMGrAa2B"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "dMAXLaxux5SQP9VsJNCZXccvWb9PtipBwJ2wspmHqBH",
+"block_height": "223744053",
+"block_timestamp": "1794214027650069510"
+},
+"block_timestamp": "1794214029878135723",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "Db6TvEje7fUmietmdC5JRMuesAa5VTXqs6Mj2WVqoDsu",
+"shard_id": 13,
+"transaction_hash": "DJfZnvaJCcvPvQqhLC8FvQca5WAAG47hAFdqfMGrAa2B"
+},
+{
+"affected_account_id": "intents.near",
+"block": {
+"block_hash": "dMAXLaxux5SQP9VsJNCZXccvWb9PtipBwJ2wspmHqBH",
+"block_height": "223744053",
+"block_timestamp": "1794214027650069510"
+},
+"block_timestamp": "1794214029878135723",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "25849038",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "4UuhAeSSvTVhy2QTFPGkvc2uiPWQ8WGRiJQGcQkgZnTj",
+"shard_id": 13,
+"transaction_hash": "91L8HN5bxHUvLNy1bG9BfHArHpwXxqej7Ye2moCjEped"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8oqyWy6rtryVUuP2bYsLTyRxkQ4pGuKhyC5KnRrX8Xyj",
+"block_height": "223744041",
+"block_timestamp": "1794214020963834546"
+},
+"block_timestamp": "1794214021562005225",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "79182346",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "53uAbJRKEPeYMVSnnpdZs35QZHtYKePENjB18HG3TtrU",
+"shard_id": 13,
+"transaction_hash": "GEgfWhPX7yxQZG9eu3NFzYTWXDVdU7PqvpX1jSGDznYZ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "HbNrCC9EhpaYHPQLwp1xPbrDgR61ggfRxkZptxqawHkH",
+"block_height": "223744035",
+"block_timestamp": "1794214017536439354"
+},
+"block_timestamp": "1794214019730264704",
+"cause": "BURN",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-12279776",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FoUdZfjTgrA5GaEBtJsUhypy1HqSnMc5dUWa1DM7wEkZ",
+"shard_id": 13,
+"transaction_hash": "5XRejCmwYtAZYCAo1QHmhHUjLmTMuGs36Z7inSGM8Ho5"
+},
+{
+"affected_account_id": "omni-relayer.bridge.near",
+"block": {
+"block_hash": "HbNrCC9EhpaYHPQLwp1xPbrDgR61ggfRxkZptxqawHkH",
+"block_height": "223744035",
+"block_timestamp": "1794214017536439354"
+},
+"block_timestamp": "1794214019730264704",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "10000",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "FoUdZfjTgrA5GaEBtJsUhypy1HqSnMc5dUWa1DM7wEkZ",
+"shard_id": 13,
+"transaction_hash": "5XRejCmwYtAZYCAo1QHmhHUjLmTMuGs36Z7inSGM8Ho5"
+}
+]
+}

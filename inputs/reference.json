@@ -1,0 +1,212 @@
+{
+ "V_ch": {
+  "Arbitrum": 30766637.36992191,
+  "BNB Chain": 29863533.782265864,
+  "Base": 23403778.732465632,
+  "Bitcoin": 82289986.41935067,
+  "Ethereum": 257043980.2418692,
+  "NEAR": 46562191.348802134,
+  "Solana": 69971460.40947239,
+  "TRON": 172136914.22001308,
+  "XRP": 8333629.000705883,
+  "Zcash": 90241740.33730534
+ },
+ "V_headline_usd": 3714703670.257741,
+ "V_swaps": 426236,
+ "V_usd": 831333190.294327,
+ "V_window": "Last 30 days: 426,236 successful swaps, 426,126 unique users, 10/10 09:21 to 11/9 09:20 UTC",
+ "capability13": [
+  "Ethereum",
+  "Bitcoin",
+  "Zcash",
+  "Solana",
+  "Base",
+  "BNB",
+  "Arbitrum",
+  "Polygon",
+  "HyperEVM",
+  "Fogo",
+  "Abstract",
+  "Starknet",
+  "Aptos"
+ ],
+ "capability_in_28": [
+  "Ethereum",
+  "Bitcoin",
+  "Zcash",
+  "Solana",
+  "Base",
+  "BNB",
+  "Arbitrum",
+  "Polygon",
+  "Starknet",
+  "Aptos"
+ ],
+ "census_exact": {
+  "nbtc.bridge.near": "Bitcoin",
+  "nzec.bridge.near": "Zcash"
+ },
+ "census_prefix": {
+  "ada": "Cardano",
+  "apt": "Aptos",
+  "aptos": "Aptos",
+  "arb": "Arbitrum",
+  "avax": "Avalanche",
+  "base": "Base",
+  "bch": "BCH",
+  "bera": "Berachain",
+  "bnb": "BNB",
+  "bsc": "BNB",
+  "btc": "Bitcoin",
+  "cardano": "Cardano",
+  "doge": "Dogecoin",
+  "eth": "Ethereum",
+  "gno": "Gnosis",
+  "gnosis": "Gnosis",
+  "ltc": "Litecoin",
+  "monad": "Monad",
+  "op": "Optimism",
+  "pol": "Polygon",
+  "polygon": "Polygon",
+  "scroll": "Scroll",
+  "sol": "Solana",
+  "starknet": "Starknet",
+  "stellar": "Stellar",
+  "strk": "Starknet",
+  "sui": "Sui",
+  "ton": "TON",
+  "tron": "Tron",
+  "xlm": "Stellar",
+  "xrp": "XRP",
+  "zec": "Zcash"
+ },
+ "census_suffix": {
+  ".factory.bridge.near": "Ethereum"
+ },
+ "chain_names": {
+  "arbitrum": [
+   "Arbitrum",
+   "Arbitrum"
+  ],
+  "base": [
+   "Base",
+   "Base"
+  ],
+  "bitcoin": [
+   "Bitcoin",
+   "Bitcoin"
+  ],
+  "ethereum": [
+   "Ethereum",
+   "Ethereum"
+  ],
+  "solana": [
+   "Solana",
+   "Solana"
+  ],
+  "tron": [
+   "Tron",
+   "TRON"
+  ],
+  "xrp": [
+   "XRP",
+   "XRP"
+  ],
+  "zcash": [
+   "Zcash",
+   "Zcash"
+  ]
+ },
+ "chains28": {
+  "hot": [
+   "BNB",
+   "Polygon",
+   "Optimism",
+   "Avalanche",
+   "Scroll",
+   "Monad",
+   "TON",
+   "Stellar",
+   "LayerX",
+   "Adi",
+   "Plasma"
+  ],
+  "omni": [
+   "Ethereum",
+   "Base",
+   "Arbitrum",
+   "BNB",
+   "Solana",
+   "Bitcoin"
+  ],
+  "poa": [
+   "Ethereum",
+   "Base",
+   "Arbitrum",
+   "Gnosis",
+   "Berachain",
+   "Bitcoin",
+   "BCH",
+   "Litecoin",
+   "Dogecoin",
+   "Solana",
+   "XRP",
+   "Zcash",
+   "Tron",
+   "Sui",
+   "Aptos",
+   "Cardano",
+   "Starknet"
+  ],
+  "union": [
+   "Adi",
+   "Aptos",
+   "Arbitrum",
+   "Avalanche",
+   "BCH",
+   "BNB",
+   "Base",
+   "Berachain",
+   "Bitcoin",
+   "Cardano",
+   "Dogecoin",
+   "Ethereum",
+   "Gnosis",
+   "LayerX",
+   "Litecoin",
+   "Monad",
+   "Optimism",
+   "Plasma",
+   "Polygon",
+   "Scroll",
+   "Solana",
+   "Starknet",
+   "Stellar",
+   "Sui",
+   "TON",
+   "Tron",
+   "XRP",
+   "Zcash"
+  ]
+ },
+ "made_utc": "2026-11-10T12:12:43Z",
+ "prices_usd": {
+  "BTC": 74500.0,
+  "ETH": 2100.0,
+  "SOL": 87.0,
+  "USD": 1.0,
+  "XRP": 1.0,
+  "ZEC": 1200.0
+ },
+ "sources": {
+  "bridging_overview": {
+   "file": "integration__bridging__overview.md",
+   "sha256": "db3916ef782c00861df64ea96d723cc3cc6bd3c1cb918c6a6e9acbe84d5678a5"
+  },
+  "nearstats_summary": {
+   "file": "nearstats-api-near-summary.json",
+   "generatedAt": "2026-11-09T09:21:11.042Z",
+   "sha256": "909949238c1b968161afb0886b5138f94df52d0e599e090703b5d729d62bef73"
+  }
+ }
+}

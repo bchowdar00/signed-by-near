@@ -1,0 +1,17 @@
+{
+ "what": "Two answers from NEAR's mainnet RPC, read after the first counted read, for one comparison of scale (afterread/NEXT-READS.md, section 1). Not an input of any frozen test.",
+ "source": "https://rpc.mainnet.fastnear.com (JSON-RPC, keyless): method \"block\" with finality \"final\"; method \"EXPERIMENTAL_protocol_config\" with finality \"final\"",
+ "fetched_utc": "2026-11-13T14:00:15Z",
+ "block_height": 224372919,
+ "total_supply_yocto": "1311599901407843423986911478818096",
+ "max_inflation_rate": [
+  1,
+  40
+ ],
+ "protocol_reward_rate": [
+  0,
+  1
+ ],
+ "protocol_treasury_account": "treasury.near",
+ "protocol_version": 88
+}

@@ -1,0 +1,33 @@
+{
+ "began": "2026-11-14T02:46:32Z",
+ "blocks": [
+  {
+   "block": 22,
+   "cells_equal": true,
+   "pages_equal": true,
+   "rows_first": 35543,
+   "rows_second": 35543,
+   "usd_in_first": "54770191.705374262982",
+   "usd_in_second": "54770191.705374262982"
+  },
+  {
+   "block": 2,
+   "cells_equal": true,
+   "pages_equal": true,
+   "rows_first": 20026,
+   "rows_second": 20026,
+   "usd_in_first": "22683702.675719010083",
+   "usd_in_second": "22683702.675719010083"
+  },
+  {
+   "block": 16,
+   "cells_equal": true,
+   "pages_equal": true,
+   "rows_first": 26632,
+   "rows_second": 26632,
+   "usd_in_first": "38969859.935660316573",
+   "usd_in_second": "38969859.935660316573"
+  }
+ ],
+ "finished": "2026-11-14T02:54:48Z"
+}

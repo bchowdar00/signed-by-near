@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signed by NEAR? Dashboard</title>
+<style>
+:root{--bg:#fcfcfb;--surf:#f3f2ed;--ink:#0b0b0b;--ink2:#52514e;--line:#e1e0d9;--edge:#c3c2b7;--omni:#2a78d6;--poa:#eb6834;--unk:#b5b3ab;color-scheme:light dark}
+@media (prefers-color-scheme: dark){:root{--bg:#1a1a19;--surf:#232321;--ink:#f0efec;--ink2:#c3c2b7;--line:#2c2c2a;--edge:#383835;--omni:#3987e5;--poa:#d95926;--unk:#5a5955}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1040px;margin:0 auto;padding:40px 20px 72px}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.05;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:24px;line-height:1.2;margin:56px 0 6px;letter-spacing:-.01em}
+h3{font-size:17px;margin:0 0 6px}
+h4{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin:16px 0 6px;font-weight:600}
+p{margin:0 0 12px}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em}
+code{background:var(--surf);padding:1px 5px;border-radius:4px}
+.sub{color:var(--ink2);font-size:18px;max-width:46em;margin:0 0 28px}
+.lede{color:var(--ink2);max-width:46em}
+.answer{font-size:21px;line-height:1.4;max-width:40em;margin:0 0 14px}
+.claim{border-left:3px solid var(--omni);padding:2px 0 2px 14px;max-width:44em}
+.small{font-size:14px;color:var(--ink2);max-width:52em}
+.tests{width:100%;border-collapse:collapse;margin:18px 0 10px}
+.tests th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);text-align:left;font-weight:600;padding:8px 12px 8px 0;border-bottom:1px solid var(--edge)}
+.tests td{vertical-align:top;padding:12px 12px 12px 0;border-bottom:1px solid var(--line)}
+.tests td:first-child{font-weight:600;width:19%}
+.tests tr.grp td{font-weight:600;width:auto;padding-top:20px;color:var(--ink)}
+.when,.points{max-width:52em;padding-left:1.2em;margin:10px 0 14px}
+.points li{margin:0 0 8px}
+.when li{margin:0 0 8px}
+.tests td:nth-child(2){width:34%;color:var(--ink2)}
+.chip{display:inline-block;border:1px solid var(--edge);border-radius:999px;padding:1px 10px;font-size:13px;white-space:nowrap}
+.grp{margin:22px 0 0}
+.grp h3{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ct{color:var(--ink2);font-weight:400;font-size:14px}
+.what{color:var(--ink2);font-size:14px;margin:0 0 10px;max-width:56em}
+.cells{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:10px}
+.cell{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg)}
+.g-dom{border-color:var(--omni)}
+.cn{font-weight:600;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.cv{font-size:13px;margin:4px 0 0;font-variant-numeric:tabular-nums}
+.cd{font-size:13px;color:var(--ink2);margin-top:4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;flex:none}
+.sw-dom{background:var(--omni)}
+.sw-use{border:2px solid var(--omni)}
+.sw-poa{background:var(--poa)}
+.sw-unk{background:var(--unk)}
+.track{position:relative;height:12px;margin:8px 0 2px}
+.track::before{content:"";position:absolute;left:0;right:0;top:5px;height:2px;border-radius:1px;background:var(--line)}
+.rng{position:absolute;top:4px;height:4px;min-width:4px;border-radius:2px;background:var(--ink2)}
+.pt{position:absolute;top:0;width:12px;height:12px;border-radius:50%;background:var(--omni);border:2px solid var(--bg)}
+.key{font-size:13px;color:var(--ink2);margin:14px 0 0}
+figure{margin:18px 0 8px}
+figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px}
+figcaption{font-size:13px;color:var(--ink2);margin-top:6px}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:14px 0 0}
+.panel{border:1px solid var(--line);border-radius:8px;padding:16px 16px 12px;min-width:0}
+.pl{display:inline-block;font-variant-numeric:tabular-nums;color:var(--ink2);margin-right:8px}
+.shows{font-size:16px}
+.how{font-size:14px;color:var(--ink2)}
+pre.q{margin:0 0 10px;padding:10px 12px;background:var(--surf);border-radius:6px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.45}
+.notes{border-top:1px solid var(--line);margin-top:12px}
+.notes ul{margin:0;padding:0;list-style:none}
+.notes li{font-size:14px;color:var(--ink2);margin:0 0 8px}
+.nn{color:var(--ink);font-weight:600}
+table.t{border-collapse:collapse;width:100%;margin:12px 0 4px;font-size:14px;font-variant-numeric:tabular-nums}
+table.t caption{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);font-weight:600;padding-bottom:6px}
+table.t th{text-align:left;font-weight:600;color:var(--ink2);padding:5px 10px 5px 0;border-bottom:1px solid var(--edge);vertical-align:bottom}
+table.t td{padding:5px 10px 5px 0;border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.box{border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0}
+.sha{word-break:break-all}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
+@media (max-width:640px){.tests thead{display:none}.tests td{display:block;width:auto!important;padding:4px 0;border:0}.tests tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Signed by NEAR?</h1>
+<p class="sub">How much of NEAR's cross-chain flow needs NEAR's signer: five tests, fixed before any counted result was read.</p>
+<p class="answer"><strong>Narrow today: the claim held on breadth. The next reads are dated.</strong> Chain Signatures is NEAR's signer. It signs the withdrawals of Omni, NEAR's own bridge. NEAR Intents is NEAR's cross-chain swap product.</p>
+<ul class="points"><li><strong>On Bitcoin the flow runs on the signer's bridge.</strong> Nearly all of the bitcoin that moves through Intents moves on Omni: [99.7%, 100.0%] of it over the 90 days to T0. NEAR's own sentence about Bitcoin holds on chain.</li><li><strong>Beyond Bitcoin it is not shown.</strong> This sample can read 8 chains, and Omni is shown to be the main route on 1 of them. On Solana and Zcash Omni carried most of the sampled flow, but the intervals are too wide to call. On Arbitrum, Base, Ethereum, Tron and XRP every sampled dollar moved on a custodial bridge that does not use the signer. Found after the read: the Intents team's own SDK lists SOL and ZEC tokens among those it now sends through Omni, and no EVM, Tron or XRP token. That is a list in its code, not a measurement of flow (<code>THESIS.md</code> §5).</li><li><strong>The call count overstates adoption.</strong> The signer took 14,046 calls a day in October. 34.0% of them came from one app, Sweat Wallet, signing in through a login service, and that app ends in its present form on Dec 30, 2026. Apps beyond NEAR's own infrastructure, leaving Sweat out, made 3.5% [1.7%, 17.4%].</li><li><strong>It is a cost, and it is not falling.</strong> The signer charges no fee. NEAR pays its operators from its treasury: 0.1065 NEAR per request in September, and by the frozen test it did not fall from July. Written after the read: at October's proposed payout the programme runs at 922,374.24 NEAR a year, equal to 2.8% of the most NEAR the protocol can issue in a year (a comparison of size, not a share of issuance; <code>THESIS.md</code> §7.2).</li><li><strong>What a holder watches next.</strong> January 2027, the first full month without Sweat; October's payout, when it is executed; and the next complete reading of Solana and Zcash. Each has a threshold and an expectation, written after the read and timestamped before this page was published (<code>THESIS.md</code> §7.2).</li></ul>
+<p class="claim"><strong>The claim under test:</strong> "On the chains this sample can measure, Chain Signatures is a narrow route, not a broad one."</p>
+</header>
+
+<section aria-labelledby="h-when">
+<h2 id="h-when">What was fixed, and when</h2>
+<p class="lede">All dates are 2026, UTC. The Bitcoin block times can be checked by anyone; the other times are this entry's own record.</p>
+<ul class="when"><li><strong>Nov 10.</strong> The method, the list of windows and the collector were hashed and submitted to OpenTimestamps at 11:51Z, a minute before collection began. The analysis code, with the five tests in it, was hashed and submitted at 13:04Z, while collection ran and before any analysis read a collected row. Bitcoin holds both hashes in a block of 14:41Z that day. That block time is what anyone can verify; the two earlier times are this entry's own record.</li><li><strong>Nov 10 to Nov 13, 00:00Z.</strong> Collection.</li><li><strong>Nov 13.</strong> The claim's sentence, from a sketch dated Nov 10 that was not stamped then, and the read for a NEAR holder were stamped: submitted at 05:46Z, in a Bitcoin block at 07:25Z. That is after collection ended and before the first read of any counted result, on Nov 13 at 11:00:30Z (<code>preread/</code>).</li></ul>
+<p class="small">The claim and the tests were both written after an uncounted pilot that their author had seen. On Nov 9, with one window per token, SOL, ZEC and BTC transfers went through Omni, and ETH, USDC on Ethereum, Arbitrum and Base, Tron USDT and XRP went through POA; and 49 of 103 sampled <code>sign</code> calls were Sweat's (METHOD, sections 4 and 7). That pilot had already shown five of the eight readable chains on POA and Sweat with about half of the sampled calls, so T2 and T3 could hardly have been met; it did not measure value, cost or change over time, which the other three test. So the claim was not a blind guess. What the stamps show is that the tests, their thresholds and the claim were not changed after the counted results were read.</p>
+</section>
+
+<section aria-labelledby="h-tests">
+<h2 id="h-tests">The five tests</h2>
+<p class="lede">Each row is what a test needed against what was found. All five frozen tests read not met; none was met and none is undecided.</p>
+<table class="tests"><thead><tr><th>Test</th><th>Needed</th><th>Found</th><th>Result</th></tr></thead><tbody><tr class="grp"><td colspan="4">T1 to T3 would have shown a broad moat.</td></tr><tr><td>T1. Value mostly on Omni</td><td>The lower end of Omni's share of the measured value at 90% or more.</td><td>21.1%; the share is 41.3% [21.1%, 89.5%] over the 90 days.</td><td><span class="chip">not met</span></td></tr><tr><td>T2. Omni dominant widely</td><td>Omni the dominant route on at least 5 of the 8 chains this sample can read.</td><td>1 of 8, Bitcoin.</td><td><span class="chip">not met</span></td></tr><tr><td>T3. Broad adoption</td><td>Apps beyond NEAR's own infrastructure, leaving Sweat out, making at least 25% of <code>sign</code> calls in each of August, September and October.</td><td>3.5% [1.7%, 17.4%] in October, and less before.</td><td><span class="chip">not met</span></td></tr><tr class="grp"><td colspan="4">T4 and T5 would have changed the read on cost and on direction.</td></tr><tr><td>T4. Falling spend per request</td><td>What NEAR pays per request falling from July to September while calls grow.</td><td>It did not fall, and total calls did not grow.</td><td><span class="chip">not met</span></td></tr><tr><td>T5. No migration</td><td>No move to Omni for SOL, ZEC or BTC.</td><td>Bitcoin moved, by the frozen test; for SOL and ZEC the comparison could not be made.</td><td><span class="chip">not met</span></td></tr></tbody></table>
+</section>
+
+<section aria-labelledby="h-watch">
+<h2 id="h-watch">What to watch, and when</h2>
+<p class="lede">Written after the read and timestamped before this page was published (<code>afterread/NEXT-READS.md</code>, with its manifest and receipt). Each read uses a series and a threshold frozen before the read; the expectation is this entry's own.</p>
+<ul class="when"><li><strong>January 2027, the first full month without Sweat.</strong> Readable from February 2027. Threshold: apps beyond NEAR's own infrastructure make at least 25% of <code>sign</code> calls, with a lower end of at least 15%. Expectation: not met. If Sweat's calls stop and nothing else changes, those apps would make 5.2% of the calls that remain, and the signer would take about 9,270 calls a day; more than that means the other callers grew.</li><li><strong>October's payout, when it is executed, and each monthly report after it.</strong> Threshold: NEAR per request falling month on month, each interval wholly below the one before, while calls grow. Expectation: not met, and higher than September's 0.1065. Paid as proposed, October comes to 0.1765 NEAR per request [0.1411, 0.2294].</li><li><strong>The next complete reading of Solana and Zcash,</strong> at a cutoff after Dec 30, in which every SOL and ZEC window is completed. Threshold: the lower end of Omni's share above 50%, by count and by amount. Expectation: both read dominant, which would make 3 of the 8 readable chains and still fall short of the 5 the test needs.</li></ul>
+<p class="small">If all three read as expected, the signer is a route that widens by chain while its use by apps outside NEAR's own stack stays small and its cost per signature rises. What keeps flow on NEAR on the other measured chains is then still Intents' own network, not Chain Signatures.</p>
+</section>
+
+<section aria-labelledby="h-grid">
+<h2 id="h-grid">The 28 chains, one by one</h2>
+<p class="lede">The partner's report names a "28-chain moat". This is where each of the 28 stands in this sample: Omni is the dominant route on 1, seen in use on 7, and 16 cannot be read at all.</p>
+<section class="grp"><h3><span class="sw sw-dom" aria-hidden="true"></span>Omni is the dominant route <span class="ct">1 of 28</span></h3><p class="what">The lower end of Omni's share is above half, by count and by amount (the rule fixed in <code>METHOD.md</code>, M1).</p><ul class="cells"><li class="cell g-dom"><div class="cn"><span class="sw sw-dom" aria-hidden="true"></span>Bitcoin</div><div class="track" role="img" aria-label="Omni's share of measured BTC by amount: BTC 99.9% [99.7%, 100.0%]"><span class="rng" style="left:min(99.71%, calc(100% - 4px));width:0.26%"></span><span class="pt" style="left:calc(99.94% - 5px)"></span></div><div class="cv">BTC 99.9% [99.7%, 100.0%]</div><div class="cv">census: 89 Omni legs with Intents</div><div class="cd">documented route: omni, poa</div></li></ul></section><section class="grp"><h3><span class="sw sw-use" aria-hidden="true"></span>Omni seen in use, not shown dominant <span class="ct">6 of 28</span></h3><p class="what">At least one Omni transfer was seen, in the measured flow or in the census of Omni's own legs with Intents.</p><ul class="cells"><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Aptos</div><div class="cv">census: 4 Omni legs with Intents</div><div class="cd">documented route: poa</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>BNB</div><div class="cv">census: 1 Omni leg with Intents</div><div class="cd">documented route: omni, hot</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Polygon</div><div class="cv">census: 2 Omni legs with Intents</div><div class="cd">documented route: hot</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Solana</div><div class="track" role="img" aria-label="Omni's share of measured SOL by amount: SOL 100.0% [32.1%, 100.0%]"><span class="rng" style="left:min(32.05%, calc(100% - 4px));width:67.95%"></span><span class="pt" style="left:calc(100.00% - 5px)"></span></div><div class="cv">SOL 100.0% [32.1%, 100.0%]</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 100.0% [26.4%, 100.0%]"><span class="rng" style="left:min(26.39%, calc(100% - 4px));width:73.61%"></span><span class="pt" style="left:calc(100.00% - 5px)"></span></div><div class="cv">USD 100.0% [26.4%, 100.0%]</div><div class="cv">census: 881 Omni legs with Intents</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Starknet</div><div class="cv">census: 2 Omni legs with Intents</div><div class="cd">documented route: poa</div></li><li class="cell g-use"><div class="cn"><span class="sw sw-use" aria-hidden="true"></span>Zcash</div><div class="track" role="img" aria-label="Omni's share of measured ZEC by amount: ZEC 94.3% [16.8%, 100.0%]"><span class="rng" style="left:min(16.81%, calc(100% - 4px));width:83.19%"></span><span class="pt" style="left:calc(94.34% - 5px)"></span></div><div class="cv">ZEC 94.3% [16.8%, 100.0%]</div><div class="cv">census: 49 Omni legs with Intents</div><div class="cd">documented route: poa</div></li></ul></section><section class="grp"><h3><span class="sw sw-poa" aria-hidden="true"></span>Measured, no Omni transfer seen <span class="ct">5 of 28</span></h3><p class="what">Every measured transfer moved on the custodial POA bridge. The method calls Omni's place here unknown, not absent: the interval's upper end reflects how few windows were read.</p><ul class="cells"><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Arbitrum</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 73.1%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:73.08%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 73.1%]</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Base</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 80.2%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:80.18%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 80.2%]</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Ethereum</div><div class="track" role="img" aria-label="Omni's share of measured ETH by amount: ETH 0.0% [0.0%, 78.7%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:78.74%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">ETH 0.0% [0.0%, 78.7%]</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 85.3%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:85.27%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 85.3%]</div><div class="cd">documented route: omni, poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>Tron</div><div class="track" role="img" aria-label="Omni's share of measured USD by amount: USD 0.0% [0.0%, 73.9%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:73.95%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">USD 0.0% [0.0%, 73.9%]</div><div class="cd">documented route: poa</div></li><li class="cell g-poa"><div class="cn"><span class="sw sw-poa" aria-hidden="true"></span>XRP</div><div class="track" role="img" aria-label="Omni's share of measured XRP by amount: XRP 0.0% [0.0%, 94.0%]"><span class="rng" style="left:min(0.00%, calc(100% - 4px));width:93.99%"></span><span class="pt" style="left:calc(0.00% - 5px)"></span></div><div class="cv">XRP 0.0% [0.0%, 94.0%]</div><div class="cd">documented route: poa</div></li></ul></section><section class="grp"><h3><span class="sw sw-unk" aria-hidden="true"></span>Not read by this sample <span class="ct">16 of 28</span></h3><p class="what">No token of the chain can be read through these sources, so only its documented route is shown. Not seen is not the same as absent.</p><ul class="cells"><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Adi</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Avalanche</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>BCH</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Berachain</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Cardano</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Dogecoin</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Gnosis</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>LayerX</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Litecoin</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Monad</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Optimism</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Plasma</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Scroll</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Stellar</div><div class="cd">documented route: hot</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>Sui</div><div class="cd">documented route: poa</div></li><li class="cell g-unk"><div class="cn"><span class="sw sw-unk" aria-hidden="true"></span>TON</div><div class="cd">documented route: hot</div></li></ul></section>
+<p class="key">Each line runs from 0% at the left to 100% at the right. The blue dot is Omni's share of the chain's measured flow by amount; the grey bar is its interval, which is wide where few windows were read. Drawn here after the counted read, from the rows of <code>M1</code> in <code>out/combined.json</code>; <code>THESIS.md</code> section 2 has the same readings in words.</p>
+</section>
+
+<section aria-labelledby="h-c1">
+<h2 id="h-c1">Chart 1. Where Intents' measured cross-chain flow runs</h2>
+<figure><img src="chart1-routes.svg" alt="Chart 1, three panels: measured value by chain and route; Omni's share early and late for four series; Omni's share of bridged BTC on NEAR by month. Each panel is described below.">
+<figcaption>Written by the timestamped code and copied here unchanged (sha256 <span class="sha">0a5424c56b960983c6e4310253f6945706eed9dcc1a4648149ef1128fd0337d9</span>).</figcaption></figure>
+<div class="panels"><article class="panel"><h3><span class="pl">1a</span>Routes by chain</h3><p class="shows">Of the value this sample measured, Omni carried 41.3% [21.1%, 89.5%] over the 90 days; on Arbitrum, Base, Ethereum, Tron and XRP none of the measured value moved on Omni.</p><h4>The query behind it</h4><pre class="q">GET https://api.nearblocks.io/v3/fts/&lt;token&gt;/txns?limit=25&amp;before_ts=&lt;window end&gt;
+    newest first; later pages follow the API&#x27;s own cursor, back to the start of each window
+    15 tokens on 8 chains; the windows were drawn by seed before collection began (frozen/instants.json)</pre><p class="how">A transfer's route is read from the counterparties of Intents' legs in it (<code>METHOD.md</code> §3). Computed by <code>chart1_flows</code>, <code>m1</code> and <code>m9</code> in <code>analysis/measures.py</code>.</p></article><article class="panel"><h3><span class="pl">1b</span>Migration, early to late</h3><p class="shows">Bitcoin is the one series with both readings: Omni's share of Intents' bridged BTC went from [0.0%, 96.3%] in early 2025 to [99.7%, 100.0%] in the 90 days to T0. For ETH (POA control), SOL and ZEC the comparison could not be made, because windows it rests on did not finish before the deadline, so they are not drawn.</p><h4>The query behind it</h4><pre class="q">GET https://api.nearblocks.io/v3/fts/&lt;token&gt;/txns?limit=25&amp;before_ts=&lt;window end&gt;
+    the same call: for each series an early stratum of windows and the 90-day flow windows,
+    and one window in every other month for the monthly points</pre><p class="how">Computed by <code>m10</code> in <code>analysis/measures.py</code>; the rule for readings not completed is <code>publish/rule.py</code> (<code>POST-FREEZE.md</code>).</p></article><article class="panel"><h3><span class="pl">1c</span>Omni's share of bridged BTC on NEAR, by supply</h3><p class="shows">Omni's share of all bridged BTC on NEAR did not climb steadily: 0.0% at the start of 2025, 66.3% in July 2025, 10.1% in March 2026 and 64.9% at T0. The fall is not explained here.</p><h4>The query behind it</h4><pre class="q">POST https://archival-rpc.mainnet.fastnear.com
+    query call_function ft_total_supply, block_id = the first block of each month and T0&#x27;s
+    on nbtc.bridge.near (Omni) and btc.omft.near (POA)</pre><p class="how">A stock, not a flow, and all of NEAR, not only Intents. Computed by <code>m10b</code> in <code>analysis/measures.py</code>.</p></article></div>
+</section>
+
+<section aria-labelledby="h-c2">
+<h2 id="h-c2">Chart 2. Who calls the signer, and what the program costs</h2>
+<figure><img src="chart2-callers-cost.svg" alt="Chart 2, two panels: sign calls per day by caller class, by month; NEAR paid per sign request, by month. Each panel is described below.">
+<figcaption>Written by the timestamped code and copied here unchanged (sha256 <span class="sha">12b606868d67ee1967b2e0bd9d6783c44f330adcfa8dc5c7b8a78c369240b7ca</span>).</figcaption></figure>
+<div class="panels"><article class="panel"><h3><span class="pl">2a</span>Calls per day, by who calls</h3><p class="shows"><code>sign</code> calls ran at 14,046 a day in October 2026; the largest single caller made 34.0% of them, and apps beyond NEAR's own infrastructure, leaving Sweat out, made 3.5% [1.7%, 17.4%].</p><h4>The query behind it</h4><pre class="q">GET https://api.nearblocks.io/v3/accounts/v1.signer/receipts?method=sign&amp;limit=25
+    in windows drawn by seed before collection began (frozen/instants.json)
+GET https://mainnet.neardata.xyz/v0/block/&lt;height&gt;
+    sampled blocks, for the signer behind each FastAuth call</pre><p class="how">Each caller is classed by <code>registry/callers.json</code>, which gives a source for every account. Computed by <code>m3</code>, <code>m4_m5</code> and <code>chart2_bands</code> in <code>analysis/measures.py</code>.</p><aside class="notes"><h4>Read beside this</h4><ul><li><span class="nn">Note 3.</span> <strong>The "–" under main.</strong> <code>tables.md</code>, "M3 and M4 by month", lines 98 to 110, the five completed months before 2025-11. The dash means no point is printed, not that a window did not finish: for a month with no neardata sample the code prints main as a range with no point. FastAuth had no calls in those months' samples, so main equals narrow: the point is in the narrow column and the interval in the main column.</li><li><span class="nn">Note 5.</span> <strong>Two months with exactly 100 calls.</strong> May and July 2026 each had 100 <code>sign</code> calls in their six 60-second windows (<code>tables.md</code> lines 118, 120, 132 and 134). The collector pages newest first and stops at the first page that holds a row older than the window's start; each of these 12 windows ends on such a page, so none was cut short. That stop rule is right only if the pages come newest first, so the order was counted: 182 of the 198 <code>sign</code> windows have saved pages (the other 16 were not started before the deadline), 253 pages in all, and 0 pages hold a row newer than the row before it; of the 71 steps from one page to the next, 0 begin with a row newer than the page before ends with.</li></ul></aside></article><article class="panel"><h3><span class="pl">2b</span>What NEAR pays per request</h3><p class="shows">NEAR paid 0.1065 NEAR per <code>sign</code> request in September [0.0884, 0.1324], from emissions; from July to September the points rose but the intervals overlap, so the rise is not established.</p><h4>The query behind it</h4><pre class="q">inputs/hsp007-ledger.json
+    the rows of the HSP-007 execution thread, each with its link, saved before collection began
+÷ the month&#x27;s sign calls, from the receipts query of panel 2a</pre><p class="how">Computed by <code>m8</code> in <code>analysis/measures.py</code> with <code>analysis/hsp007.py</code>.</p><table class="t"><caption>NEAR paid per <code>sign</code> request, 2026 (executed plus pending)</caption><thead><tr><th>Month</th><th>As charted (testnet rows pooled in)</th><th>Mainnet rows only</th></tr></thead><tbody><tr><td>June</td><td>0.0659</td><td>0.0622</td></tr><tr><td>July</td><td>0.0702</td><td>0.0618</td></tr><tr><td>August</td><td>0.0820</td><td>0.0782</td></tr><tr><td>September</td><td>0.1065</td><td>0.1065</td></tr></tbody></table><aside class="notes"><h4>Read beside this</h4><ul><li><span class="nn">Note 1.</span> <strong>M8 is shown pooled.</strong> <code>tables.md</code>, "M8: program expenditure per request", lines 133 to 135, and chart 2's cost panel. The amounts for June to August 2026 include testnet payouts, and the calls are mainnet calls. On mainnet rows alone NEAR paid 0.0622 NEAR per request in June, 0.0618 in July and 0.0782 in August; the table shows 0.0659, 0.0702 and 0.0820. The other months have no testnet rows. <code>THESIS.md</code> §4.4 gives both sets for July to September.</li><li><span class="nn">Note 2.</span> <strong>October's M8 row.</strong> <code>tables.md</code> line 137. The "0.00" is the amount executed. The 0.1765 beside it is the 76,864.52 NEAR of a proposed report, not yet executed, over October's calls.</li></ul></aside></article></div>
+</section>
+
+<section aria-labelledby="h-sample">
+<h2 id="h-sample">The sample, and how to rebuild all of this</h2>
+<div class="two">
+<div class="box">
+<h3>490 of 526 windows read in full</h3>
+<p class="small">The windows were drawn by seed, and their list was hashed before collection began. A reading that rests on a window that did not finish is marked "not completed" and is never drawn as if it were known. Data cutoff (T0): 2026-11-10T11:00:00.000000Z.</p>
+<table class="t"><thead><tr><th>Family of windows</th><th>Read in full</th><th>Not finished</th></tr></thead><tbody><tr><td>census</td><td>48</td><td>0</td></tr><tr><td>flow</td><td>192</td><td>0</td></tr><tr><td>index</td><td>11</td><td>2</td></tr><tr><td>migration</td><td>57</td><td>18</td></tr><tr><td>sign</td><td>182</td><td>16</td></tr></tbody></table>
+<aside class="notes"><h4>Read beside this</h4><ul><li><span class="nn">Note 4.</span> <strong>The resolution audit.</strong> <code>tables.md</code> line 13 says "19 transactions read whole, 0 differ". 20 were drawn; one, <code>6gXczJpg5zbZCDnVa7yPCQ1ruivARq5QQsMoAdXqBNy6</code>, drew HTTP 429 on 2026-11-11 and was not requested again, so it is not among the 19.</li></ul></aside>
+</div>
+<div class="box">
+<h3>Two commands, offline</h3>
+<pre class="q">python3 -I rebuild.py data --draft
+python3 -I publish/written.py data</pre>
+<p class="small">The first recomputes every number, table and chart from the saved rows. The second fills <code>THESIS.md</code>, checks it against the results, and writes this page. Neither makes a network call. When they worked:</p>
+<p class="small"><code>out/published/tables.md</code> sha256 <span class="sha">cd05cf5f0eec33295f6a5272e049d324ee715182cd9ee1e0d66ed44795afdd76</span><br>
+<code>THESIS.md</code> sha256 <span class="sha">fc8842e9928cc9c09535f55bf63206756c1ee32ac7cb08fb63155f0f1e9a9cc5</span></p>
+<p class="small">The full write-up is <code>THESIS.md</code>; the method, hashed before collection began, is <code>METHOD.md</code>; what changed after the counted read is in <code>AFTER-READ.md</code>.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>This page is written by <code>publish/dashboard.py</code> from <code>out/combined.json</code>, <code>THESIS.md</code> and <code>TABLE-NOTES.md</code>. It was made after the counted read and is not one of the timestamped files; the two charts and every reading on it are.</p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+out-committed/
+# receipts as first returned by the calendars, before the Bitcoin block; the upgraded .ots files are published
+*.ots.bak
+registry/BRIEF-callers.md
+# working files that rederive/run.py rebuilds; the two comparisons are published
+rederive/out/*
+!rederive/out/compare.json
+!rederive/out/compare-with-sources.json

@@ -1,0 +1,1524 @@
+{
+ "source": {
+  "blocks_jsonl_sha256": "bfad04c7c53ad421c1422417c09c6f6117627d1d3724b4d2f8368fa2040d4e58",
+  "assets_json_sha256": "ca5b7fd93967c7d015356c90fdd74f33ec5df3ded9980533bcb3bcd3c4c698a0",
+  "sdk_list_sha256": "ed49694cd4641f48041e92b6dfa58bf133918e4cd5fce2f75a505a227fe3eb01",
+  "lines": 90,
+  "pages": 1979
+ },
+ "checks": {
+  "blocks": [
+   90,
+   true
+  ],
+  "bad_bounds": [],
+  "rows_key_mismatch": [],
+  "dropped": 0,
+  "duplicates": 0
+ },
+ "prefixes_translated_by_the_list": {
+  "bnb": "bsc"
+ },
+ "withdrawals": {
+  "usd_by_category": {
+   "omni": "490664443.077036791633",
+   "sdk": "588968188.156853810978",
+   "poa": "2191234928.064893279712",
+   "hot": "200720714.237728917429",
+   "unclassified": "41773677.308160885454",
+   "near": "105897724.783022524455",
+   "inside": "209531599.763213911125",
+   "other_form_on_non_near_chain": "0"
+  },
+  "rows_by_category": {
+   "omni": 66478,
+   "sdk": 367412,
+   "poa": 1054884,
+   "hot": 229036,
+   "unclassified": 3694,
+   "near": 113063,
+   "inside": 99559,
+   "other_form_on_non_near_chain": 0
+  },
+  "bridged_usd": "3513361950.844673685206",
+  "shares_of_bridged": {
+   "omni": "0.139656673562788620315964878725",
+   "omni+sdk": "0.307293312314243065124380370163",
+   "omni+sdk+unclassified": "0.319183256445424244031330660816",
+   "sdk": "0.167636638751454444808415491439",
+   "poa": "0.623686075822071808922420267346",
+   "hot": "0.0571306677325039470462490718380",
+   "unclassified": "0.0118899441311811789069502906522"
+  },
+  "bridged_usd_by_chain": {
+   "eth": {
+    "poa": "1147038387.000898651290"
+   },
+   "tron": {
+    "poa": "773086830.581917815052"
+   },
+   "btc": {
+    "omni": "489315441.684449756756",
+    "poa": "68739.136692379997"
+   },
+   "sol": {
+    "omni": "451023.707067231666",
+    "sdk": "290786729.642492018989",
+    "unclassified": "16197176.135766798495"
+   },
+   "zec": {
+    "sdk": "297279798.996144355709"
+   },
+   "bsc": {
+    "hot": "155779012.958036136062",
+    "omni": "15235.559660331795"
+   },
+   "arb": {
+    "poa": "108138758.479829126637",
+    "unclassified": "1.683186412275"
+   },
+   "base": {
+    "poa": "80619743.317678575447",
+    "unclassified": "1292.273052713300"
+   },
+   "xrp": {
+    "poa": "37900025.742542700168"
+   },
+   "hypercore": {
+    "unclassified": "24979659.702623944022"
+   },
+   "pol": {
+    "hot": "21944673.580130704895",
+    "omni": "845177.581317109357",
+    "unclassified": "0.250293931673"
+   },
+   "ltc": {
+    "poa": "14270754.797235788683"
+   },
+   "ton": {
+    "hot": "11934314.013666313025"
+   },
+   "avax": {
+    "hot": "6376708.928463872539"
+   },
+   "sui": {
+    "poa": "6028922.258220796760"
+   },
+   "doge": {
+    "poa": "5802223.762891325789"
+   },
+   "gnosis": {
+    "poa": "5559091.508300605611"
+   },
+   "aleo": {
+    "poa": "2830674.147187265451"
+   },
+   "cardano": {
+    "poa": "2550299.986377816735"
+   },
+   "dash": {
+    "poa": "2193245.845997137770"
+   },
+   "stellar": {
+    "hot": "2130953.460390840619"
+   },
+   "hood": {
+    "poa": "1955361.129127867571"
+   },
+   "plasma": {
+    "poa": "1927367.998180472199"
+   },
+   "op": {
+    "hot": "1288556.118128673146"
+   },
+   "bch": {
+    "poa": "981525.608938385647"
+   },
+   "aptos": {
+    "sdk": "384645.253898477262",
+    "unclassified": "585213.983622494790"
+   },
+   "monad": {
+    "hot": "712636.103393025070"
+   },
+   "starknet": {
+    "sdk": "517014.264318959018",
+    "unclassified": "10333.279614590899"
+   },
+   "xlayer": {
+    "hot": "461992.253414245585"
+   },
+   "prl": {
+    "poa": "249032.171677833846"
+   },
+   "adi": {
+    "hot": "54047.408707887838"
+   },
+   "scroll": {
+    "hot": "37819.413397218650"
+   },
+   "fogo": {
+    "omni": "37564.544542362059"
+   },
+   "bera": {
+    "poa": "20778.304563765751"
+   },
+   "qtc": {
+    "poa": "13046.360380909204"
+   },
+   "movement": {
+    "poa": "111.543021732304"
+   },
+   "miden": {
+    "poa": "8.383232327800"
+   }
+  },
+  "sampled8": {
+   "bridged_usd": "3240883948.381718535781",
+   "usd_by_category": {
+    "omni": "489766465.391516988422",
+    "sdk": "588066528.638636374698",
+    "poa": "2146852484.259559248591",
+    "hot": "0",
+    "unclassified": "16198470.092005924070"
+   },
+   "shares_of_group": {
+    "omni": "0.151121259876051323012919468918",
+    "omni+sdk": "0.332573770365443456001509497647",
+    "omni+sdk+unclassified": "0.337571934554597578762502314024",
+    "sdk": "0.181452510489392132988590028730",
+    "poa": "0.662428065445402421237497685976",
+    "hot": "0",
+    "unclassified": "0.00499816418915412276099281637675"
+   },
+   "share_of_all_bridged": "0.922445223044142471524072134090",
+   "chains_with_value_count": 8,
+   "chains_with_value": [
+    "arb",
+    "base",
+    "btc",
+    "eth",
+    "sol",
+    "tron",
+    "xrp",
+    "zec"
+   ]
+  },
+  "other_chains": {
+   "bridged_usd": "272478002.462955149425",
+   "usd_by_category": {
+    "omni": "897977.685519803211",
+    "sdk": "901659.518217436280",
+    "poa": "44382443.805334031121",
+    "hot": "200720714.237728917429",
+    "unclassified": "25575207.216154961384"
+   },
+   "shares_of_group": {
+    "omni": "0.00329559699279536559709447983823",
+    "omni+sdk": "0.00660470638903010107127223201573",
+    "omni+sdk+unclassified": "0.100466254789187829103728625781",
+    "sdk": "0.00330910939623473547417775217750",
+    "poa": "0.162884502250298400392323616993",
+    "hot": "0.736649242960513770503947757227",
+    "unclassified": "0.0938615484001577280324563937648"
+   },
+   "share_of_all_bridged": "0.0775547769558575284759278659104",
+   "chains_with_value_count": 29,
+   "chains_with_value": [
+    "adi",
+    "aleo",
+    "aptos",
+    "avax",
+    "bch",
+    "bera",
+    "bsc",
+    "cardano",
+    "dash",
+    "doge",
+    "fogo",
+    "gnosis",
+    "hood",
+    "hypercore",
+    "ltc",
+    "miden",
+    "monad",
+    "movement",
+    "op",
+    "plasma",
+    "pol",
+    "prl",
+    "qtc",
+    "scroll",
+    "starknet",
+    "stellar",
+    "sui",
+    "ton",
+    "xlayer"
+   ]
+  }
+ },
+ "deposits": {
+  "usd_by_category": {
+   "omni": "476829755.879048476154",
+   "sdk": "541248158.891913917855",
+   "poa": "1996711165.655448569711",
+   "hot": "242767121.636016913986",
+   "unclassified": "5783098.203589962393",
+   "near": "86592574.717877092448",
+   "inside": "500760188.755579308664",
+   "other_form_on_non_near_chain": "0"
+  },
+  "rows_by_category": {
+   "omni": 151086,
+   "sdk": 282476,
+   "poa": 908591,
+   "hot": 236929,
+   "unclassified": 2758,
+   "near": 92828,
+   "inside": 259458,
+   "other_form_on_non_near_chain": 0
+  },
+  "bridged_usd": "3263339300.266017840099",
+  "shares_of_bridged": {
+   "omni": "0.146117124823697834364610485319",
+   "omni+sdk": "0.311974275763470770876920981317",
+   "omni+sdk+unclassified": "0.313746417018631869572343707875",
+   "sdk": "0.165857150939772936512310495999",
+   "poa": "0.611861342610828894473091738871",
+   "hot": "0.0743922403705392359545645532536",
+   "unclassified": "0.00177214125516109869542272655766"
+  },
+  "bridged_usd_by_chain": {
+   "eth": {
+    "poa": "1136896568.100960511708",
+    "unclassified": "6.003225000000"
+   },
+   "tron": {
+    "poa": "609910923.557904753818"
+   },
+   "btc": {
+    "omni": "476139668.998271354821"
+   },
+   "zec": {
+    "sdk": "334603856.579610298373"
+   },
+   "sol": {
+    "omni": "323606.073219179107",
+    "sdk": "205075823.410707820637",
+    "unclassified": "4279733.308926426314"
+   },
+   "bsc": {
+    "hot": "201838408.621355087141",
+    "omni": "4133.710495599065"
+   },
+   "arb": {
+    "poa": "98186443.606150532133",
+    "unclassified": "2066.124835557446"
+   },
+   "base": {
+    "poa": "62779131.208011805886",
+    "unclassified": "223.890715212632"
+   },
+   "xrp": {
+    "poa": "40122300.968584783017"
+   },
+   "ltc": {
+    "poa": "18966232.457556593430"
+   },
+   "pol": {
+    "hot": "15405470.696136468634",
+    "omni": "352282.239381284172",
+    "unclassified": "0.620997420125"
+   },
+   "stellar": {
+    "hot": "9462055.509125584821"
+   },
+   "cardano": {
+    "poa": "8886556.436164222587"
+   },
+   "avax": {
+    "hot": "6729464.020411410823"
+   },
+   "ton": {
+    "hot": "5186567.109856610826"
+   },
+   "doge": {
+    "poa": "4795888.623137481723"
+   },
+   "gnosis": {
+    "poa": "4084073.818807600631"
+   },
+   "sui": {
+    "poa": "3591783.597370941632"
+   },
+   "hood": {
+    "poa": "2732597.270137622058"
+   },
+   "op": {
+    "hot": "2552940.733063595203"
+   },
+   "bch": {
+    "poa": "2040273.332293493457"
+   },
+   "aptos": {
+    "sdk": "1342314.423474794026",
+    "unclassified": "249569.372530436411"
+   },
+   "plasma": {
+    "poa": "1295059.747196202936"
+   },
+   "dash": {
+    "poa": "1249574.986912753116"
+   },
+   "hypercore": {
+    "unclassified": "1195358.941404909462"
+   },
+   "monad": {
+    "hot": "964272.244801208819"
+   },
+   "aleo": {
+    "poa": "830348.724543087697"
+   },
+   "xlayer": {
+    "hot": "576402.437289227201"
+   },
+   "starknet": {
+    "sdk": "226164.478121004819",
+    "unclassified": "56139.940955000003"
+   },
+   "prl": {
+    "poa": "214955.237533320990"
+   },
+   "bera": {
+    "poa": "113595.780717870881"
+   },
+   "scroll": {
+    "hot": "47943.026896252699"
+   },
+   "qtc": {
+    "poa": "14850.222056952011"
+   },
+   "fogo": {
+    "omni": "10064.857681058989"
+   },
+   "adi": {
+    "hot": "3597.237081467819"
+   },
+   "miden": {
+    "poa": "7.979408040000"
+   }
+  },
+  "sampled8": {
+   "bridged_usd": "2968320351.831123235892",
+   "usd_by_category": {
+    "omni": "476463275.071490533928",
+    "sdk": "539679679.990318119010",
+    "poa": "1947895367.441612386562",
+    "hot": "0",
+    "unclassified": "4282029.327702196392"
+   },
+   "shares_of_group": {
+    "omni": "0.160516123125849853482611848933",
+    "omni+sdk": "0.342329275354313277712982153727",
+    "omni+sdk+unclassified": "0.343771851902717381385506706313",
+    "sdk": "0.181813152228463424230370304794",
+    "poa": "0.656228148097282618614493293687",
+    "hot": "0",
+    "unclassified": "0.00144257654840410367252455258568"
+   },
+   "share_of_all_bridged": "0.909595993156198766836743950625",
+   "chains_with_value_count": 8,
+   "chains_with_value": [
+    "arb",
+    "base",
+    "btc",
+    "eth",
+    "sol",
+    "tron",
+    "xrp",
+    "zec"
+   ]
+  },
+  "other_chains": {
+   "bridged_usd": "295018948.434894604207",
+   "usd_by_category": {
+    "omni": "366480.807557942226",
+    "sdk": "1568478.901595798845",
+    "poa": "48815798.213836183149",
+    "hot": "242767121.636016913986",
+    "unclassified": "1501068.875887766001"
+   },
+   "shares_of_group": {
+    "omni": "0.00124222803146089436236134094778",
+    "omni+sdk": "0.00655876417233163587237380182421",
+    "omni+sdk+unclassified": "0.0116468064280955059204463760339",
+    "sdk": "0.00531653614087074151001246087643",
+    "poa": "0.165466653829555477305609502270",
+    "hot": "0.822886539742349016773944121696",
+    "unclassified": "0.00508804225576387004807257420968"
+   },
+   "share_of_all_bridged": "0.0904040068438012331632560493747",
+   "chains_with_value_count": 28,
+   "chains_with_value": [
+    "adi",
+    "aleo",
+    "aptos",
+    "avax",
+    "bch",
+    "bera",
+    "bsc",
+    "cardano",
+    "dash",
+    "doge",
+    "fogo",
+    "gnosis",
+    "hood",
+    "hypercore",
+    "ltc",
+    "miden",
+    "monad",
+    "op",
+    "plasma",
+    "pol",
+    "prl",
+    "qtc",
+    "scroll",
+    "starknet",
+    "stellar",
+    "sui",
+    "ton",
+    "xlayer"
+   ]
+  }
+ },
+ "totals": {
+  "amountInUsd_90d": "3850692063.739474241211",
+  "amountInUsd_blocks_60_89": "1054663680.251718991643",
+  "amountOutUsd_90d": "3828791275.390910120786",
+  "amountOutUsd_blocks_60_89": "1048558924.148965878270",
+  "rows": 1934126,
+  "rows_blocks_60_89": 500664,
+  "rows_no_amountInUsd": 0,
+  "rows_no_amountOutUsd": 0
+ },
+ "ids_on_marked_sides": {
+  "1cs_v1:aptos:aptos-fa:0x0b0b819dcf8d9517ed14195a95adfae6a49bfdb49de33a532ca0aa7ee588e8e0": [
+   "unclassified",
+   "aptos",
+   "list"
+  ],
+  "1cs_v1:aptos:aptos-fa:0x0d829a23c3a3760e2fed60ca24d83cee8943f7c61859608ae0726fdb2e4f2784": [
+   "unclassified",
+   "aptos",
+   "list"
+  ],
+  "1cs_v1:aptos:aptos-fa:0x261c85bc1bb5acc3ffcf769530c732d4182c3bbd84936d427125fcd4732e9879": [
+   "unclassified",
+   "aptos",
+   "list"
+  ],
+  "1cs_v1:aptos:aptos-fa:0x3c521aac00b811b330a2bc168544fc7ceab8a6546c9ed5abfead2c628642a0d3": [
+   "unclassified",
+   "aptos",
+   "list"
+  ],
+  "1cs_v1:aptos:aptos-fa:0x692a35763b3715e910bd7207937d3695c185cde7292f3d89a4d36a907b22dca4": [
+   "unclassified",
+   "aptos",
+   "list"
+  ],
+  "1cs_v1:aptos:aptos-fa:0xb07cf73714a0980fd589e1602ea98fc9c18b8c9c82b828ad3662ee873629be1d": [
+   "unclassified",
+   "aptos",
+   "list"
+  ],
+  "1cs_v1:arb:erc20:0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+   "unclassified",
+   "arb",
+   "id"
+  ],
+  "1cs_v1:base:erc20:0x0382e3fee4a420bd446367d468a6f00225853420": [
+   "unclassified",
+   "base",
+   "list"
+  ],
+  "1cs_v1:base:erc20:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+   "unclassified",
+   "base",
+   "id"
+  ],
+  "1cs_v1:base:native:eth": [
+   "unclassified",
+   "base",
+   "id"
+  ],
+  "1cs_v1:btc:native:coin": [
+   "omni",
+   "btc",
+   "list"
+  ],
+  "1cs_v1:eth:native:coin": [
+   "unclassified",
+   "eth",
+   "id"
+  ],
+  "1cs_v1:hypercore:erc20:0xb88339CB7199b77E23DB6E890353E22632Ba630f": [
+   "unclassified",
+   "hypercore",
+   "list"
+  ],
+  "1cs_v1:hypercore:hip1:0x20b8c9d2f022ffd2aea4f7962b7b1d8b": [
+   "unclassified",
+   "hypercore",
+   "list"
+  ],
+  "1cs_v1:hypercore:hip1:0x6d1e7cde53ba9467b783cb7c530ce054": [
+   "unclassified",
+   "hypercore",
+   "list"
+  ],
+  "1cs_v1:near:nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1": [
+   "near",
+   "near",
+   "id"
+  ],
+  "1cs_v1:near:nep141:prl.omft.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "1cs_v1:near:nep141:qtc.omft.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "1cs_v1:near:nep141:zec.omft.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "1cs_v1:pol:erc20:0x3c499c542cef5e3811e1192ce70d8cc03d5c3359": [
+   "unclassified",
+   "pol",
+   "id"
+  ],
+  "1cs_v1:pol:native:pol": [
+   "unclassified",
+   "pol",
+   "id"
+  ],
+  "1cs_v1:sol:native:sol": [
+   "unclassified",
+   "sol",
+   "id"
+  ],
+  "1cs_v1:sol:spl:3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG": [
+   "unclassified",
+   "sol",
+   "list"
+  ],
+  "1cs_v1:sol:spl:8SMMso8Muv8d6i4WmMDthKt6TN1ysN6937sx3DKLXZqB": [
+   "unclassified",
+   "sol",
+   "list"
+  ],
+  "1cs_v1:sol:spl:A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS": [
+   "unclassified",
+   "sol",
+   "list"
+  ],
+  "1cs_v1:sol:spl:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": [
+   "unclassified",
+   "sol",
+   "id"
+  ],
+  "1cs_v1:sol:spl:HsRpHQn6VbyMs5b5j5SV6xQ2VvpvvCCzu19GjytVSCoz": [
+   "unclassified",
+   "sol",
+   "list"
+  ],
+  "1cs_v1:starknet:erc20:0x05ce53b9b68fb8e9ecab9283a96d97948914733fd6ed8d9a53a276a419497841": [
+   "unclassified",
+   "starknet",
+   "list"
+  ],
+  "1cs_v1:starknet:erc20:0x07bc19585817a78f2304b2f3b31f954d80e8a1eff6e8d81a84eb5cedb7267728": [
+   "unclassified",
+   "starknet",
+   "list"
+  ],
+  "nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:2260fac5e5542a773aa44fbcfedf7c193bc2c599.factory.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:853d955acef822db058eb8505911ed77f175b99e.factory.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:a35923162c49cf95e6bf26623385eb431ad920d3.factory.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:aleo-usad.omft.near": [
+   "poa",
+   "aleo",
+   "list"
+  ],
+  "nep141:aleo-usdcx.omft.near": [
+   "poa",
+   "aleo",
+   "list"
+  ],
+  "nep141:aleo.omft.near": [
+   "poa",
+   "aleo",
+   "list"
+  ],
+  "nep141:aptos-34ee497f210c5a511e8d5b53bc56d75b63612bb5.omft.near": [
+   "sdk",
+   "aptos",
+   "list"
+  ],
+  "nep141:aptos-88cb7619440a914fe6400149a12b443c3ac21d59.omft.near": [
+   "sdk",
+   "aptos",
+   "list"
+  ],
+  "nep141:aptos.omft.near": [
+   "sdk",
+   "aptos",
+   "list"
+  ],
+  "nep141:arb-0x82af49447d8a07e3bd95bd0d56f35241523fbab1.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:arb-0x912ce59144191c1204e64559fe8253a0e49e6548.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:arb-0xca7dec8550f43a5e46e3dfb95801f64280e75b27.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:arb-0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:arb.omft.near": [
+   "poa",
+   "arb",
+   "list"
+  ],
+  "nep141:base-0x0bb69b79bc829e1cfcc34a740110886d98d2bd14.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0x227d920e20ebac8a40e7d6431b7d724bb64d7245.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0x4200000000000000000000000000000000000006.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0x532f27101965dd16442e59d40670faf5ebb142e4.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0x959fc04dbf97a27073f89237cd62605f4d1b906d.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0x98d0baa52b2d063e780de12f615f963fe8537553.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base-0xe62bfbe57763ec24c0f130426f34dbce11fc5b06.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:base.omft.near": [
+   "poa",
+   "base",
+   "list"
+  ],
+  "nep141:bch.omft.near": [
+   "poa",
+   "bch",
+   "list"
+  ],
+  "nep141:bera-0x779ded0c9e1022225f8e0630b35a9b54be713736.omft.near": [
+   "poa",
+   "bera",
+   "list"
+  ],
+  "nep141:bera.omft.near": [
+   "poa",
+   "bera",
+   "list"
+  ],
+  "nep141:blackdragon.tkn.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:bnb-0x0574e53f8214d0402c8388b4402113a74354d1b0.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x091fc7778e6932d4009b087b191d1ee3bac5729a.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x0cde6936d305d5b34667fc46425e852efd73559a.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x1501ec83ffef405b4331cc4f73277a40fb0c627d.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x19601179a60f55ff6636f5d1a8b6671053bd60a8.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x2494b603319d4d9f9715c9f4496d9e0364b59d93.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x2f20d5dfbaffa3e6351e06b8b18059747cd7ee72.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x50436ec45316a98e72b03ead5752e8543f11ec09.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x6a708ead771238919d85930b5a0f10454e1c331a.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x6bfe75d1ad432050ea973c3a3dcd88f02e2444c3.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x8b872732b07be325a8803cdb480d9d20b6f8d11b.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0x992879cd8ce0c312d98648875b5a8d6d042cbf34.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0xa528caaa2f96090e379d43f90834c75df54d6e74.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0xa9ee28c80f960b889dfbd1902055218cba016f75.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0xe4bd77247671746caa3119e9feaa146f8a4ee237.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0xe658c62195f32bc53226e7e2642e3d76b4382fb8.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:bnb-0xf78155dc15b838b7577002bc53bbe1041ca48622.omdep.near": [
+   "omni",
+   "bsc",
+   "id, prefix by the list"
+  ],
+  "nep141:btc.omft.near": [
+   "poa",
+   "btc",
+   "list"
+  ],
+  "nep141:cardano.omft.near": [
+   "poa",
+   "cardano",
+   "list"
+  ],
+  "nep141:cfi.consumer-fi.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:d9c2d319cd7e6177336b0a9c93c21cb48d84fb54.factory.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:dash.omft.near": [
+   "poa",
+   "dash",
+   "list"
+  ],
+  "nep141:doge.omft.near": [
+   "poa",
+   "doge",
+   "list"
+  ],
+  "nep141:eth-0x0f38f1ce62776d4a0038bc6cac66877a5687383b.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x1f9840a85d5af5bf1d1762f925bdaddc4201f984.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x514910771af9ca656af840dff83e8264ecf986ca.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x5afe3855358e112b5647b952709e6165e1c1eeee.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x68749665ff8d2d112fa859aa293f07a622782f38.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x6982508145454ce325ddbe47a25d4ec3d2311933.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x6b175474e89094c44da98b954eedeac495271d0f.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x8b1484d57abbe239bb280661377363b03c89caea.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xa35923162c49cf95e6bf26623385eb431ad920d3.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xaaaaaa20d9e0e2461697782ef11675f668207961.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xb4b9dc1c77bdbb135ea907fd5a08094d98883a35.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xd9c2d319cd7e6177336b0a9c93c21cb48d84fb54.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xdef1b2d939edc0e4d35806c59b3166f790175afe.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth-0xfa2b947eec368f42195f24f36d2af29f7c24cec2.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:eth.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:eth.omft.near": [
+   "poa",
+   "eth",
+   "list"
+  ],
+  "nep141:fogo.omdep.near": [
+   "omni",
+   "fogo",
+   "list"
+  ],
+  "nep141:gnosis-0x177127622c4a00f3d409b75571e12cb3c8973d3c.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:gnosis-0x2a22f9c3b484c3629090feed35f17ff8f88f76f0.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:gnosis-0x420ca0f9b9b604ce0fd9c18ef134c705e5fa3430.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:gnosis-0x4ecaba5870353805a9f068101a40e0f32ed605c6.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:gnosis-0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:gnosis-0x9c58bacc331c9aa871afd802db6379a98e80cedb.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:gnosis.omft.near": [
+   "poa",
+   "gnosis",
+   "list"
+  ],
+  "nep141:hood-0x020bfc650a365f8bb26819deaabf3e21291018b4.omft.near": [
+   "poa",
+   "hood",
+   "list"
+  ],
+  "nep141:hood-0x0bd7d308f8e1639fab988df18a8011f41eacad73.omft.near": [
+   "poa",
+   "hood",
+   "list"
+  ],
+  "nep141:hood-0x39dbed3a2bd333467115de45665cc57f813c4571.omft.near": [
+   "poa",
+   "hood",
+   "list"
+  ],
+  "nep141:hood-0x5fc5360d0400a0fd4f2af552add042d716f1d168.omft.near": [
+   "poa",
+   "hood",
+   "list"
+  ],
+  "nep141:hood.omft.near": [
+   "poa",
+   "hood",
+   "list"
+  ],
+  "nep141:itlx.intellex_xyz.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:jambo-1679.meme-cooking.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:kat.token0.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:ltc.omft.near": [
+   "poa",
+   "ltc",
+   "list"
+  ],
+  "nep141:meta-pool.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:miden-0x3084d3c389ececd15fda9770d18c8a.omft.near": [
+   "poa",
+   "miden",
+   "list"
+  ],
+  "nep141:miden-0x419f8f4bff72959132aa7cea15a4c1.omft.near": [
+   "poa",
+   "miden",
+   "list"
+  ],
+  "nep141:miden-0x5cb79d29507d3ad17bb6dc60279e89.omft.near": [
+   "poa",
+   "miden",
+   "list"
+  ],
+  "nep141:miden-0xe69e6ca6e39df1b10c1e5399399feb.omft.near": [
+   "poa",
+   "miden",
+   "list"
+  ],
+  "nep141:miden-0xf4f3dd3678997811522164320be4be.omft.near": [
+   "poa",
+   "miden",
+   "list"
+  ],
+  "nep141:movement-6f9a70ef4605e7d9174f1abf8d8d3c15012f48f3.omft.near": [
+   "poa",
+   "movement",
+   "list"
+  ],
+  "nep141:movement.omft.near": [
+   "poa",
+   "movement",
+   "list"
+  ],
+  "nep141:mpdao-token.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:nbtc.bridge.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:noear-324.meme-cooking.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:npro.nearmobile.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:plasma-0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb.omft.near": [
+   "poa",
+   "plasma",
+   "list"
+  ],
+  "nep141:plasma.omft.near": [
+   "poa",
+   "plasma",
+   "list"
+  ],
+  "nep141:pol-0x7b12598e3616261df1c05ec28de0d2fb10c1f206.omdep.near": [
+   "omni",
+   "pol",
+   "list"
+  ],
+  "nep141:prl.omft.near": [
+   "poa",
+   "prl",
+   "list"
+  ],
+  "nep141:purge-558.meme-cooking.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:qtc.omft.near": [
+   "poa",
+   "qtc",
+   "list"
+  ],
+  "nep141:sol-0x936420c6ae310eb29511d139991654f922456fbe.omdep.near": [
+   "omni",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-0xa69aa1bcb03a369e338156a8718ad60271145803.omdep.near": [
+   "omni",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-0xaad74c68eecfc9f8c5bdcea614f6167048c795ef.omdep.near": [
+   "omni",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-57d087fd8c460f612f8701f5499ad8b2eec5ab68.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-91914f13d3b54f8126a2824d71632d4b078d7403.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-b9c68f94ec8fd160137af8cdfe5e61cd68e2afba.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-c58e6539c2f2e097c251f8edf11f9c03e581f8d4.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-c634d063ceff771aff0c972ec396fd915a6bbd0e.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol-df27d7abcc1c656d4ac3b1399bbfbba1994e6d8c.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:sol.omft.near": [
+   "sdk",
+   "sol",
+   "list"
+  ],
+  "nep141:starknet.omft.near": [
+   "sdk",
+   "starknet",
+   "list"
+  ],
+  "nep141:sui-c1b81ecaf27933252d31a963bc5e9458f13c18ce.omft.near": [
+   "poa",
+   "sui",
+   "list"
+  ],
+  "nep141:sui.omft.near": [
+   "poa",
+   "sui",
+   "list"
+  ],
+  "nep141:token.0xshitzu.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:token.publicailab.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:token.rhealab.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:token.sweat": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:tron-d28a265909efecdcee7c5028585214ea0b96f015.omft.near": [
+   "poa",
+   "tron",
+   "list"
+  ],
+  "nep141:tron.omft.near": [
+   "poa",
+   "tron",
+   "list"
+  ],
+  "nep141:usdt.tether-token.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:wrap.near": [
+   "near",
+   "near",
+   "list"
+  ],
+  "nep141:xrp.omft.near": [
+   "poa",
+   "xrp",
+   "list"
+  ],
+  "nep141:zec.omft.near": [
+   "sdk",
+   "zec",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:10_11111111111111111111": [
+   "hot",
+   "op",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:10_2R1RXDBxCyJTeMEsdXydh7xsHmz": [
+   "hot",
+   "op",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:10_359RPSJVdTxwTJT9TyGssr2rFoWo": [
+   "hot",
+   "op",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:10_A2ewyUyDp6qsue1jqZsGypkCxRJ": [
+   "hot",
+   "op",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:10_vLAiSt9KfUGKpw5cD3vsSyNYBo7": [
+   "hot",
+   "op",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:1100_111bzQBB5v7AhLyPMDwS8uJgQV24KaAPXtwyVWu2KXbbfQU6NXRCz": [
+   "hot",
+   "stellar",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:1100_111bzQBB65GxAPAVoxqmMcgYo5oS3txhqs1Uh1cgahKQUeTUq1TJu": [
+   "hot",
+   "stellar",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:1117_": [
+   "hot",
+   "ton",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR": [
+   "hot",
+   "ton",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:137_11111111111111111111": [
+   "hot",
+   "pol",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:137_3hpYoaLtt8MP1Z2GH1U473DMRKgr": [
+   "hot",
+   "pol",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:137_qiStmoQJDQPTebaPjgx5VBxZv6L": [
+   "hot",
+   "pol",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:143_11111111111111111111": [
+   "hot",
+   "monad",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:143_2dmLwYWkCQKyTjeUPAsGJuiVLbFx": [
+   "hot",
+   "monad",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:143_4EJiJxSALvGoTZbnc8K7Ft9533et": [
+   "hot",
+   "monad",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:196_11111111111111111111": [
+   "hot",
+   "xlayer",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:196_2dK9kLNR7Ekq7su8FxNGiUW3djTw": [
+   "hot",
+   "xlayer",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:196_2fezDCvVYRsG8wrK6deJ2VRPiAS1": [
+   "hot",
+   "xlayer",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:36900_11111111111111111111": [
+   "hot",
+   "adi",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:43114_11111111111111111111": [
+   "hot",
+   "avax",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:43114_372BeH7ENZieCaabwkbWkBiTTgXp": [
+   "hot",
+   "avax",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:43114_3atVJH3r5c4GqiSYmg9fECvjc47o": [
+   "hot",
+   "avax",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:534352_11111111111111111111": [
+   "hot",
+   "scroll",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_11111111111111111111": [
+   "hot",
+   "bsc",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_12zbnsg6xndDVj25QyL82YMPudb": [
+   "hot",
+   "bsc",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_24S22V8GMmQN8t6PbCdRb3mBewAd": [
+   "hot",
+   "bsc",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_28V9BijGeZDBFEEtkAcnJo4tPRH4": [
+   "hot",
+   "bsc",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g": [
+   "hot",
+   "bsc",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_2w93GqMcEmQFDru84j3HZZWt557r": [
+   "hot",
+   "bsc",
+   "list"
+  ],
+  "nep245:v2_1.omni.hot.tg:56_SZzgw3HSudhZcTwPWUTi2RJB19t": [
+   "hot",
+   "bsc",
+   "list"
+  ]
+ },
+ "readings": [
+  "Withdrawal category of a cell: recipientType not DESTINATION_CHAIN -> inside; else the destination asset's chain (assets.json, else from the ID) is near -> near; else its STAGE2 family.",
+  "Deposit category: the same with depositType ORIGIN_CHAIN and the origin asset.",
+  "Bridged = omni+sdk+poa+hot+unclassified. A rule-7 form whose chain is not near would go to other_form_on_non_near_chain, outside bridged; its value is reported beside the categories.",
+  "Census: all 90 blocks read, so no scaling and no bootstrap (PLAN section 6). Shares at 30 significant digits; sums exact.",
+  "Chains named by the token list codes; a chain group counts a chain once it has bridged value above zero.",
+  "An ID missing from the list takes its chain from its prefix, translated by the list's own convention where the list is consistent (bnb -> bsc: the list files every nep141:bnb-...omdep.near it holds under 'bsc'). Read literally, the prefix would add 'bnb' as a 31st chain name for the same chain."
+ ]
+}

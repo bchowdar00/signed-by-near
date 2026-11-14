@@ -1,0 +1,25 @@
+{
+ "about": "Files some numbers need that this repository does not ship. Each copy was saved on 2026-11-09. Pass a folder of copies with: python3 -I rederive/run.py data --sources <folder>. A copy is used only if its sha256 equals the one here; live pages change, so a fresh download will usually differ and its rows stay 'needs source file'.",
+ "files": {
+  "gov-hsp007-execution-42147.json": {
+   "url": "https://gov.near.org/t/hsp-007-execution-mpc-node-infrastructure-financing-program/42147.json?print=true",
+   "sha256": "cce349cfedd04a1103395f94ccfcd8fe60887caf23f872e010249eef9b4289fe",
+   "used_for": "HSP-007's payout ledger (families/m3-m8-m7/hsp007.py) and SVRN's onboarding date (compare.py, row 52)"
+  },
+  "nearstats-api-near-summary.json": {
+   "url": "https://nearstats.org/api/near/summary",
+   "sha256": "909949238c1b968161afb0886b5138f94df52d0e599e090703b5d729d62bef73",
+   "used_for": "the number of chains NearStats lists as supported for Intents, and the feed's date (compare.py, row 14)"
+  },
+  "web-update.swe.at_.html": {
+   "url": "https://update.swe.at",
+   "sha256": "4ed8412ece53ab9afdf7e233d72ce957ec07372ddcd296cb30ff0d575da49a23",
+   "used_for": "the date Sweat Wallet ends in its present form (compare.py, row 52)"
+  },
+  "web-docs.near.org_omnibridge_overview.html": {
+   "url": "https://docs.near.org/chain-abstraction/omnibridge/overview",
+   "sha256": "8ea5eb6163548bc67daa6e5ee14974a75870977b90fca160e26717936d6b9ce4",
+   "used_for": "the chains NEAR's Omni overview lists with Chain Signatures (compare.py, row 13)"
+  }
+ }
+}

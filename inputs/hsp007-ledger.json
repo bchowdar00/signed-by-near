@@ -1,0 +1,1325 @@
+{
+  "source": {
+    "file": "gov-hsp007-execution-42147.json",
+    "sha256": "cce349cfedd04a1103395f94ccfcd8fe60887caf23f872e010249eef9b4289fe",
+    "topic_id": 42147,
+    "extracted_utc": "2026-11-10T12:23:27Z"
+  },
+  "rows": [
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "2Uwb3mKWq6uwvqUKrF8vsLFtRMqSDADdDmAkpMSagT4x",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Near One | 4,600 | $7,824.50 | 2Uwb3mKWq6uwvqUKrF8vsLFtRMqSDADdDmAkpMSagT4x"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "eKGwei5Qt8RfcEsMwKtuZsv5Y15YkHaudsh2LkuuahZ",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Blacksand | 4,600 | $7,824.50 | eKGwei5Qt8RfcEsMwKtuZsv5Y15YkHaudsh2LkuuahZ"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "2RiNZkzHZTBsKbXKq4h7cau9L1qtWsjk8yiMCk8wqym9",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Luganodes | 4,600 | $7,824.50 | 2RiNZkzHZTBsKbXKq4h7cau9L1qtWsjk8yiMCk8wqym9"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "9cMkDMZdAxiqLMxmFjpYww3EKMzcrdW9jsHMtaHxL48S",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Staking4all | 4,600 | $7,824.50 | 9cMkDMZdAxiqLMxmFjpYww3EKMzcrdW9jsHMtaHxL48S"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "8UvZSoU55aXmrJFdaCEqEJYjipe6ZnfCEf2HhXmC3R14",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Node Monster | 4,600 | $7,824.50 | 8UvZSoU55aXmrJFdaCEqEJYjipe6ZnfCEf2HhXmC3R14"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "mgxWp9awTxDDezsctTWW6Wk3Ly7vbL5tSFGLsTaszrw",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Everstake | 4,600 | $7,824.50 | mgxWp9awTxDDezsctTWW6Wk3Ly7vbL5tSFGLsTaszrw"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Stakin",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "5tNCFXc1UaGuweb2f6zMh4RFx4QL2PxZcsKGCiGJJjWc",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Stakin | 4,600 | $7,824.50 | 5tNCFXc1UaGuweb2f6zMh4RFx4QL2PxZcsKGCiGJJjWc"
+    },
+    {
+      "service_month": "2026-03",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600",
+      "status": "executed",
+      "tx": "QYc9xo5cjw9oHe5NScXaJNsi8M2jgsmJFvVpXaF6LRQ",
+      "tx_abbreviated": false,
+      "post_number": 7,
+      "source_line": "Aurora | 4,600 | $7,824.50 | QYc9xo5cjw9oHe5NScXaJNsi8M2jgsmJFvVpXaF6LRQ"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "56FqJZSHisQVvQcPTrpq4zgAuye3WUmxvniQvxkX1749",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Near One | 4,600.00 | $5,961.60 | 56FqJZSHisQVvQcPTrpq4zgAuye3WUmxvniQvxkX1749"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "2,300.00",
+      "status": "pending",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Blacksand | 2,300.00 | $2,981.26 | PENDING"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "A9hKYxJsxZL4U4UF2jHTi9PmRKmniLmkuhdgyBi2esPj",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Luganodes | 4,600.00 | $5,961.60 | A9hKYxJsxZL4U4UF2jHTi9PmRKmniLmkuhdgyBi2esPj"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "HG3v8ydDHHRQ5bSyBBNwtX2pdgdiUC1eUbnfKPeAofcX",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Aurora | 4,600.00 | $5,961.60 | HG3v8ydDHHRQ5bSyBBNwtX2pdgdiUC1eUbnfKPeAofcX"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "HXgoYSXg4pdzZ7choQjz8iRpm9hCnwhpYy13sV2aSrmX",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Staking4all | 4,600.00 | $5,961.60 | HXgoYSXg4pdzZ7choQjz8iRpm9hCnwhpYy13sV2aSrmX"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "2EVRQVodv4dPESsTqvZW3VW6kV9XPmkT6oW9u8QFAVPh",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Node Monster | 4,600.00 | $5,961.60 | 2EVRQVodv4dPESsTqvZW3VW6kV9XPmkT6oW9u8QFAVPh"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "62cVh1zZ3URxHjSDwh4tGjdWrUSiU6SYiShqdFjvVcC",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Everstake | 4,600.00 | $5,961.60 | 62cVh1zZ3URxHjSDwh4tGjdWrUSiU6SYiShqdFjvVcC"
+    },
+    {
+      "service_month": "2026-04",
+      "network": "mainnet",
+      "node": "Stakin",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "2J2YuCBYMUoAGXzSzfWshgrMRGy9SovTdZEp6hSbUL3E",
+      "tx_abbreviated": false,
+      "post_number": 8,
+      "source_line": "Stakin | 4,600.00 | $5,961.60 | 2J2YuCBYMUoAGXzSzfWshgrMRGy9SovTdZEp6hSbUL3E"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "CfFKcdH7iXYgFgFKDTyFTbUX1q3UWMAAQ8FSiDpZXLgw",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Near One | 4,600.00 | $6,694.38 | CfFKcdH7iXYgFgFKDTyFTbUX1q3UWMAAQ8FSiDpZXLgw"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "CPH5zVtwKaUTtvgoXZZPziarcHNAtk7rdTgv4BgTT875",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Blacksand | 4,600.00 | $6,694.38 | CPH5zVtwKaUTtvgoXZZPziarcHNAtk7rdTgv4BgTT875"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "8ACjKq39L11HXsv3JVcnx2Wi2ZcfU7Bgu1vCUN1XQ38Z",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Luganodes | 4,600.00 | $6,694.38 | 8ACjKq39L11HXsv3JVcnx2Wi2ZcfU7Bgu1vCUN1XQ38Z"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "DkGzw6UcTJZesCpuHE6x3CejWURzU3tyUUJPrUkrA55j",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Aurora | 4,600.00 | $6,694.38 | DkGzw6UcTJZesCpuHE6x3CejWURzU3tyUUJPrUkrA55j"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "5kP6kCvRFTTEjgPjtyW6ebTjthotBCZAaAxaPhnZNmmH",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Staking4all | 4,600.00 | $6,694.38 | 5kP6kCvRFTTEjgPjtyW6ebTjthotBCZAaAxaPhnZNmmH"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "9D84MrnF6xgTuiAxFyqsHbwv9zLYvmRqb3oSy2gZzmpG",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Node Monster | 4,600.00 | $6,694.38 | 9D84MrnF6xgTuiAxFyqsHbwv9zLYvmRqb3oSy2gZzmpG"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "3bfedbC5M9EPNhAht4PmmAW5w5BN52L812TEDnSKY8J6",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Everstake | 4,600.00 | $6,694.38 | 3bfedbC5M9EPNhAht4PmmAW5w5BN52L812TEDnSKY8J6"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "Stakin (The TIE)",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "B5jeYRgMX67p8sG4Bf67YWRKWus6J699DwMH1ax3Ympt",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "Stakin (The TIE) | 4,600.00 | $6,694.38 | B5jeYRgMX67p8sG4Bf67YWRKWus6J699DwMH1ax3Ympt"
+    },
+    {
+      "service_month": "2026-05",
+      "network": "mainnet",
+      "node": "MPCH*",
+      "amount_near": "2,078.00",
+      "status": "executed",
+      "tx": "BYmrgeKcaU7NRgXUES6uxgCYVajezLhWqWyhyn9mbivq",
+      "tx_abbreviated": false,
+      "post_number": 11,
+      "source_line": "MPCH* | 2,078.00 | $3,024.11 | BYmrgeKcaU7NRgXUES6uxgCYVajezLhWqWyhyn9mbivq"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "2fWmvka6UptgBq6rmpi7otqDuoc7g9NV95z915kLdGP2",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Near One | 4,600.00 | $7,088.14 | 2fWmvka6UptgBq6rmpi7otqDuoc7g9NV95z915kLdGP2"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "3YbrrFsA1C9uqgaWZ1oiBBeHGzxpZyCYmtpPrUesg4Ms",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Blacksand | 4,600.00 | $7,088.14 | 3YbrrFsA1C9uqgaWZ1oiBBeHGzxpZyCYmtpPrUesg4Ms"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "8e18666AkGxBoAM1QL2nJrA7Nyj2zYfcTxjgZ7yy7Pj8",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Luganodes | 4,600.00 | $7,088.14 | 8e18666AkGxBoAM1QL2nJrA7Nyj2zYfcTxjgZ7yy7Pj8"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "HgNWNVJw73S4mkc6ivv2S1myF5cK11VJiioRJmbrWHaG",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Aurora | 4,600.00 | $7,088.14 | HgNWNVJw73S4mkc6ivv2S1myF5cK11VJiioRJmbrWHaG"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "Doe5JLfhiaysyTUDwVFrhGRMiqMZxLhHpFmrNQHv6XsM",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Staking4all | 4,600.00 | $7,088.14 | Doe5JLfhiaysyTUDwVFrhGRMiqMZxLhHpFmrNQHv6XsM"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "8y1F1C3FCGgmrusnYEXBkygeP97ZuoszLMsyjdbBkqEy",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Node Monster | 4,600.00 | $7,088.14 | 8y1F1C3FCGgmrusnYEXBkygeP97ZuoszLMsyjdbBkqEy"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "2pFFLeYCFUGTJ3mkKTjU23Zm4qEKGYoFiuf7mpDBZ8NG",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Everstake | 4,600.00 | $7,088.14 | 2pFFLeYCFUGTJ3mkKTjU23Zm4qEKGYoFiuf7mpDBZ8NG"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "Stakin (The TIE)",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "AEaF4BhmBxaDmVYnyN5GTd8v8zqqGcB4LqNKDLuUjLJr",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Stakin (The TIE) | 4,600.00 | $7,088.14 | AEaF4BhmBxaDmVYnyN5GTd8v8zqqGcB4LqNKDLuUjLJr"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "MPCH",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "9Eb8qrkdX7AduKBte1Yu646pdEMYiGhqgGqNdjRqe8pB",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "MPCH | 4,600.00 | $7,088.14 | 9Eb8qrkdX7AduKBte1Yu646pdEMYiGhqgGqNdjRqe8pB"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "mainnet",
+      "node": "SVRN",
+      "amount_near": "1,380.00",
+      "status": "executed",
+      "tx": "6EAULQtHjLs6ZCVWVm8L2erw35YEydGWtwJY1zfc3oiD",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "SVRN | 1,380.00 | $2,126.44 | 6EAULQtHjLs6ZCVWVm8L2erw35YEydGWtwJY1zfc3oiD"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "testnet",
+      "node": "Greenfield",
+      "amount_near": "1,280.33",
+      "status": "executed",
+      "tx": "AN3JG6Un7Bn7vm14H1CTarqvjpM2qnC7RSmd7jPPBcRe",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Greenfield | 1,280.33 | $1,972.86 | AN3JG6Un7Bn7vm14H1CTarqvjpM2qnC7RSmd7jPPBcRe"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "testnet",
+      "node": "HashKey Cloud (Wancloud)",
+      "amount_near": "563.35",
+      "status": "executed",
+      "tx": "5xDjNK4ssEenszCmoiRNWeaCuao42agXV4JKrLzYu9eV",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "HashKey Cloud (Wancloud) | 563.35 | $868.06 | 5xDjNK4ssEenszCmoiRNWeaCuao42agXV4JKrLzYu9eV"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "testnet",
+      "node": "Klever",
+      "amount_near": "358.49",
+      "status": "executed",
+      "tx": "7C1QZGQ6WPVBKYaw58jt6hwraoi6KTvpbNUFYAiJe1qo",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Klever | 358.49 | $552.40 | 7C1QZGQ6WPVBKYaw58jt6hwraoi6KTvpbNUFYAiJe1qo"
+    },
+    {
+      "service_month": "2026-06",
+      "network": "testnet",
+      "node": "Nansen",
+      "amount_near": "358.49",
+      "status": "executed",
+      "tx": "BnZLrBcHzPFb4SdW6iWiGDq3Lv4WCqzGozeiSZAmxWDy",
+      "tx_abbreviated": false,
+      "post_number": 15,
+      "source_line": "Nansen | 358.49 | $552.40 | BnZLrBcHzPFb4SdW6iWiGDq3Lv4WCqzGozeiSZAmxWDy"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "7iaJzZk1X9d2NZpf3nmtp5ZVFj1UJPkMBTga2frMUicx",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Near One | 4,600.00 | $7,316.76 | 7iaJzZk1X9d2NZpf3nmtp5ZVFj1UJPkMBTga2frMUicx"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "H9agF5ZsCsixEpCnJ7KBif646mbFS52Gurufd3242bGR",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Blacksand | 4,600.00 | $7,316.76 | H9agF5ZsCsixEpCnJ7KBif646mbFS52Gurufd3242bGR"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "2GAq55kF4cdwoNUbKv5N7GSFuJ3qYZZah7nEYyYW8cjR",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Luganodes | 4,600.00 | $7,316.76 | 2GAq55kF4cdwoNUbKv5N7GSFuJ3qYZZah7nEYyYW8cjR"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "C1UrzdHx7wSkux3Y1E4XY8qVUcQiK9MV9UkhAoDhvk8H",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Aurora | 4,600.00 | $7,316.76 | C1UrzdHx7wSkux3Y1E4XY8qVUcQiK9MV9UkhAoDhvk8H"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "EeFnURRE88aiP449AGh57fouNPXByEQpGN9vRgrPzi43",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Staking4all | 4,600.00 | $7,316.76 | EeFnURRE88aiP449AGh57fouNPXByEQpGN9vRgrPzi43"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "25paSfthKkn84WBEtehV2bZSRLYyh3JZhP8DhHfidb3N",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Node Monster | 4,600.00 | $7,316.76 | 25paSfthKkn84WBEtehV2bZSRLYyh3JZhP8DhHfidb3N"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "Ebh56BusuLBnWoNujzM4HdSVHd2iJVGsvddJJyiyNyFk",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Everstake | 4,600.00 | $7,316.76 | Ebh56BusuLBnWoNujzM4HdSVHd2iJVGsvddJJyiyNyFk"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "Stakin (The TIE)",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "5VH5JVASZvZzKBhuBrj2ELk7SbfWH5gmXqtN19762Hwe",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Stakin (The TIE) | 4,600.00 | $7,316.76 | 5VH5JVASZvZzKBhuBrj2ELk7SbfWH5gmXqtN19762Hwe"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "MPCH",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "HC4upBdZLFmGBPi9MGtfQCB4TaXn3YobGiViMGME3xcy",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "MPCH | 4,600.00 | $7,316.76 | HC4upBdZLFmGBPi9MGtfQCB4TaXn3YobGiViMGME3xcy"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "mainnet",
+      "node": "SVRN",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "CfufSmNPcwEbvRNmxMyiJawGC3PkiubxfiNgtrxPr4oR",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "SVRN | 4,600.00 | $7,316.76 | CfufSmNPcwEbvRNmxMyiJawGC3PkiubxfiNgtrxPr4oR"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "testnet",
+      "node": "Greenfield",
+      "amount_near": "1,536.40",
+      "status": "executed",
+      "tx": "FRMQv2dZiwVhYTbVb5oWvqH6c11f1ZzBLsxMtn9fvkeP",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Greenfield | 1,536.40 | $2,443.80 | FRMQv2dZiwVhYTbVb5oWvqH6c11f1ZzBLsxMtn9fvkeP"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "testnet",
+      "node": "HashKey Cloud (Wancloud)",
+      "amount_near": "768.20",
+      "status": "executed",
+      "tx": "FnRmdEWHeqDQx4n4SGDLo6RSAZSxQTi8nuaSVrdUTzLo",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "HashKey Cloud (Wancloud) | 768.20 | $1,221.90 | FnRmdEWHeqDQx4n4SGDLo6RSAZSxQTi8nuaSVrdUTzLo"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "testnet",
+      "node": "Klever",
+      "amount_near": "1,536.40",
+      "status": "executed",
+      "tx": "5kTaWBXc12vaM6amCV9jE2rjtTMjJFeQ8bfQn8ABQjUV",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Klever | 1,536.40 | $2,443.80 | 5kTaWBXc12vaM6amCV9jE2rjtTMjJFeQ8bfQn8ABQjUV |"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "testnet",
+      "node": "Nansen",
+      "amount_near": "1,536.40",
+      "status": "executed",
+      "tx": "2uUZaqNdcSxHaRtDh9DHrJDgwgJsMZ9wiw1qePmujYMc",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Nansen | 1,536.40 | $2,443.80 | 2uUZaqNdcSxHaRtDh9DHrJDgwgJsMZ9wiw1qePmujYMc"
+    },
+    {
+      "service_month": "2026-07",
+      "network": "testnet",
+      "node": "Bitwise",
+      "amount_near": "842.54",
+      "status": "executed",
+      "tx": "29MpdLGbp4ErRfNrW7K1wf4KMaFzZmcLmR6X34N9HgE6",
+      "tx_abbreviated": false,
+      "post_number": 18,
+      "source_line": "Bitwise | 842.54 | $1,340.14 | 29MpdLGbp4ErRfNrW7K1wf4KMaFzZmcLmR6X34N9HgE6"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Near One Limited",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "4paKMoqUriYEJUHYpcrUHd9vA3MmwT2zqC8tpbFgDFih",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Near One Limited | 4,600.00 | $9,384.00 | NEAR Transaction 4paKMoqUriYEJUHYpcrUHd9vA3MmwT2zqC8tpbFgDFih | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "NodeRun VIP LTD",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "56bexj19f1mrB7y7VvBTdQa7BSZaL5E1CPjTnsitH9id",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "NodeRun VIP LTD | 4,600.00 | $9,384.00 | NEAR Transaction 56bexj19f1mrB7y7VvBTdQa7BSZaL5E1CPjTnsitH9id | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Black Sand",
+      "amount_near": "4,600.00",
+      "status": "pending",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Black Sand | 4,600.00 | $9,384.00 | Pending"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Astro-Stakers",
+      "amount_near": "2,225.81",
+      "status": "executed",
+      "tx": "J34U1ev9PGCdecUiUYT9bmHpkksAvs3JebzXM8Qtpua2",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Astro-Stakers | 2,225.81 | $4,540.65 | NEAR Transaction J34U1ev9PGCdecUiUYT9bmHpkksAvs3JebzXM8Qtpua2 | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Everstake Validation Services LLC",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "FAykV79YTZzNiyWhVD3gUchJTTfU95jNh2vb5FkQVdSN",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Everstake Validation Services LLC | 4,600.00 | $9,384.00 | NEAR Transaction FAykV79YTZzNiyWhVD3gUchJTTfU95jNh2vb5FkQVdSN | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Greenfield Capital Labs GmbH",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "5EMjC8h9hGkj65GHRXiYkx1gjgpXaQsmhPHZMR8aUWBa",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Greenfield Capital Labs GmbH | 4,600.00 | $9,384.00 | NEAR Transaction 5EMjC8h9hGkj65GHRXiYkx1gjgpXaQsmhPHZMR8aUWBa | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Natsai OÜ",
+      "amount_near": "3,858.06",
+      "status": "executed",
+      "tx": "89tW36rmLfdHnxSDBAtpZeyQG9TGJoMj1shQPkfF72Pz",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Natsai OÜ | 3,858.06 | $7,870.44 | NEAR Transaction 89tW36rmLfdHnxSDBAtpZeyQG9TGJoMj1shQPkfF72Pz | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Boldfit Tech Solutions Ltd",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "9UpTPKLxttCnvGkhE6Q4mNXG5imkzpv2YYWWPQiwEi4r",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Boldfit Tech Solutions Ltd | 4,600.00 | $9,384.00 | NEAR Transaction 9UpTPKLxttCnvGkhE6Q4mNXG5imkzpv2YYWWPQiwEi4r | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "SovereignAI Services LLC",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "DzxjfVhEgX3XKrLj3wyyTCjTbfdZAYpxFqtzoudeeTKk",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "SovereignAI Services LLC | 4,600.00 | $9,384.00 | NEAR Transaction DzxjfVhEgX3XKrLj3wyyTCjTbfdZAYpxFqtzoudeeTKk | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Wancloud Limited",
+      "amount_near": "3,858.06",
+      "status": "executed",
+      "tx": "BFGJz1d7t8XYDYQKrGPpBN7HyRGsV4L4or65rDDvbPWi",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Wancloud Limited | 3,858.06 | $7,870.44 | NEAR Transaction BFGJz1d7t8XYDYQKrGPpBN7HyRGsV4L4or65rDDvbPWi | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Klever Blockchain",
+      "amount_near": "2,225.81",
+      "status": "executed",
+      "tx": "D4hy1SfbMLwEa4XT5B5JBEJNHEooLhNnr79rMN1BeyBZ",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Klever Blockchain | 2,225.81 | $4,540.65 | NEAR Transaction D4hy1SfbMLwEa4XT5B5JBEJNHEooLhNnr79rMN1BeyBZ | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "MPC Holding, Inc.",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "Fpoub7ZEYsscBiWFUK23dXEDKBsLHXNHhmq7NaBcVevh",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "MPC Holding, Inc. | 4,600.00 | $9,384.00 | NEAR Transaction Fpoub7ZEYsscBiWFUK23dXEDKBsLHXNHhmq7NaBcVevh | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "The Tie, Inc",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "7nvzDA6qBLbwYYubjHuGmU1W6s6MQpxQjGrgP5YQX8EF",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "The Tie, Inc | 4,600.00 | $9,384.00 | NEAR Transaction 7nvzDA6qBLbwYYubjHuGmU1W6s6MQpxQjGrgP5YQX8EF | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Staking4All",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "7YvuTthcBD6taa1ABuEj1poSrAcxv4cpkmRPjSwGHXaw",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Staking4All | 4,600.00 | $9,384.00 | NEAR Transaction 7YvuTthcBD6taa1ABuEj1poSrAcxv4cpkmRPjSwGHXaw | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "mainnet",
+      "node": "Aurora Labs Limited",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "5DUaBdBnnwKtK6QEDvBTJhLNrPSrKgiLnxfy3EW2VUW4",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Aurora Labs Limited | 4,600.00 | $9,384.00 | NEAR Transaction 5DUaBdBnnwKtK6QEDvBTJhLNrPSrKgiLnxfy3EW2VUW4 | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "testnet",
+      "node": "Nansen Markets Pte. Ltd.",
+      "amount_near": "1,536.40",
+      "status": "executed",
+      "tx": "ArRm9QDSEvL7cr5kMe2rqG8mQvHRNvkAnaqog3UH6aUY",
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Nansen Markets Pte. Ltd. | 1,536.40 | $3,134.26 | NEAR Transaction ArRm9QDSEvL7cr5kMe2rqG8mQvHRNvkAnaqog3UH6aUY | NearBlocks"
+    },
+    {
+      "service_month": "2026-08",
+      "network": "testnet",
+      "node": "Bitwise",
+      "amount_near": "1,536.40",
+      "status": "pending",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 23,
+      "source_line": "Bitwise | 1,536.40 | $3,134.26 | Pending"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Astrostakers",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Astrostakers | near-mainnet-mpc.astrostakers.com | astrostakers-mainnet.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Aurora | multichain-mainnet.aurora.dev | multichain-mainnet-aurora.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Bitwise",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Bitwise | near-mpc-mainnet01.mainnet.validators.bitwiseinvestments.com | bitwise-mpc01.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Near One | 57.129.86.53 | n1-multichain.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "3,264.52",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Blacksand | multichain-mainnet-0.near.blksnd.xyz | blacksandtech.near | 100.0% | Eligible (Prorated) | 3,264.52 | Left Oct 22; 100% uptime while active; prorated 22/31 days"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Luganodes | 137.74.108.92 | mpc-lgns.near | 99.7% | Eligible | 4,600.00 | OVH rack outage on Oct 22; met ≥ 99.0% SLA"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Staking4all | multichain-mainnet-0.staking4all.org | near-mpc-staking4all-01.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Nansen",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Nansen | mpc.near.staking.nansen.ai | nansen-ai-mpc.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Node Monster | near.node.monster | nodemonster.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Everstake | nearmpc-mainnet.everstake.one | everstake-mpc-1.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Stakin",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Stakin | near-mpc-mainnet-1.stakin-nodes.com | stakin-mpc.near | 99.9% | Eligible | 4,600.00 | Standard operating status (≥ 99.0% SLA)"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "MPCH",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "MPCH | mpch-mpc-near-m-01.near.mainnet.mpch.io | mpch-01.near | 99.7% | Eligible | 4,600.00 | Emergency server recovery; recovered to ≥ 99.0% SLA"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "SVRN",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "SVRN | svrn-mpc-near-m-01.near.mainnet.ssgllc.io | svrn-01.near | 99.3% | Eligible | 4,600.00 | Firewall issue following TDX migration; resolved (≥ 99.0% SLA)"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Greenfield",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Greenfield | near-mpc-mainnet2.greenfield.xyz | greenfield-mpc01.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "HashKey",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "HashKey | near-mpc-mainnet-1.hashkey.cloud | hashkeympc.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Natsai",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Natsai | near-mpc-mainnet-1.natsai.xyz | natsai-mpc.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-10",
+      "network": "mainnet",
+      "node": "Klever",
+      "amount_near": "4,600.00",
+      "status": "proposed",
+      "tx": null,
+      "tx_abbreviated": false,
+      "post_number": 26,
+      "source_line": "Klever | multichain-mainnet-01.klever.io | klever-nearmpc-01.near | 100.0% | Eligible | 4,600.00 | Standard operating status"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Astrostakers",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "26wYBq...3Ccw",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Astrostakers | astrostakers-mainnet.near | 4,600.00 | $9,384.00 | 26wYBq...3Ccw"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Aurora",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "GEVKEt...cuR4",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Aurora | multichain-mainnet-aurora.near | 4,600.00 | $9,384.00 | GEVKEt...cuR4"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Bitwise",
+      "amount_near": "2,146.67",
+      "status": "executed",
+      "tx": "DWoNft...A6Ha",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Bitwise | bitwise-mpc01.near | 2,146.67 | $4,379.21 | DWoNft...A6Ha"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Near One",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "7M13Wj...AnwZ1",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Near One | n1-multichain.near | 4,600.00 | $9,384.00 | 7M13Wj...AnwZ1"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Blacksand",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "8ExYEr...8VtD",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Blacksand | blacksandtech.near | 4,600.00 | $9,384.00 | 8ExYEr...8VtD"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Luganodes",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "G5TQxd...vSMdF",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Luganodes | mpc-lgns.near | 4,600.00 | $9,384.00 | G5TQxd...vSMdF"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Staking4all",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "Auizyn...4QVj",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Staking4all | near-mpc-staking4all-01.near | 4,600.00 | $9,384.00 | Auizyn...4QVj"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Nansen",
+      "amount_near": "2,146.67",
+      "status": "executed",
+      "tx": "4Ybeu5...2XN7",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Nansen | nansen-ai-mpc.near | 2,146.67 | $4,379.21 | 4Ybeu5...2XN7"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Node Monster",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "HL8VCM...1hsn",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Node Monster | nodemonster.near | 4,600.00 | $9,384.00 | HL8VCM...1hsn"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Everstake",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "G4fnQK...VSRW",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Everstake | everstake-mpc-1.near | 4,600.00 | $9,384.00 | G4fnQK...VSRW"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Stakin",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "7zxGmL...zmc6",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Stakin | stakin-mpc.near | 4,600.00 | $9,384.00 | 7zxGmL...zmc6"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "MPCH",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "FG3qzF...BP9n6",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "MPCH | mpch-01.near | 4,600.00 | $9,384.00 | FG3qzF...BP9n6"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "SVRN",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "FinbHy...Qvy1",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "SVRN | svrn-01.near | 4,600.00 | $9,384.00 | FinbHy...Qvy1"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Greenfield",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "EWqvfM...o6EV",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Greenfield | greenfield-mpc01.near | 4,600.00 | $9,384.00 | EWqvfM...o6EV"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "HashKey",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "BtZRkp...myb4",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "HashKey | hashkeympc.near | 4,600.00 | $9,384.00 | BtZRkp...myb4"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Natsai",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "8izdgM...DAHv",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Natsai | natsai-mpc.near | 4,600.00 | $9,384.00 | 8izdgM...DAHv"
+    },
+    {
+      "service_month": "2026-09",
+      "network": "mainnet",
+      "node": "Klever",
+      "amount_near": "4,600.00",
+      "status": "executed",
+      "tx": "FofQxv...iqmP",
+      "tx_abbreviated": true,
+      "post_number": 27,
+      "source_line": "Klever | klever-nearmpc-01.near | 4,600.00 | $9,384.00 | FofQxv...iqmP"
+    }
+  ],
+  "reports": [
+    {
+      "service_month": "2026-03",
+      "post_number": 3,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "1.7010"
+      ],
+      "stated_total_near": null,
+      "source_line": "March 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-04",
+      "post_number": 7,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "1.2962"
+      ],
+      "stated_total_near": "36,800",
+      "source_line": "April 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-03",
+      "post_number": 7,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "1.7010"
+      ],
+      "stated_total_near": "36,800",
+      "source_line": "March 2026 – Payout Execution Report"
+    },
+    {
+      "service_month": "2026-05",
+      "post_number": 8,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "1.4553"
+      ],
+      "stated_total_near": "38,878",
+      "source_line": "May 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-04",
+      "post_number": 8,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "1.2962"
+      ],
+      "stated_total_near": "34,500.00",
+      "source_line": "April 2026 – Payout Execution Report"
+    },
+    {
+      "service_month": "2026-06",
+      "post_number": 10,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "1.5409"
+      ],
+      "stated_total_near": null,
+      "source_line": "June 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-05",
+      "post_number": 11,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "1.4553"
+      ],
+      "stated_total_near": "38,878.00",
+      "source_line": "May 2026 – Payout Execution Report"
+    },
+    {
+      "service_month": "2026-07",
+      "post_number": 14,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "1.5906"
+      ],
+      "stated_total_near": null,
+      "source_line": "July 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-06",
+      "post_number": 15,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "1.4553"
+      ],
+      "stated_total_near": "45,340.66",
+      "source_line": "June 2026 – Payout Execution Report"
+    },
+    {
+      "service_month": "2026-08",
+      "post_number": 16,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "1.7031"
+      ],
+      "stated_total_near": null,
+      "source_line": "August 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-07",
+      "post_number": 18,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "1.5906"
+      ],
+      "stated_total_near": "52,219.94",
+      "source_line": "July 2026 – Payout Execution Report"
+    },
+    {
+      "service_month": "2026-09",
+      "post_number": 22,
+      "kind": "performance_report",
+      "reference_price_usd": [
+        "2.04"
+      ],
+      "stated_total_near": "73,293.34",
+      "source_line": "September 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-08",
+      "post_number": 23,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "2.04"
+      ],
+      "stated_total_near": "65,840.54",
+      "source_line": "August 2026 – Payout Execution Report"
+    },
+    {
+      "service_month": null,
+      "post_number": 25,
+      "kind": "transparency_report",
+      "reference_price_usd": [],
+      "stated_total_near": "344,372.94",
+      "source_line": "Transparency Report: NEAR MPC Node Infrastructure Financing Program (HSP-007)"
+    },
+    {
+      "service_month": "2026-10",
+      "post_number": 26,
+      "kind": "proposed_report",
+      "reference_price_usd": [
+        "2.65"
+      ],
+      "stated_total_near": "76,864.52",
+      "source_line": "October 2026 – Performance Report"
+    },
+    {
+      "service_month": "2026-09",
+      "post_number": 27,
+      "kind": "payout_execution_report",
+      "reference_price_usd": [
+        "2.04"
+      ],
+      "stated_total_near": "73,293.34",
+      "source_line": "September 2026 – Payout Execution Report"
+    }
+  ]
+}

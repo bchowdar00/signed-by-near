@@ -1,0 +1,393 @@
+{
+ "census_rate_per_day": 8904.9,
+ "census_rate_source": "omni-flow-derived-20261109T100540Z.json: 76 of 100 omni.bridge.near rows with intents.near counterparty over 737.39 s",
+ "flow_rate_per_day": {
+  "arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near": 1811.28,
+  "arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near": 433.48,
+  "base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near": 4148.0,
+  "btc.omft.near": 1.22,
+  "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 3237.52,
+  "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 4656.56,
+  "eth.omft.near": 5755.8,
+  "nbtc.bridge.near": 4221.64,
+  "nzec.bridge.near": 0.622,
+  "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near": 2711.76,
+  "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near": 895.0,
+  "sol.omft.near": 5316.64,
+  "tron-d28a265909efecdcee7c5028585214ea0b96f015.omft.near": 4028.32,
+  "xrp.omft.near": 1848.08,
+  "zec.omft.near": 2908.24
+ },
+ "flow_rate_source": {
+  "arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near": "rates-ftstats-20261109.json",
+  "arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near": "rates-ftstats-20261109c.json",
+  "base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near": "rates-ftstats-20261109.json",
+  "btc.omft.near": "rates-ftstats-20261109.json",
+  "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": "rates-ftstats-20261109.json",
+  "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": "rates-ftstats-20261109.json",
+  "eth.omft.near": "rates-ftstats-20261109.json",
+  "nbtc.bridge.near": "rates-ftstats-20261109b.json",
+  "nzec.bridge.near": "rates-ftstats-20261109.json",
+  "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near": "rates-ftstats-20261109.json",
+  "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near": "rates-ftstats-20261109.json",
+  "sol.omft.near": "rates-ftstats-20261109.json",
+  "tron-d28a265909efecdcee7c5028585214ea0b96f015.omft.near": "rates-ftstats-20261109.json",
+  "xrp.omft.near": "rates-ftstats-20261109.json",
+  "zec.omft.near": "rates-ftstats-20261109.json"
+ },
+ "m10_rate_per_day": {
+  "btc.omft.near": {
+   "chart:2025-07": 110.13652567237526,
+   "chart:2025-09": 287.4048844440824,
+   "chart:2025-11": 1301.363727245638,
+   "chart:2026-01": 1772.1782293402418,
+   "chart:2026-03": 993.810530211357,
+   "chart:2026-05": 1774.7212764842143,
+   "chart:2026-07": 2.4703807652300833,
+   "early": 15.745617594625996
+  },
+  "eth.omft.near": {
+   "chart:2025-07": 154.79055370981555,
+   "chart:2025-09": 1163.3390564580282,
+   "chart:2025-11": 5707.572196638192,
+   "chart:2026-01": 4922.214262142439,
+   "chart:2026-03": 3164.7640458458754,
+   "chart:2026-05": 7323.099113220601,
+   "chart:2026-07": 4797.175602921858,
+   "early": 16.341863471760245
+  },
+  "nbtc.bridge.near": {
+   "chart:2025-07": 638.9621370487712,
+   "chart:2025-09": 74.55566436665808,
+   "chart:2025-11": 88.78797008298308,
+   "chart:2026-01": 18.336782957773067,
+   "chart:2026-03": 18.459035981458467,
+   "chart:2026-05": 2510.3518712231357,
+   "chart:2026-07": 3312.0300194729866,
+   "early": 12.77062793512118
+  },
+  "sol.omft.near": {
+   "chart:2025-07": 79.00263983289443,
+   "chart:2025-09": 1436.403052196897,
+   "chart:2025-11": 4139.571070423877,
+   "chart:2026-01": 5753.14621430589,
+   "chart:2026-03": 4683.087177006632,
+   "chart:2026-05": 183.20193756539223,
+   "chart:2026-07": 4411.199110901521,
+   "early": 53.23052312858805
+  },
+  "zec.omft.near": {
+   "chart:2025-07": 1195.9639269730164,
+   "chart:2025-09": 430.9727282892844,
+   "chart:2025-11": 3379.4641684622165,
+   "chart:2026-01": 2513.281511215736,
+   "chart:2026-03": 5842.530482875776,
+   "chart:2026-05": 15996.666875148238,
+   "chart:2026-07": 1504.7029305990602,
+   "early": 1151.892774190273
+  }
+ },
+ "m10_rate_source": {
+  "periods": {
+   "btc.omft.near|chart:2025-07": {
+    "pilot_instant_utc": "2025-07-29T05:21:45.828644Z",
+    "rate_per_day": 110.13652567237526,
+    "rows": 25,
+    "span_s": 19612.022322416306
+   },
+   "btc.omft.near|chart:2025-09": {
+    "pilot_instant_utc": "2025-09-14T14:33:14.179703Z",
+    "rate_per_day": 287.4048844440824,
+    "rows": 25,
+    "span_s": 7515.529891490936
+   },
+   "btc.omft.near|chart:2025-11": {
+    "pilot_instant_utc": "2025-11-14T07:06:45.784389Z",
+    "rate_per_day": 1301.363727245638,
+    "rows": 25,
+    "span_s": 1659.7972993850708
+   },
+   "btc.omft.near|chart:2026-01": {
+    "pilot_instant_utc": "2026-01-06T02:46:16.793292Z",
+    "rate_per_day": 1772.1782293402418,
+    "rows": 25,
+    "span_s": 1218.8390333652496
+   },
+   "btc.omft.near|chart:2026-03": {
+    "pilot_instant_utc": "2026-03-31T10:58:46.681000Z",
+    "rate_per_day": 993.810530211357,
+    "rows": 25,
+    "span_s": 2173.4525187015533
+   },
+   "btc.omft.near|chart:2026-05": {
+    "pilot_instant_utc": "2026-05-03T06:20:45.643050Z",
+    "rate_per_day": 1774.7212764842143,
+    "rows": 25,
+    "span_s": 1217.0925252437592
+   },
+   "btc.omft.near|chart:2026-07": {
+    "pilot_instant_utc": "2026-07-05T20:04:54.289239Z",
+    "rate_per_day": 2.4703807652300833,
+    "rows": 25,
+    "span_s": 874359.1394498348
+   },
+   "btc.omft.near|early": {
+    "pilot_instant_utc": "2025-03-29T04:52:22.687243Z",
+    "rate_per_day": 15.745617594625996,
+    "rows": 25,
+    "span_s": 137181.02748394012
+   },
+   "eth.omft.near|chart:2025-07": {
+    "pilot_instant_utc": "2025-07-28T22:00:15.046417Z",
+    "rate_per_day": 154.79055370981555,
+    "rows": 25,
+    "span_s": 13954.339901447296
+   },
+   "eth.omft.near|chart:2025-09": {
+    "pilot_instant_utc": "2025-09-04T04:47:37.995590Z",
+    "rate_per_day": 1163.3390564580282,
+    "rows": 25,
+    "span_s": 1856.7243900299072
+   },
+   "eth.omft.near|chart:2025-11": {
+    "pilot_instant_utc": "2025-11-17T23:43:57.386909Z",
+    "rate_per_day": 5707.572196638192,
+    "rows": 25,
+    "span_s": 378.44462156295776
+   },
+   "eth.omft.near|chart:2026-01": {
+    "pilot_instant_utc": "2026-01-26T16:44:16.657645Z",
+    "rate_per_day": 4922.214262142439,
+    "rows": 25,
+    "span_s": 438.82689476013184
+   },
+   "eth.omft.near|chart:2026-03": {
+    "pilot_instant_utc": "2026-03-12T04:36:01.767696Z",
+    "rate_per_day": 3164.7640458458754,
+    "rows": 25,
+    "span_s": 682.515337228775
+   },
+   "eth.omft.near|chart:2026-05": {
+    "pilot_instant_utc": "2026-05-16T20:57:46.711889Z",
+    "rate_per_day": 7323.099113220601,
+    "rows": 25,
+    "span_s": 294.9570894241333
+   },
+   "eth.omft.near|chart:2026-07": {
+    "pilot_instant_utc": "2026-07-21T09:09:26.553910Z",
+    "rate_per_day": 4797.175602921858,
+    "rows": 25,
+    "span_s": 450.26494312286377
+   },
+   "eth.omft.near|early": {
+    "pilot_instant_utc": "2025-03-05T19:48:51.030194Z",
+    "rate_per_day": 16.341863471760245,
+    "rows": 25,
+    "span_s": 132175.8686659336
+   },
+   "nbtc.bridge.near|chart:2025-07": {
+    "pilot_instant_utc": "2025-07-06T10:17:31.912509Z",
+    "rate_per_day": 638.9621370487712,
+    "rows": 25,
+    "span_s": 3380.481995344162
+   },
+   "nbtc.bridge.near|chart:2025-09": {
+    "pilot_instant_utc": "2025-09-02T03:49:33.754790Z",
+    "rate_per_day": 74.55566436665808,
+    "rows": 25,
+    "span_s": 28971.641770601273
+   },
+   "nbtc.bridge.near|chart:2025-11": {
+    "pilot_instant_utc": "2025-11-16T15:57:42.044803Z",
+    "rate_per_day": 88.78797008298308,
+    "rows": 25,
+    "span_s": 24327.62003660202
+   },
+   "nbtc.bridge.near|chart:2026-01": {
+    "pilot_instant_utc": "2026-01-18T17:03:09.640029Z",
+    "rate_per_day": 18.336782957773067,
+    "rows": 25,
+    "span_s": 117796.01716256142
+   },
+   "nbtc.bridge.near|chart:2026-03": {
+    "pilot_instant_utc": "2026-03-18T09:49:11.929983Z",
+    "rate_per_day": 18.459035981458467,
+    "rows": 25,
+    "span_s": 117015.86161756516
+   },
+   "nbtc.bridge.near|chart:2026-05": {
+    "pilot_instant_utc": "2026-05-20T18:31:49.116200Z",
+    "rate_per_day": 2510.3518712231357,
+    "rows": 25,
+    "span_s": 860.4371461868286
+   },
+   "nbtc.bridge.near|chart:2026-07": {
+    "pilot_instant_utc": "2026-07-11T14:49:38.764877Z",
+    "rate_per_day": 3312.0300194729866,
+    "rows": 25,
+    "span_s": 652.1680018901825
+   },
+   "nbtc.bridge.near|early": {
+    "pilot_instant_utc": "2025-03-16T01:21:01.566131Z",
+    "rate_per_day": 12.77062793512118,
+    "rows": 25,
+    "span_s": 169138.11998701096
+   },
+   "sol.omft.near|chart:2025-07": {
+    "pilot_instant_utc": "2025-07-28T00:15:34.727488Z",
+    "rate_per_day": 79.00263983289443,
+    "rows": 25,
+    "span_s": 27340.858540534973
+   },
+   "sol.omft.near|chart:2025-09": {
+    "pilot_instant_utc": "2025-09-07T23:20:04.367184Z",
+    "rate_per_day": 1436.403052196897,
+    "rows": 25,
+    "span_s": 1503.756203174591
+   },
+   "sol.omft.near|chart:2025-11": {
+    "pilot_instant_utc": "2025-11-15T16:45:33.918327Z",
+    "rate_per_day": 4139.571070423877,
+    "rows": 25,
+    "span_s": 521.7931914329529
+   },
+   "sol.omft.near|chart:2026-01": {
+    "pilot_instant_utc": "2026-01-03T18:10:42.450269Z",
+    "rate_per_day": 5753.14621430589,
+    "rows": 25,
+    "span_s": 375.44674158096313
+   },
+   "sol.omft.near|chart:2026-03": {
+    "pilot_instant_utc": "2026-03-02T02:23:03.357458Z",
+    "rate_per_day": 4683.087177006632,
+    "rows": 25,
+    "span_s": 461.23420691490173
+   },
+   "sol.omft.near|chart:2026-05": {
+    "pilot_instant_utc": "2026-05-02T15:21:29.635406Z",
+    "rate_per_day": 183.20193756539223,
+    "rows": 25,
+    "span_s": 11790.26831650734
+   },
+   "sol.omft.near|chart:2026-07": {
+    "pilot_instant_utc": "2026-07-06T19:09:52.220278Z",
+    "rate_per_day": 4411.199110901521,
+    "rows": 25,
+    "span_s": 489.66277551651
+   },
+   "sol.omft.near|early": {
+    "pilot_instant_utc": "2025-05-28T07:42:32.436932Z",
+    "rate_per_day": 53.23052312858805,
+    "rows": 25,
+    "span_s": 40578.22228765488
+   },
+   "zec.omft.near|chart:2025-07": {
+    "pilot_instant_utc": "2025-07-14T18:22:20.613655Z",
+    "rate_per_day": 1195.9639269730164,
+    "rows": 25,
+    "span_s": 1806.0745406150818
+   },
+   "zec.omft.near|chart:2025-09": {
+    "pilot_instant_utc": "2025-09-05T00:06:13.989393Z",
+    "rate_per_day": 430.9727282892844,
+    "rows": 25,
+    "span_s": 5011.91805934906
+   },
+   "zec.omft.near|chart:2025-11": {
+    "pilot_instant_utc": "2025-11-13T04:05:21.185600Z",
+    "rate_per_day": 3379.4641684622165,
+    "rows": 25,
+    "span_s": 639.1545796394348
+   },
+   "zec.omft.near|chart:2026-01": {
+    "pilot_instant_utc": "2026-01-29T22:36:05.583438Z",
+    "rate_per_day": 2513.281511215736,
+    "rows": 25,
+    "span_s": 859.4341661930084
+   },
+   "zec.omft.near|chart:2026-03": {
+    "pilot_instant_utc": "2026-03-15T10:40:30.917137Z",
+    "rate_per_day": 5842.530482875776,
+    "rows": 25,
+    "span_s": 369.70282077789307
+   },
+   "zec.omft.near|chart:2026-05": {
+    "pilot_instant_utc": "2026-05-23T05:49:20.594782Z",
+    "rate_per_day": 15996.666875148238,
+    "rows": 25,
+    "span_s": 135.02812910079956
+   },
+   "zec.omft.near|chart:2026-07": {
+    "pilot_instant_utc": "2026-07-21T08:28:01.364908Z",
+    "rate_per_day": 1504.7029305990602,
+    "rows": 25,
+    "span_s": 1435.499297618866
+   },
+   "zec.omft.near|early": {
+    "pilot_instant_utc": "2025-06-07T20:43:02.903896Z",
+    "rate_per_day": 1151.892774190273,
+    "rows": 25,
+    "span_s": 1875.1745374202728
+   }
+  },
+  "pilot_seed": 20261110,
+  "rule": "METHOD-b \u00a76.7 (pilot_m10.py docstring)",
+  "utc": "2026-11-10T10:13:02Z"
+ },
+ "m10_tokens": [
+  "sol.omft.near",
+  "zec.omft.near",
+  "btc.omft.near",
+  "nbtc.bridge.near",
+  "eth.omft.near"
+ ],
+ "note": "final rates for the freeze: draft rates with M10 rates from the second uncounted pilot",
+ "sign_rate_per_day_by_month": {
+  "2024-08": 5.1,
+  "2024-09": 2.7,
+  "2024-10": 288.0,
+  "2024-11": 300.4,
+  "2024-12": 288.0,
+  "2025-01": 12.8,
+  "2025-02": 288.0,
+  "2025-03": 33.1,
+  "2025-04": 31.7,
+  "2025-05": 119.0,
+  "2025-06": 409.1,
+  "2025-07": 1571.4,
+  "2025-08": 1440.2,
+  "2025-09": 1570.5,
+  "2025-10": 2143.4,
+  "2025-11": 4327.3,
+  "2025-12": 3416.2,
+  "2026-01": 4856.3,
+  "2026-02": 5773.4,
+  "2026-03": 20856.5,
+  "2026-04": 6925.2,
+  "2026-05": 34360.2,
+  "2026-06": 23317.4,
+  "2026-07": 37919.3,
+  "2026-08": 23812.8,
+  "2026-09": 29161.0,
+  "2026-10": 13762.2,
+  "2026-11": 13498.4
+ },
+ "sign_rate_source": "/Users/bobby/Data/hackathons/near-2026/best-price-probes-2026-11-09/nb-pilot-20261109T100107Z.json",
+ "tokens": [
+  "nbtc.bridge.near",
+  "btc.omft.near",
+  "zec.omft.near",
+  "nzec.bridge.near",
+  "sol.omft.near",
+  "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+  "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+  "eth.omft.near",
+  "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+  "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near",
+  "arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near",
+  "arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near",
+  "base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near",
+  "tron-d28a265909efecdcee7c5028585214ea0b96f015.omft.near",
+  "xrp.omft.near"
+ ]
+}

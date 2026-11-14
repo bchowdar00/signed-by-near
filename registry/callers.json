@@ -1,0 +1,99 @@
+{
+ "about": "Caller-class registry for v1.signer `sign` predecessors (METHOD-b §5). Rules apply in order; the first match wins. An account matching no rule is class 5 (unattributed). Status: confirmed = seen at the owner's or an official source; reported = someone else's claim, or a tie resting on a block-explorer label or an account-name lead plus a confirmed fact. Researchers' notes with every search tried: registry/sources-1.md, sources-2.md, sources-3.md. Raw copies of explorer responses: ~/Data/hackathons/near-2026/best-price-sources-2026-11-09/callers/.",
+ "namespace_rule": {
+  "text": "Accounts cannot create sub-accounts of other accounts; bob.near can create sub-accounts of itself, such as app.bob.near.",
+  "source": "https://docs.near.org/protocol/accounts-contracts/account-id",
+  "status": "confirmed",
+  "use": "A sub-account was created by its parent's owner, so it inherits the parent's attribution at creation. It says nothing about who controls it later; the rules below use it only where the parent is attributed."
+ },
+ "rules": [
+  {"match": "suffix", "pattern": ".bridge.near", "class": "1", "label": "Near One bridge infrastructure (Omni, BTC and Zcash connectors, relayer)",
+   "builder": "Near One",
+   "sources": [
+    {"url": "https://github.com/Near-One/omni-bridge (README, Mainnet Addresses; saved as omni-bridge-README-20261109.md)", "quote": "NEAR: omni.bridge.near ... vaa-prover-0_4_3.bridge.near ... factory.bridge.near", "status": "confirmed"},
+    {"url": "https://doc.aurora.dev/blog/omnibridge-tutorial/", "quote": "Transaction will be finalized automatically for you by omni-relayer.bridge.near account on the NEAR side.", "status": "confirmed"},
+    {"url": "https://github.com/Near-One/btc-bridge/issues/96", "quote": "Ready refunds on btc-connector.bridge.near can sit unexecuted for weeks after their lock ends.", "status": "reported"}
+   ],
+   "note": "Near One's README lists several *.bridge.near accounts as Omni's mainnet addresses, so bridge.near is Near One's namespace; by the namespace rule every *.bridge.near account was created by it."},
+  {"match": "exact", "pattern": "fast-auth.near", "class": "2", "label": "NEAR Auth (formerly FastAuth), shared login service",
+   "builder": "Peersyst (reported)",
+   "sources": [
+    {"url": "https://docs.auth.near.org/resources/mainnet", "quote": "The addresses below are the production NEAR Auth deployment on NEAR mainnet.", "status": "confirmed"},
+    {"url": "https://www.near.org/blog/near-infrastructure-committee-announces-chain-abstracted-relayer-rfp-winners", "quote": "FastAuth 2.0 (subject to rename) by Peersyst/NEAR Mobile Wallet Team", "status": "reported"}
+   ],
+   "subclass_by_transaction_signer": {
+    "sweat-relayer.near": {"subclass": "2a", "label": "Sweat Wallet (closing 2026-12-30)", "status": "reported",
+     "sources": [{"url": "https://update.swe.at", "quote": "Sweat Wallet and the SWEAT token as they exist today end on 30 December 2026", "status": "confirmed"},
+                 {"url": "https://nearblocks.io/address/sweat-relayer.near (403 on direct fetch; search-cache summary only)", "quote": "delegate actions to spin.sweat and jars-oracle.sweat; Call sign on fast-auth.near", "status": "reported"}],
+     "note": "Tie to Sweat rests on the account relaying to Sweat's own .sweat contracts and on Sweat's published relayer design; no source names the account in its own text."},
+    "_default": {"subclass": "2c", "label": "unknown app behind FastAuth"}
+   },
+   "note": "rathrelayer.near matches Rath's relayer product (Tachyon) by name only, so it stays 2c."},
+  {"match": "exact", "pattern": "ping-account.near", "class": "3", "label": "monitor (observed behaviour)",
+   "sources": [{"url": "observed: NearBlocks pilot 2026-11-09 (nb-pilot-20261109T100107Z.json), 13 samples 2024-09 to 2025-02", "quote": "calls spaced 300.0 s apart (min 293 s, max 307 s) from 2024-10 to 2025-02, 840 s in 2024-09, each with a 1 yoctoNEAR deposit", "status": "confirmed"}],
+   "note": "A clock-driven schedule, not user demand. No document found (sources-1.md). Every class-3 result is also shown with this account in class 5."},
+  {"match": "exact", "pattern": "tx-bench.near", "class": "3", "label": "benchmark / load test (observed behaviour)",
+   "sources": [
+    {"url": "observed: NearBlocks pilot 2026-11-09, 56 samples 2025-04 to 2026-11; neardata pilot (signer-pilot-20261109T105315Z.json), 16 calls", "quote": "calls every 900 s (Apr-Jun 2025), then every 60 s (Jul-Oct 2025); always signs for itself (transaction signer = predecessor) with an empty derivation path, on both domains; its keys never appear as a requester among completed signatures in the 28-month signature-index sample", "status": "confirmed"},
+    {"url": "https://dune.com/proximity_team/v1signer", "quote": "Actions by predecessor: tx-bench.near, 87561", "status": "reported"}
+   ],
+   "note": "No document names the operator (sources-1.md). The schedule and self-signing with no destination use are the evidence. Every class-3 result is also shown with this account in class 5."},
+  {"match": "exact", "pattern": "v0.shadeagent.near", "class": "3", "label": "demo agent (documented example), Shade Agents framework",
+   "builder": "Proximity Labs (framework)",
+   "sources": [{"url": "https://github.com/NearDeFi/shade-agent-twitter", "quote": "This repository is an example of a Shade Agent ... account_id: v0.shadeagent.near", "status": "confirmed"}],
+   "note": "An example deployment, documented as such by its builder."},
+  {"match": "exact_set", "pattern": ["7eda04920f22ba6a2b9f2573fd9a6f6f1946ff9f.aurora", "e12bc514e90e136cad10413669a6ccdeb9e3adb7.aurora", "66667945c34b399993ca834587886b8508db39b1.aurora", "62e1e3be3df663f0563c4ef48233d42ec988e6d9.aurora"], "class": "4", "label": "Relay Protocol (settlement contracts on Aurora, via XCC)",
+   "builder": "Relay (independent; Uneven Labs reported)",
+   "sources": [
+    {"url": "https://explorer.mainnet.aurora.dev/api/v2/addresses/0x7eda04920f22ba6a2b9f2573fd9a6f6f1946ff9f (saved)", "quote": "name: RelayAllocator, is_verified: true", "status": "confirmed"},
+    {"url": "https://explorer.mainnet.aurora.dev/api/v2/addresses/0xe12bc514e90e136cad10413669a6ccdeb9e3adb7 (saved)", "quote": "name: Allocator, is_verified: true; creator 0x1D682340264cF209257f24C3EDcb2a9fc0592535", "status": "confirmed"},
+    {"url": "https://explorer.mainnet.aurora.dev/api/v2/addresses/0x66667945c34b399993ca834587886b8508db39b1 (saved)", "quote": "name: RelayMultisigSigner, is_verified: true; creator 0x1D682340264cF209257f24C3EDcb2a9fc0592535", "status": "confirmed"},
+    {"url": "https://explorer.mainnet.aurora.dev/api/v2/addresses/0x62e1e3be3df663f0563c4ef48233d42ec988e6d9 (saved)", "quote": "name: BitcoinDepositAddress, is_verified: true", "status": "confirmed"},
+    {"url": "https://docs.relay.link/references/protocol/how-it-works", "quote": "Allocator: Generates MPC withdrawal payloads ... Aurora (NEAR)", "status": "confirmed"},
+    {"url": "https://doc.aurora.dev (Contract Callbacks in XCC)", "quote": "format!(\"{}.aurora\", hex::encode(address))", "status": "confirmed"}
+   ],
+   "note": "Verified contract names on Aurora's explorer plus Relay's docs placing its Allocator on Aurora (NEAR). 'Allocator' shares a deployer with 'RelayMultisigSigner'. The tie of each contract to Relay is reported (names and docs), not a statement by Relay naming these addresses."},
+  {"match": "regex", "pattern": "^[0-9a-f]{40}\\.aurora$", "class": "4x", "label": "Aurora XCC sub-account, owner not found",
+   "sources": [{"url": "https://doc.aurora.dev (Contract Callbacks in XCC)", "quote": "The XCC account for an Aurora address is a subaccount of Aurora", "status": "confirmed"}]},
+  {"match": "suffix", "pattern": ".meteor-vaults.near", "class": "4", "label": "Meteor Wallet / Dew Finance vaults",
+   "builder": "Meteor Wallet team (Dew Finance), independent",
+   "sources": [
+    {"url": "https://forum.zcashcommunity.com/t/zcash-vault-by-dew-finance-8-apy/55900", "quote": "we are partner of RHEA Finance and we are the team of meteor wallet in NEAR Protocol", "status": "reported"},
+    {"url": "https://x.com/NEARProtocol/status/1968000555059679594", "quote": "Introducing Dew Finance, our sister company, ... powered by NEAR Intent, Chain Signature and Shade Agent", "status": "reported"},
+    {"url": "https://nearblocks.io/address/usdt.meteor-vaults.near (403; search-cache only)", "quote": "Meteor Savings USDT", "status": "reported"}
+   ],
+   "note": "Every *.meteor-vaults.near account was created by meteor-vaults.near (namespace rule); that parent's tie to Meteor rests on explorer labels, so the class is reported."},
+  {"match": "exact", "pattern": "acc.ref-labs.near", "class": "4", "label": "Ref Finance / RHEA (namespace ref-labs.near)",
+   "builder": "Ref Finance, now RHEA Finance, independent",
+   "sources": [
+    {"url": "https://guide.rhea.finance/history", "quote": "In 2025, Ref Finance merged with Burrow ... and rebranded as RHEA Finance.", "status": "confirmed"},
+    {"url": "Ref's contracts guide (guide.ref.finance; DNS failure on direct fetch, search summary only)", "quote": "boostfarm.ref-labs.near, ref-ve.ref-labs.near, dclv2.ref-labs.near", "status": "reported"}
+   ],
+   "note": "Created by ref-labs.near (namespace rule), whose tie to Ref is reported. Its purpose (parent of BTC-mapped accounts) is not confirmed."},
+  {"match": "exact", "pattern": "rri.sputnik-dao.near", "class": "4", "label": "Trezu (a DAO treasury on Trezu)",
+   "builder": "Near Dev Inc (NEAR DevHub grant; reported)",
+   "sources": [
+    {"url": "https://github.com/NEAR-DevHub/trezu/issues/1891", "quote": "rri.sputnik-dao.near named among the affected DAO treasuries in Trezu's own tracker", "status": "confirmed"},
+    {"url": "https://github.com/MultiAgency/platform/issues/13", "quote": "files a v1.signer.sign proposal, votes it and takes the MPC signature", "status": "reported"}
+   ],
+   "note": "Trezu's confidential setup has a treasury DAO call v1.signer through a proposal; the DAO is the predecessor. Other sputnik-dao accounts are not attributed."},
+  {"match": "suffix", "pattern": ".peerfolio.near", "class": "4", "label": "Peerfolio (AI-agent trading accounts)",
+   "builder": "Peerfolio (beneviolabs), independent",
+   "sources": [
+    {"url": "https://github.com/beneviolabs/autonomous-trading-account", "quote": "NEAR smart contracts that give an AI agent limited, revocable authority to trade on a user's behalf.", "status": "confirmed"},
+    {"url": "earlier README version (search index only)", "quote": "auth-v0.peerfolio.near as the ProxyFactory; per-user accounts user.auth-v0.peerfolio.near", "status": "reported"}
+   ],
+   "note": "Every *.peerfolio.near account was created by peerfolio.near (namespace rule)."}
+ ],
+ "leads_not_attributed": {
+  "about": "Accounts researched with no source beyond a name match; they stay class 5 under METHOD §5. Listed so a reader can check them.",
+  "rathrelayer.near": "name matches Rath's relayer (Tachyon); FastAuth signer, so 2c",
+  "mindshare_contract.near": "name matches Yonder Labs' repo Yonder-Labs/mindshare_contract (Mindshare Index agent, NEAR blog)",
+  "contract.stp-p0.near": "possibly Yonder Labs' Stablecoin Transport Protocol; no source names the account",
+  "v1.shadeagent.near": "name pattern follows v0.shadeagent.near; not found",
+  "dew-rneardefi-kernel.near": "name resembles Dew Finance's dew-rneardefi-vault.near; not found",
+  "stg1.btchive0.near, bithive-staging.near": "BitHive (Allstake) is real; these accounts are not documented",
+  "margin-toward.kronos-heyelsa.near, twist-hollow.heyelsa.near": "HeyElsa's own litepaper names no NEAR use; contradicts the name",
+  "laikachainab.near, acc.toalice.near, brg.toalice.near, passivefund.near, *.acmore.near, jwt-chain-signatures.near, ac-sandbox.shadeainexa.near": "none found"
+ }
+}

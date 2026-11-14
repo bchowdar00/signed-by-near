@@ -1,0 +1,2408 @@
+{
+"source": "NearBlocks v3 keyless, saved 2026-11-09 (pilot, uncounted); meta.icon stripped",
+"meta": {
+"next_page": "eyJpbmRleCI6MSwic2hhcmQiOjQsInRpbWVzdGFtcCI6IjE3OTQyMTc5NDgxNzI0MjQ0MzgiLCJ0eXBlIjoxfQ=="
+},
+"data": [
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "HWLGiFywQrUddf1niXDfU7KghV4AfNk8752J1B35Xnt5",
+"block_height": "223752169",
+"block_timestamp": "1794218684923996696"
+},
+"block_timestamp": "1794218685566752937",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "997757",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "HeSfVo3XC9dBsG6bftUcFoJngWaysnibKR31xEofqo9D",
+"shard_id": 4,
+"transaction_hash": "79tFKtrgLqqZGjdfLg5ifkE9pk39rThgtA8TjJ5vf3uL"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "7iPosDtAboMArbN6xKDFgKAj8fto4gGF3dxvA1rjZcRp",
+"block_height": "223752133",
+"block_timestamp": "1794218662946317333"
+},
+"block_timestamp": "1794218663974223675",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-23397120",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "EEMYmQDg58GHNKbZrHR4noL5jAzVnTSvrZt6tk8Xebkn",
+"shard_id": 4,
+"transaction_hash": "9XyS8aiGK5hr6jRbER3D3dX92pkfXhj4wnt6j6u9So4F"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "73WE5YaejKvjS89ZYKcn6K29jGF4jxb3nghrxwsC1EHG",
+"block_height": "223752122",
+"block_timestamp": "1794218656276777431"
+},
+"block_timestamp": "1794218659798952158",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-30000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "AccEjQPW3zw8Yw6i7r7iSzzZLKXX6Gqa31UXUNf82eb1",
+"shard_id": 4,
+"transaction_hash": "GGNPcMgHoYk1anJnkBkHQVExtYQgkfvWDGT3tJFEQJLm"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EAjHWu7d5SigXrXm9A2EEkyf8ZQPq7wePWRfrEoMuSYD",
+"block_height": "223752117",
+"block_timestamp": "1794218652748388155"
+},
+"block_timestamp": "1794218656566854003",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-11908640",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "8NFn8agyyuvMUHDXVtqaVKAS6XdFH7xWV9qn43rXkP4i",
+"shard_id": 4,
+"transaction_hash": "GX3vQkXnfahTZUodLXt6jm6TZA2ZeAqU6inxRbD6gmaB"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "73WE5YaejKvjS89ZYKcn6K29jGF4jxb3nghrxwsC1EHG",
+"block_height": "223752122",
+"block_timestamp": "1794218656276777431"
+},
+"block_timestamp": "1794218656566854003",
+"cause": "TRANSFER",
+"contract_account_id": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"delta_amount": "9706238",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"decimals": 6,
+"symbol": "USDT",
+"name": "Tether USD"
+},
+"receipt_id": "FNNgx3sZXYyqK63CCfxp9rkmmVjTn6NgyMTyipJ4Y6c",
+"shard_id": 4,
+"transaction_hash": "7NfUmiSjYys4VzPtMzNjyEYpMksfESPYNU5Xciikcjzs"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4rADFtBC5Gvfp485A99jvJBnYic2gz6CeGjRmgU3MNtG",
+"block_height": "223752106",
+"block_timestamp": "1794218646418198398"
+},
+"block_timestamp": "1794218650001964190",
+"cause": "TRANSFER",
+"contract_account_id": "token.rhealab.near",
+"delta_amount": "-60000000000000000000000",
+"event_index": 30,
+"event_type": 1,
+"involved_account_id": "ohovo.near",
+"meta": {
+"contract": "token.rhealab.near",
+"decimals": 18,
+"symbol": "RHEA",
+"name": "Rhea"
+},
+"receipt_id": "5DscgSEaxAevDV58YckJoS59BBSYYcDXdKWhSjRd63zn",
+"shard_id": 12,
+"transaction_hash": "FYZsUGFJSx7J3ajDWTDtzFBVsz52Za4FG88pRrEhaaaS"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "3yqhdxLTGgLzNADv5wnX4pAC5fPCRHdoc2iTJ8nZhrKC",
+"block_height": "223752089",
+"block_timestamp": "1794218636428493685"
+},
+"block_timestamp": "1794218640006107778",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-10000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "9z3Nq3KBjR1V1rBj3jTEZ1b4M5EG4pX45FkdmvcmtX9w",
+"shard_id": 4,
+"transaction_hash": "EtgjqjsHXpC4HW119QCHqAkEd2KxjkCj9pTpxyYJgDRE"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "6ejDYk8Vad2R6j9DeEa8JDLqdEb1mtvZ28W6QPMYT6Bg",
+"block_height": "223752025",
+"block_timestamp": "1794218598330345688"
+},
+"block_timestamp": "1794218601493058838",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-6751000",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "EqnS6YaCiAk3xetiKahoXNd1zHvPPmidUHC2e7f82ieP",
+"shard_id": 4,
+"transaction_hash": "7LnmpoHTFSnSWLs8XC59wrVe4HWZdMgUAcHswuE2SyAc"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "7x6rxS3ffoVQyEnpAgWwJUg7vxtsMTfSiKacXMhkxT9g",
+"block_height": "223752030",
+"block_timestamp": "1794218601260684367"
+},
+"block_timestamp": "1794218601493058838",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "23397120",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "3go4UpPHzdc9A6mWdXvrY4tE58jjNb8pthHjunEGP9ba",
+"shard_id": 4,
+"transaction_hash": "BdXAeNAgi5McAtdDtr3589dzvujBM8SccBaRfPvBD4vP"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "2rK54Luxxes7t7Gi4c3HxdjXGJRSCFjuUWFD4VB1Hadv",
+"block_height": "223752009",
+"block_timestamp": "1794218588763400861"
+},
+"block_timestamp": "1794218590018608817",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-6775288",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "Hmgvwvb6Cj5kBXAeW85mQ5R3AWATNJunD7gbuNEpBgzs",
+"shard_id": 4,
+"transaction_hash": "3mubtaPERWKanzqtEsVZvrcBnURG8X6pj6oDeRZtA3ug"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "GT3YSgym7Y8GkQybuMjdKDNi8RkPWaUe7sMHgiFZchz3",
+"block_height": "223751983",
+"block_timestamp": "1794218573340707070"
+},
+"block_timestamp": "1794218573860203105",
+"cause": "TRANSFER",
+"contract_account_id": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"delta_amount": "63617480472",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "soundfile8883.near",
+"meta": {
+"contract": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"decimals": 6,
+"symbol": "DARK",
+"name": "DarkSwap"
+},
+"receipt_id": "4bxNt1bm3bfNhFwfHXqnrPWT6fAgZ7i6sgz4dTpFc4tq",
+"shard_id": 4,
+"transaction_hash": "BVfgS4Q3CZSNmVBZQ7wui9fTm22p1tpdMRhMHc3JGiu1"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CYuyYnZ8Vs1ub1TUKPzUVe7BWpgWJj1CyAWQ8Ketd4Vz",
+"block_height": "223751944",
+"block_timestamp": "1794218549767587348"
+},
+"block_timestamp": "1794218550575190693",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-89978",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "3qqbDnF3h6wiowJrt2i1e182sxhr1EaUZ9i8kyxhk6mH",
+"shard_id": 4,
+"transaction_hash": "695hwhdpfmCqadEV75BVbWKtJn8Nh4qL1D4rocmDeEjm"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "qojTDutWxKFkGxmyA3vtVqxJfc58X3fCJA5x6Axdj1r",
+"block_height": "223751927",
+"block_timestamp": "1794218538899780997"
+},
+"block_timestamp": "1794218539533146109",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "3018217259",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "D9osTv2A2Qe2Eky9kwtfmxNEzDn9EvMvNm4SkpAtv3xN",
+"shard_id": 4,
+"transaction_hash": "8AXxHoz1FseeLkxcA3L9bzLphbwACF8WoSieYYSow8Vx"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "9shycZKwztZSqvvkYXGgTDtcvc2LnLh3iHqeAPM9BLjV",
+"block_height": "223751923",
+"block_timestamp": "1794218536547094220"
+},
+"block_timestamp": "1794218537489352411",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "36341312",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "BxaCD47u7S1GN1F5PZ8JR2S7v4mzoqdM9tsihDP6ConU",
+"shard_id": 4,
+"transaction_hash": "DjKs1huBvr4LZgjmP2tBivi9hooEbT7Z5Z2CSRQyPGjs"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "9cLX7Bty9bWGHK94abXqbZZLbB11VvfHZc59KSuZr9F",
+"block_height": "223751921",
+"block_timestamp": "1794218534838294503"
+},
+"block_timestamp": "1794218535428362934",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "786051379",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "3C4mear5B5kzGwr7tFPMb4YJEmswX7TD9BcsFDEPMbgp",
+"shard_id": 4,
+"transaction_hash": "EoMmMeKdhiwFEwqwut5GJu6n1kz37ic3UTNrRg4schZg"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "Fn4S5Cahbv4NGxgq4mU5qE2fKDww8QCNKpT3kXy4e8qw",
+"block_height": "223751915",
+"block_timestamp": "1794218531295708583"
+},
+"block_timestamp": "1794218534838294503",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-283951542",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "A8sPixXHEBknp32fTmM8eZzMmMSVnADvQ8WoTBKoMaQn",
+"shard_id": 4,
+"transaction_hash": "J5e3TRcZtww5HttinXff9c3iPmfzLscNDtJmse7fq4ki"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "7Bk6cDab6HX62E7hw2kLUrBT2e4rNrgWjcCryWfaVfWz",
+"block_height": "223751917",
+"block_timestamp": "1794218532517551994"
+},
+"block_timestamp": "1794218533135932668",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "143494028",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "CRhRfENZ1KKA9kQxgW7KqpDSfxdQPcePuUGNygTSAnc7",
+"shard_id": 4,
+"transaction_hash": "E6HLEVsuSNnu2DcDNL8FpUdcNvif3pst3AXmhyuPCDBY"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "7tJRhhrxR2xKgMn2E5XWqGFbUurmaaBZ8hAfA7czEnvQ",
+"block_height": "223751914",
+"block_timestamp": "1794218530837585429"
+},
+"block_timestamp": "1794218531295708583",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "2861455801",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "B74MT8PaeKg5BsHpDFw2ftv7LSUHsRcH9o6iEE2S7Zyf",
+"shard_id": 4,
+"transaction_hash": "4gDc94i2uKhoEarV2Asbn18UFVGBNrosXyhZWzFpEXx6"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "E5mx6kbJr2YEkGYYvMHMq53zUfrV4YT94uxBEksJ9rfQ",
+"block_height": "223751906",
+"block_timestamp": "1794218525676431664"
+},
+"block_timestamp": "1794218527014089019",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "6775288",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "9qbDXogCvwLZ5LNZwzLQMK6rKKKzbrpgFL4NK7wyyuST",
+"shard_id": 4,
+"transaction_hash": "8ZqRzriGrSZ7z6NpdVLhJox24UsnXpaZPgjZZATiPCQg"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "E5mx6kbJr2YEkGYYvMHMq53zUfrV4YT94uxBEksJ9rfQ",
+"block_height": "223751906",
+"block_timestamp": "1794218525676431664"
+},
+"block_timestamp": "1794218527014089019",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "11717293",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "Edn87DML1Famr4ozT7MVPy8GCCw2dmAhy6uuwryd27Jz",
+"shard_id": 4,
+"transaction_hash": "FWDHyXfB5xjTSyhsyQytvLMqQNkCbaEYppUtH4augWUE"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EtgdJWPBEBwTGwbQXGGf8kgtDtCpFhiixmje6aZTV9Qi",
+"block_height": "223751900",
+"block_timestamp": "1794218521653684650"
+},
+"block_timestamp": "1794218526831035550",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-1111",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "ALpEBmurVPNkE1VDKRhAPsoJNFN99nESkj3dr5AjZKzV",
+"shard_id": 4,
+"transaction_hash": "5TrMX1AyfGVhNv9zufcVykvbP6mJYAYDPjrP9WAsRMFK"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "88s4N9evGYGU4qYCaK5q91SuyMevKbzu15uRfk9K3V9L",
+"block_height": "223751885",
+"block_timestamp": "1794218512822394472"
+},
+"block_timestamp": "1794218515035861686",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-81494006",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "AYbamqvTVyK8xViJFj9F1fCEvxzxDcgpuM2YPpj9tdeU",
+"shard_id": 4,
+"transaction_hash": "A7gSaJRisMBFu1xk7bZhqT2RsoAnGwM6xJ6yDMWd4cXL"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8r6cBwrXZGk7de9LyZUsnqXdJt2bmMPESV2EKgvG1hL4",
+"block_height": "223751883",
+"block_timestamp": "1794218511693394265"
+},
+"block_timestamp": "1794218513974986011",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-1329180",
+"event_index": 8,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "EhUP3g3y1ZAoGEuTzAGQenjGzPSu2s4zxwdYXNgNkmCD",
+"shard_id": 4,
+"transaction_hash": "GN2YBmBkZWZDTrcsoUE9UAcCXLaMTJGdyAJNLqL1Hw4q"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8r6cBwrXZGk7de9LyZUsnqXdJt2bmMPESV2EKgvG1hL4",
+"block_height": "223751883",
+"block_timestamp": "1794218511693394265"
+},
+"block_timestamp": "1794218513974986011",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-39850146",
+"event_index": 5,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "FJGSnwS5KsrEFUZm1VMftmbRKwXxkFjzAqBWjS2WCh6M",
+"shard_id": 4,
+"transaction_hash": "4fgj6SfCFEUtJiW9it9ehP6mc2fLWtzRN9XY94FhR2g7"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8r6cBwrXZGk7de9LyZUsnqXdJt2bmMPESV2EKgvG1hL4",
+"block_height": "223751883",
+"block_timestamp": "1794218511693394265"
+},
+"block_timestamp": "1794218513974986011",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-3374942",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "G4nY7bAfWyeHRbXcyucQ9ju2JGtGUCzu2BhvybzCiFbE",
+"shard_id": 4,
+"transaction_hash": "4B2VcwZkBRxdxjRPnQkUcGoXXBjb9wvCAVuofqPYHS4Y"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "2Jh8VeTx6TCNaDagY2QEtN17CFPv3bwnFyonipYRrHGZ",
+"block_height": "223751880",
+"block_timestamp": "1794218509925285425"
+},
+"block_timestamp": "1794218510420816988",
+"cause": "TRANSFER",
+"contract_account_id": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"delta_amount": "9703549",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"decimals": 6,
+"symbol": "USDT",
+"name": "Tether USD"
+},
+"receipt_id": "9pNG7Bwsw6mp2j7RCWRkgrRbm2sMP846fe5apWUBuHrz",
+"shard_id": 4,
+"transaction_hash": "CGi5AuWoJNi2g3A6zxKNHMdABHXDdfGAi6bT35oQGJpq"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "ALoX46TyP5mMXWQXRonLbvRnL1HAra5PQeaFEcHKDEvW",
+"block_height": "223751876",
+"block_timestamp": "1794218507668247044"
+},
+"block_timestamp": "1794218509925285425",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-100087469",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "3bMPGQ6Z4XP75wwicY4beddChpaCCZzQJHCaFnzDmCz7",
+"shard_id": 4,
+"transaction_hash": "4fzDsjKQYUrypMjhCSPbLq28F6NLMgwZZgBC6GKpaQHD"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DaJozBoJ1ZSr1n7iThJGx6UxXkQL4ApDPmrBhb9enkxi",
+"block_height": "223751875",
+"block_timestamp": "1794218507058674283"
+},
+"block_timestamp": "1794218509304573654",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-2369588",
+"event_index": 8,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "GE9wUkbLipPX81tBmj6duHQpfCbAYjnXEjGv3x8yVJhm",
+"shard_id": 4,
+"transaction_hash": "GK2njpKa2YifgNMAzF8UgUBZc7Pvphh6989TCEiGHTBZ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DaJozBoJ1ZSr1n7iThJGx6UxXkQL4ApDPmrBhb9enkxi",
+"block_height": "223751875",
+"block_timestamp": "1794218507058674283"
+},
+"block_timestamp": "1794218509304573654",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-10007485",
+"event_index": 5,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "7deoFkDwHpKrvUaBPH8GDUDGGzR9JimSGqVEy12p8Xn",
+"shard_id": 4,
+"transaction_hash": "7rdbnCiZJcnwtFazRHDvcSmV81hrj2WSLwLUZkVhd18h"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DaJozBoJ1ZSr1n7iThJGx6UxXkQL4ApDPmrBhb9enkxi",
+"block_height": "223751875",
+"block_timestamp": "1794218507058674283"
+},
+"block_timestamp": "1794218509304573654",
+"cause": "BURN",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-4008143",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": null,
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "FpHA2BVZnHAoijdZNTwwP7HjtfvBeiPXi1s1ikw89fAo",
+"shard_id": 4,
+"transaction_hash": "E1czj5mPsgvcxyo5n6cGtuPnML33fSdprhizurNEQTKf"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "6wF8ky96rAXe6dPLgw4phGd55kCdQR3Uw345umBfgXXs",
+"block_height": "223751862",
+"block_timestamp": "1794218499999869750"
+},
+"block_timestamp": "1794218503275156051",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-10000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "EvWzCNNfQi9MhWgTb2T9zTcBPP7S4bugp2JJNMxGVk6R",
+"shard_id": 4,
+"transaction_hash": "AgjpxJQsNvG2hsJbmX1ctUn7QGDFwqkuT7L9Y6yBjWrW"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "HEgx3BtRMe24b6wB6Tn7rw5D4m57vyohhrH5Pp1wNTMJ",
+"block_height": "223751857",
+"block_timestamp": "1794218497115918807"
+},
+"block_timestamp": "1794218498252264091",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-40861514",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "2uQmkjyA9DUcam9ZnT5hAbU2D78xFAiDsi4PSdMut5HP",
+"shard_id": 13,
+"transaction_hash": "CXQrhowhSH8ozAhSsKWvizBrpgfG13L9CgLeFKGd6FAM"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "HEgx3BtRMe24b6wB6Tn7rw5D4m57vyohhrH5Pp1wNTMJ",
+"block_height": "223751857",
+"block_timestamp": "1794218497115918807"
+},
+"block_timestamp": "1794218497870194059",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "162309889",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "J3z6QitR79p1s5BknVKqPpFhhiJsodstGQL6q3oJxbmc",
+"shard_id": 4,
+"transaction_hash": "Bonkej7t5vE5uLejGiu6ghxHVoDvEeXPeNGqUAUmhWbP"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "86iqA2sbriNmaALE6ayedqnandk14RyAphj8HccXTxVA",
+"block_height": "223751841",
+"block_timestamp": "1794218487716052483"
+},
+"block_timestamp": "1794218488258641588",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "89978",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "4roiuyKRRQHBT5BepLprQSf1sQJTuPuwQMacvhxtdPLj",
+"shard_id": 4,
+"transaction_hash": "5VYXMmxKxxokbgpGFZcJGZLV6zLDp98yXKSJhQjy8Fs9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EouXFyZ6RAUaCtmnbcRLZHc2gngP9MfdrFSSHw5YfCNM",
+"block_height": "223751772",
+"block_timestamp": "1794218448368236281"
+},
+"block_timestamp": "1794218448846047337",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "1156115805",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "Ech4oXjb6KZBumv6ghP1JBXoFbVCHaiL3W75n9sy5zqg",
+"shard_id": 4,
+"transaction_hash": "BxKRqrn9fNkYQpQaXHDKJpqmyiwfngMY3MNkNpgMxpoN"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "9J45arJmsAHbkfkCdw2EPVCgDBn3q8yG3JoiTHJzk7Pe",
+"block_height": "223751766",
+"block_timestamp": "1794218444858266232"
+},
+"block_timestamp": "1794218445926180601",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "-24897697",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "zcash-connector.bridge.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "5RMMGy6Q8NxRkAjPPi38bVZhRj5J3c11vEW7GP4XJoJC",
+"shard_id": 13,
+"transaction_hash": "s3BC8kScbK3Qbu1RMAkaV6mA5vrfgY35vGW5cDJ6494"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "AxSb2mmy7hmrrGXijbo5xDTSyqNKAd5s9BJq4881e2ay",
+"block_height": "223751748",
+"block_timestamp": "1794218434492479141"
+},
+"block_timestamp": "1794218435120295421",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "40861514",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "C957EY5XfMcuG9zaTxNdVRFdyKsMNWWTZjc42QaVcswR",
+"shard_id": 13,
+"transaction_hash": "CeWbGSuR7qLGXzJ6Pyy5VTcPiWoHQ85u2RpRu2t83cho"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4AmPcUXaiuA3m44TiECj4dcxqesG3bQN63N1Y9HgHSRn",
+"block_height": "223751742",
+"block_timestamp": "1794218431173926979"
+},
+"block_timestamp": "1794218434492479141",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-9383721",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "7yDi1hkNnAtkG2FzHMLuNxvA3shFJ2HGA2i7makPmDG3",
+"shard_id": 4,
+"transaction_hash": "GVx4fMiXSNzNaYvgeMXNG8wpWJcipEcPenLFVhi9GrKB"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "F6NunPVQgn6ukRVupDLuqP1xdpoKVwjLX3yUBBHWmz3J",
+"block_height": "223751700",
+"block_timestamp": "1794218407363438735"
+},
+"block_timestamp": "1794218410790985404",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-1183650390",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "HrZyQUPMQ6D54dzwbCMivDBYf1NHyNJauCX9gs7T5iwX",
+"shard_id": 4,
+"transaction_hash": "5vgUngr2CuqZVfCU1AJb1mqcWWkT6RwEK1GPLd5P5jo7"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "GKEFxugQB2EdevvnurVGvLzjiwG95yZWdsGegSn79Xot",
+"block_height": "223751703",
+"block_timestamp": "1794218409136798401"
+},
+"block_timestamp": "1794218409508690818",
+"cause": "TRANSFER",
+"contract_account_id": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"delta_amount": "232856370306",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "lolr.near",
+"meta": {
+"contract": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"decimals": 6,
+"symbol": "DARK",
+"name": "DarkSwap"
+},
+"receipt_id": "AqFXr4jXCk1g8DXKAoxh5ct3Uh9ybHADhE9FKQxo3rpe",
+"shard_id": 4,
+"transaction_hash": "GVqp3T6nthknLZGnRx4FCX5vjdRvvmu8h7QL1aZJHf1t"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "A32aD28zyY6JacFU7dnw5p1ehmQTAHhQ7CRfh5Sa3EVs",
+"block_height": "223751702",
+"block_timestamp": "1794218408521703848"
+},
+"block_timestamp": "1794218409136798401",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "54176291",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "DTd76bxTo5ws3yeMYg7WU5QUmkErsALVEXyyt1smUQKK",
+"shard_id": 4,
+"transaction_hash": "6AW7gnMdkBLqhmTzGFC97SA3yWsvEgzUog3cy4y1cUBp"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4chVZtzohYcjRFdSkqTWFDzsoJnDK33H1erFxML9pTke",
+"block_height": "223751698",
+"block_timestamp": "1794218406397236539"
+},
+"block_timestamp": "1794218406886848543",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "99769822",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "CsHpeDDe4TWTm2nwfuansMZi2rLfMFGyXkDZ6VJ4Tipb",
+"shard_id": 4,
+"transaction_hash": "Gm5yeT9fTbVdakxc6uL6nMRo9LLPAwkLNK64qaEwpJ5x"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "trvDHUt6d8CXJyHMqY18KCU4DQA6eJFE3oP33vY1yvE",
+"block_height": "223751696",
+"block_timestamp": "1794218405179279996"
+},
+"block_timestamp": "1794218405676087531",
+"cause": "TRANSFER",
+"contract_account_id": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"delta_amount": "131769148844",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "soundfile8883.near",
+"meta": {
+"contract": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"decimals": 6,
+"symbol": "DARK",
+"name": "DarkSwap"
+},
+"receipt_id": "8A7wUvRoyqmPaL1LiCYo3cQ94zjXnc2C9f5WNQZWXXBG",
+"shard_id": 4,
+"transaction_hash": "4qYG85kPkxYv6jdkxegncsdv34yvh4rxjJ8p1RtEG2P7"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "FtTznpKf9SBWPtgPxyU9wYXWWgMFxtavUtm5AAz4KVNE",
+"block_height": "223751690",
+"block_timestamp": "1794218401770022038"
+},
+"block_timestamp": "1794218405179279996",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-20000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "DwDpreyc44z7nFZqATakBrUftwojnTLNHJzehKG6w1en",
+"shard_id": 4,
+"transaction_hash": "HGEgbnR6e9D5KMWy8MDBTLtY4zwsASEDjxch2EwfXNfN"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8wnezevb4mBgqQGpvHEohgrePiaGsrzDDy8oRgZecWca",
+"block_height": "223751669",
+"block_timestamp": "1794218389705172555"
+},
+"block_timestamp": "1794218393298150193",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-100000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "7E2iv2cCoFyen2Qgt4ErPv9r9vWV9ZU78gcKSBZFoMHM",
+"shard_id": 4,
+"transaction_hash": "pprpCAxMzKkwRz883n3UbtUyYV5ipNesDbgpuSq1vGc"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CD8xb4g68a5nKsNajJ7qGx3ULj6kmmysKQSdkWvHbfg",
+"block_height": "223751644",
+"block_timestamp": "1794218375731875980"
+},
+"block_timestamp": "1794218376173259428",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "24897697",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "8QeWZ4fvLKMkcV2GcHUTyyS2LeZBHsvKTANaSZoW96SS",
+"shard_id": 13,
+"transaction_hash": "GYPbsRCVf3fDyEswwkjLxrH7vDMT54CxamUaMNhecqe2"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "vSoHJEk3u2BCXQhccghzU4NLDdfBpAgrKtwzJVqxYKo",
+"block_height": "223751620",
+"block_timestamp": "1794218361941328304"
+},
+"block_timestamp": "1794218365485255889",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-6758951",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "H2kVJKdaQid8KrDKpCthzb3S75BVWShcoFMTtUzDpRTE",
+"shard_id": 4,
+"transaction_hash": "8g6K5G4A6AD2T9MGy8fd5ntmFRGdg7dK2smCibTPAvA2"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4MAyV7YDmTvt6mF1Qn9iyvtGyEn8sRtdpXkpupB5UTJY",
+"block_height": "223751616",
+"block_timestamp": "1794218359788893122"
+},
+"block_timestamp": "1794218360403619560",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "739884366",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "FvPkAgmanHaFnkpzQJebj6C7kjYxwFnF9skj9XWLuuBF",
+"shard_id": 4,
+"transaction_hash": "4hGm3qiY7kzjHcYZTegZNpe4FGJhj6GjDpJ56jsQcsFg"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CH9QWtRGYNHRFYhEJ7jpu5ghjHzWGS3w5LkQ1cFqothr",
+"block_height": "223751586",
+"block_timestamp": "1794218342651410814"
+},
+"block_timestamp": "1794218346073294569",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-740000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "Dv9ZsxtCf6wJJ16tBxgrHgokmx3eLWy2USdPRzW41ipn",
+"shard_id": 4,
+"transaction_hash": "EgU7P1z9URtKzBoAytjLHF4xnR52u45o8w79SiGHDcJw"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "71bZRJEQtXovdvME1cbNj58qk1kZho9wXwDMxGmpmTW5",
+"block_height": "223751588",
+"block_timestamp": "1794218343816022394"
+},
+"block_timestamp": "1794218344969886927",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-14265601",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "3XsXJy2ZFG5dfZSQMkEYiy5NsPu61jkmRBmWu9m84uJn",
+"shard_id": 4,
+"transaction_hash": "CSdiCtx7Ne4Xm2gYigovVTT2oborkPcGSTxb7XXLVu6i"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "36rxxrLrCNpQGUsn39KAU4VR11tCVR9uga3kKH2yrmu6",
+"block_height": "223751579",
+"block_timestamp": "1794218338635667347"
+},
+"block_timestamp": "1794218342123646759",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-206471190",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "6Mr9rLHqTkipZni3B9FyGt5CsdwDbtRrJcyXi3bK258J",
+"shard_id": 4,
+"transaction_hash": "4WUKvaVen7JcmYRfZJEGhThZCW67F5GBUVDnbJemjJC9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "FANXen3AFJMmEfJXo3BLqNVMbK9GYqycgfD8XeKFiX7o",
+"block_height": "223751557",
+"block_timestamp": "1794218325745842004"
+},
+"block_timestamp": "1794218329141468914",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-143357484",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "G6NZmvfMGYqmdtj7ZciGg2DS65B1zm2wsNX91VM51wrr",
+"shard_id": 4,
+"transaction_hash": "HWFgqKVx8RzJ7atMVgVPrw3HGUra5hSfAmibkC13hDPd"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "HA7mpe5ziabAYK6AAPzDQu8GmYZXrRJK58XTK5P5gf2k",
+"block_height": "223751552",
+"block_timestamp": "1794218322851708504"
+},
+"block_timestamp": "1794218323525498422",
+"cause": "TRANSFER",
+"contract_account_id": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"delta_amount": "203080924144",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "soundfile8883.near",
+"meta": {
+"contract": "sol-0xd31e793eff8104551603bfac6e1222af303d4c5b.omdep.near",
+"decimals": 6,
+"symbol": "DARK",
+"name": "DarkSwap"
+},
+"receipt_id": "XimekPniGzE4CqRa9999gRxe7FaZGfEuWSBJiWwkYjZ",
+"shard_id": 4,
+"transaction_hash": "6b9k1iNrk2uE3kSJAKWeC4xkw7egrjagr6x6J7dJuTi9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "Fu6xCL2mzpe1qoaXgj72SJFVfmXYrdy8v6EHJiZriDX7",
+"block_height": "223751529",
+"block_timestamp": "1794218310097414449"
+},
+"block_timestamp": "1794218313301027965",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-236320832",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "DkNKSwRkopREN8eWXYAALAckRbbYm8yA49DET3cpg1Cu",
+"shard_id": 4,
+"transaction_hash": "8MAvDF4hL2Rk1zvqHF495k64DX4kC2BLbqmDyiubgRcu"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "Bw4XxERca4zzJ6KsgpVgYWW3BZE2HdjFBkkKtRdog1E1",
+"block_height": "223751517",
+"block_timestamp": "1794218303559719493"
+},
+"block_timestamp": "1794218304016154200",
+"cause": "TRANSFER",
+"contract_account_id": "zec.omft.near",
+"delta_amount": "93314",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "zec.omft.near",
+"decimals": 8,
+"symbol": "ZEC",
+"name": "Zcash"
+},
+"receipt_id": "DZqWVQvaRZwaLiwAaYEv9nf72d9UzvgUuUBXGJq9pW4U",
+"shard_id": 13,
+"transaction_hash": "GNhQrpLjcQYRT9P19EsASQ4edv2VT4sbuK4cspfuUYoM"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "3pabCg32dUtYWLhRgGLmQ1CRuGzPViz6rpnyyQCJ3C2A",
+"block_height": "223751483",
+"block_timestamp": "1794218284314052514"
+},
+"block_timestamp": "1794218287866645119",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-13546080",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "97R5Y56TRsXgfoP5GLGSXZzYM5pUwBtcYfmT4WQ5WTf",
+"shard_id": 4,
+"transaction_hash": "9zEdcnNfmeRuA4eEiKY6TNCoqyxwjSMN2UqgmBtZfath"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4PuvBf9F6dcL5pwuJ8WoUsBY1xhfKpAjTd7XRXohZrsS",
+"block_height": "223751486",
+"block_timestamp": "1794218286093598919"
+},
+"block_timestamp": "1794218287373019919",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-59625",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "5kJ7uHSpfh5D7WVCEj2ra6p64pNwcPDjT4Cbt6uY63iL",
+"shard_id": 4,
+"transaction_hash": "9oMwcz2zQvD87z9Ywb9KyrRJsY4mA2k5sypReZUTjHxt"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EbgccqjJMZavk6xMvoVRrNs6zoJwsuNkWRMQgShregQV",
+"block_height": "223751479",
+"block_timestamp": "1794218282307849578"
+},
+"block_timestamp": "1794218282795671196",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "14265601",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "9SjsZPFUfo5DbBuvHpQPw81nvqTW1f6o22qkdnhQcXC7",
+"shard_id": 4,
+"transaction_hash": "6X7bebSkMj7nNhVh5tbxeSm2XEQxWTuRCddoh3tGwAm2"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EdUy4FM9XsCXkyNKjA36JSBkuDt5L5mqF2QYUW5NT3Jo",
+"block_height": "223751454",
+"block_timestamp": "1794218268327246243"
+},
+"block_timestamp": "1794218268890881305",
+"cause": "TRANSFER",
+"contract_account_id": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"delta_amount": "200335488",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"decimals": 6,
+"symbol": "USDT",
+"name": "Tether USD"
+},
+"receipt_id": "CKgEGUi3v3xJXKypxRtW2n1Srd2Ci7emL97WEMK3L6q9",
+"shard_id": 4,
+"transaction_hash": "FqKY3MA8e7mpHxHa8RYqUrBtXxSe1aA9jA1YH7XofqQZ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "C66JzEuAcYMXP55n9zYf2W1ANjYMM81H7uY8fPoiUAyL",
+"block_height": "223751423",
+"block_timestamp": "1794218250959912531"
+},
+"block_timestamp": "1794218251542836664",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "18676470697",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "7J53qBMGKSQHjGeuMd9TeB2hxvC7p4ZyPoWs1PPWFNDg",
+"shard_id": 4,
+"transaction_hash": "C8UA45U848GfUAbGvd9h2xxMsw2gxbex1ooAMMvzgP4g"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "BMQd748zwmDwZqXJspSfYavwdTWZZHEFS7qvFomJVzHW",
+"block_height": "223751412",
+"block_timestamp": "1794218244980727515"
+},
+"block_timestamp": "1794218248263123795",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-1111",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "FMHXNuHb3gd6Ky5gRbZeGmn7HHWzgg5avHb1xR6XdjNC",
+"shard_id": 4,
+"transaction_hash": "2JRqqyvo2D5583EtMJWoDKafukLqaBtudvEi1vh1q176"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4cZSwXX3s8bLMqb4C6qAJFSb6ESapFdmQMEt8F8X3EwF",
+"block_height": "223751376",
+"block_timestamp": "1794218225077903010"
+},
+"block_timestamp": "1794218228324556465",
+"cause": "TRANSFER",
+"contract_account_id": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"delta_amount": "-1500000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"decimals": 6,
+"symbol": "USDT",
+"name": "Tether USD"
+},
+"receipt_id": "FgntHkHa8vVXZaFBF4S8bd7PMw8CjSbh2Tg8XSHony2x",
+"shard_id": 4,
+"transaction_hash": "4hYoXo7gkE9qb1euDhjQ1GeuGrPd5NiZZ4RXmZAGhzAE"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "6WCCFiz8t4xWEGASpBqFfjYcoK6VYrNBAgqv9aAc7YGa",
+"block_height": "223751375",
+"block_timestamp": "1794218224573749688"
+},
+"block_timestamp": "1794218225077903010",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "136786956",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "3BeJucYpWEkwsS7JuuVv9fTFw1LQEi3yrdo4cymQKzJ8",
+"shard_id": 4,
+"transaction_hash": "3cfskVXZa7woLMaxCB3v5Vrzw5eQMK7MYy6DiEDWEQxs"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "3y2Ytx4kv9sWVyX3xAxzNCnPAj1Dqz2hmbwywG2bChPg",
+"block_height": "223751374",
+"block_timestamp": "1794218223944606356"
+},
+"block_timestamp": "1794218224573749688",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "59625",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "CEAKJkbTkzC5eC3MKUCEdWdT3SoMdSY7XWeekZwrrA9W",
+"shard_id": 4,
+"transaction_hash": "5cej28c7ccTtkWorgGRXUH7UCD5GBmpYLrWEJmGV9i9i"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "F5Hs6h3oRLLepQThL4zVm7GwK5ucwdpoMa617Qr5aGhH",
+"block_height": "223751335",
+"block_timestamp": "1794218202574241176"
+},
+"block_timestamp": "1794218205843410042",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-1111",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "GsZDc4vMCwujEMcii2z33JJoNfBRDWB3Sbcyh1CfJF3c",
+"shard_id": 4,
+"transaction_hash": "9x9g1eu78FvhFdG2Z7NSPwcD2tsKkcDZr6Ua6gwo9Ean"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "63E2eopcBxfcGnxoJJSWLPmrmpxppDg4RfJXJ6eBVKsu",
+"block_height": "223751326",
+"block_timestamp": "1794218197638682402"
+},
+"block_timestamp": "1794218198126330990",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "100352677",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "GNULFehZgB9HTKhRkzUtsNsfqfGV1spCtdFp33GdFBF9",
+"shard_id": 4,
+"transaction_hash": "8KHMZaqBQ4DtzEL2vtLdyf4bnVvwjpj3Ym6UbBjf3DZz"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CJiBdTD84CWp936wFEKaHHy8dfLvV1m4jxD5ebG3o4KH",
+"block_height": "223751312",
+"block_timestamp": "1794218189939727347"
+},
+"block_timestamp": "1794218190624867769",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "334447753",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "FgiLgjm2eHXvh2qXCXr5LD9ohnN6RLWSLgu6cUmpzoTe",
+"shard_id": 4,
+"transaction_hash": "BF71v8GnxCucAvMb5bjP4HfmU4fdPdHgamXNPYWyi1Z8"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4AP9zYHBaXd72CaJV93R8jNUUYaVWyrJhFCkKLQcPA2P",
+"block_height": "223751310",
+"block_timestamp": "1794218188859127289"
+},
+"block_timestamp": "1794218189435894770",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "295962501",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "9MeeGdjBKTtA6VsDQTR8DBWMfzmFoVt8TimsmUWWGaEP",
+"shard_id": 4,
+"transaction_hash": "Giz5VdBCo3GHQ23Vhi52og9DVVTZh8qG7LhWwyNTuYzT"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EhekXgg3M4xN4gYEQ1FUv2WRxjmLbqRkSMWdXvnjRAAm",
+"block_height": "223751242",
+"block_timestamp": "1794218150811934502"
+},
+"block_timestamp": "1794218154498709621",
+"cause": "TRANSFER",
+"contract_account_id": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"delta_amount": "-2021686",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"decimals": 6,
+"symbol": "USDT",
+"name": "Tether USD"
+},
+"receipt_id": "Ahvw3cQrx2QxS84hYUbHQqvTudtaqk97KschgWqov2v8",
+"shard_id": 4,
+"transaction_hash": "GoFU2sQYrYaoHUmkmm5CFDaszHG2u8f3sjcFbMxwSswL"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DKHdTj9fAQ9xgXLsvuVpskaNpaSLhXUKp1ZQE6BpkZgo",
+"block_height": "223751244",
+"block_timestamp": "1794218152014454810"
+},
+"block_timestamp": "1794218152619764601",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "9434844",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "AfBT3xz6Fem4eybTf8qfsSes3u5KWyqm2gencsqpnKsn",
+"shard_id": 4,
+"transaction_hash": "Cvjoa949TUNnYdQsNm5QhGksz9Ghbi5Ptpzi8nwn9Wmy"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8fBUAQM7n3uuNW1mohyjfAdtGJT51fUrBg4PGR9Rtuiq",
+"block_height": "223751212",
+"block_timestamp": "1794218133641629873"
+},
+"block_timestamp": "1794218137055127735",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-100000000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "EZAM2zVvsaxfQqEYkoEAX8f6m7iaJtLKZFKqn9mYjfrW",
+"shard_id": 4,
+"transaction_hash": "GVunf8PrenYdPWi6h4FXpbzHaK3b7ywpdFFpLyPokTY4"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "AbBpa5h14Y1qGkH5qz3PhJZU1sZENDKjiMS4aQwcQv4h",
+"block_height": "223751211",
+"block_timestamp": "1794218133041996045"
+},
+"block_timestamp": "1794218136420956893",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-100000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "CVSd5pDtgi64piT8SwyyDHcUv2E9NkpmHdF31doJjeDy",
+"shard_id": 4,
+"transaction_hash": "Bj7znVL9ypX265nDuNv8Y3DmBBdzTysQr9TqHnLnn5V5"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "ftrCGLn1WbEeue3xXebbtuvmhUtmwz3u4Wat4xjUF6j",
+"block_height": "223751209",
+"block_timestamp": "1794218131992370214"
+},
+"block_timestamp": "1794218135204483091",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-104340000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "4raZeXddgVHVGDuvidPzzZf198rg1fmn2woSwHfSesgJ",
+"shard_id": 4,
+"transaction_hash": "CCxALE83C2QQNGmQEzU3UGdrtGe6HhDGcuGY3A4TUUYJ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "5ad6UQCZbhh1du7fjna7ebNEtGuZa8UoJkCMMKa7QsPx",
+"block_height": "223751198",
+"block_timestamp": "1794218125311933478"
+},
+"block_timestamp": "1794218128882758771",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-99708160",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "32nTwcf2iwniQvXV8rHokj8mGvfGtxzVtgcKM7Fws3pY",
+"shard_id": 4,
+"transaction_hash": "CFx4ig53r2qytE5KmLzHe9b1dZ3otWR7nuHQXRULmK1a"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "DHKa1b6gJyDvShV4T8kxK3QD4DCVLwL626XTgJLPeV6b",
+"block_height": "223751156",
+"block_timestamp": "1794218101500304632"
+},
+"block_timestamp": "1794218104946881433",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-1263659697",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "EK9t22Lth1a2M6XgFYZ2LVP1nx5HWpvvhp3C3zCqxQsc",
+"shard_id": 4,
+"transaction_hash": "8yH2uTWqUnNha5SiPRGbozqpTFgGjminzwvwtpU2uaZZ"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "BF1MDVDNf2UCb3ZnaS6tAT21iv7i2M7AvsP36iweNqTM",
+"block_height": "223751132",
+"block_timestamp": "1794218087637227598"
+},
+"block_timestamp": "1794218091090328018",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-12000000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "EjmJwHyx3QfktMPKkho8wZJy1XX8ZtaE2ZiK8Bh52NpV",
+"shard_id": 4,
+"transaction_hash": "BYg3SX4HVG4AHunK7htrtXzSa5A7ZCiCBB3U5SwW9Rpf"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "9thndd5fFBRvi5S61KCkKgSE8PmMVwTRFUwFaCNcYsiw",
+"block_height": "223751136",
+"block_timestamp": "1794218089835660560"
+},
+"block_timestamp": "1794218090489345181",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "149770409",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "847fjCovL7Raw1uu8KNMhqJpcNsWCVY6i8ZAjWWXfdJu",
+"shard_id": 4,
+"transaction_hash": "H6fDRTK9MztVgGqVKGBGF3bUGjCutan8U46MHvGLirND"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "FJPUickqibsqZ7v8dgEhrtLpGJKCSWrMbBahVzvctKhS",
+"block_height": "223751120",
+"block_timestamp": "1794218080454975079"
+},
+"block_timestamp": "1794218081721019123",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-35644706",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "FQwjTGmiTHqZg2kXBCkAtHHMKdx86mM6SRxM9vzx6bbV",
+"shard_id": 4,
+"transaction_hash": "79BaQAKYvKvcERJPaMsvGVGHf26kC1bhubHgBR8Af7MW"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "aJB1wzHxbLboD4ZZSe7MoD8LNHRjtpLLCWDA9onHtqf",
+"block_height": "223751107",
+"block_timestamp": "1794218072738817682"
+},
+"block_timestamp": "1794218076266559455",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-150000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "FUuMJkShaiAETVGE1TJFKxkHMPm9JV14o3VxhojdkkME",
+"shard_id": 4,
+"transaction_hash": "4nNoWzfHvkCyCYUQk3mXTSrKBXzd8LtzKkMxeLRJMfX4"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8VsAjiMrYPHZnMKQDVxyC9SMSDdo1stHPZBkDuj7xA4c",
+"block_height": "223751098",
+"block_timestamp": "1794218067229096791"
+},
+"block_timestamp": "1794218070838013519",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-384795489",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "EYkTHkc8JmQtvMVc6eCYBnMuMHc7yLGPfAQDWXN58gtE",
+"shard_id": 4,
+"transaction_hash": "DXemGPaMYhac6EssisYVgrhtEuahqp44hXf862jfjgTa"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "8VsAjiMrYPHZnMKQDVxyC9SMSDdo1stHPZBkDuj7xA4c",
+"block_height": "223751098",
+"block_timestamp": "1794218067229096791"
+},
+"block_timestamp": "1794218070838013519",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-2000000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "3uct3LrZY4Mqo5vqf1YNwucQzztwapJStAuiotnRspAU",
+"shard_id": 4,
+"transaction_hash": "3fuDtSXWWtszJdVzF8mCN5ShexqJFBJmMiu6EMGWFaMA"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "EWWWqnGMLZcxCikNEkWN1USEFcWCsPYVDwhqT4gmCkZZ",
+"block_height": "223751102",
+"block_timestamp": "1794218069592104814"
+},
+"block_timestamp": "1794218070218761859",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "5009481820",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "6QhNy7GzDdd6o63NAQGHvSXEr18vzFiZvKg4B8iL4U9D",
+"shard_id": 4,
+"transaction_hash": "2jaseSum4rt2nLdnCJby9yHESXswz9RJABySQbxPgmZ1"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "48W2gFdH6DKgCt6MwnBU9XMjZWSYdNfKvUNN3jtWfArv",
+"block_height": "223751094",
+"block_timestamp": "1794218064787905520"
+},
+"block_timestamp": "1794218068416085774",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-249614000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "6HG5EvrzyoDj9SEYDwWedGxfEy9EJjRntdpmd72nSweb",
+"shard_id": 4,
+"transaction_hash": "EzGeXwtG9HxzWbPs9XMgG42ivqBGBfXdiYUcbGvfvWFx"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4XSeZrxrgRELgr9jfMR9Ln4qq6AJ6ewGfTV7EmrU1yM4",
+"block_height": "223751092",
+"block_timestamp": "1794218063606668844"
+},
+"block_timestamp": "1794218064209871930",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "291089783",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "nd6qFZjDyGNznAq2tDqzazaBvMJc66VjxhT29DB2Lrj",
+"shard_id": 4,
+"transaction_hash": "9uM6Q9KTaptmvjfHMAKCmndT6aE3EeWABnJususuB6PT"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "GJQLqVrAbSJtnuMdswGrua6XX3QTT8kNammRkCMFkfNR",
+"block_height": "223751064",
+"block_timestamp": "1794218046913523998"
+},
+"block_timestamp": "1794218050562024220",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-57585700",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "BbV3XSubNAPJP918ChqLyNX1zjpnM4qH9mkphC6oojvp",
+"shard_id": 4,
+"transaction_hash": "3pwHMhJVhjhF3y6Yz4bo1mMjk1jKCnYfMou73DDxx8zx"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "3FMZFzU7dQpB7S3wBxGiWs5MBa5d2taSk2dnJwig1LKf",
+"block_height": "223751044",
+"block_timestamp": "1794218036185280445"
+},
+"block_timestamp": "1794218039428274013",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "-8876428",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "CFRvmCdd8AGES8wHa3gbYpG8AdWnmdR7rdNkd26cjVfA",
+"shard_id": 4,
+"transaction_hash": "HLaYyw5VjUQ5UjPHpeUUnQhxREpTGuQq3D3qBjnChXfA"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "AYLeGxou8ypMuF5yUkJ7vvoNVn2eRdqPryR1H1gaNyMU",
+"block_height": "223751040",
+"block_timestamp": "1794218034037335764"
+},
+"block_timestamp": "1794218034654160826",
+"cause": "TRANSFER",
+"contract_account_id": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"delta_amount": "230190847",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+"decimals": 6,
+"symbol": "USDC",
+"name": "USD Coin"
+},
+"receipt_id": "GGan5wXV9amN97KpUFafcmk8Pafx3tr4sW28r86ufenj",
+"shard_id": 4,
+"transaction_hash": "92thkrRCYvr8irvBe285oCVTa8Ed4KhWbsA6VDgRzU6U"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "BVneU9Br6KMEcWHg91q13QgmkEsCQEhoiuuN5jEju9an",
+"block_height": "223751023",
+"block_timestamp": "1794218023914289780"
+},
+"block_timestamp": "1794218024518397250",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "11739884272",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "FqeuQ3RNDL4izPSHNZjWiGkPkLcQxrhGgCmoGzGmQY1r",
+"shard_id": 4,
+"transaction_hash": "9tmTQGhL3JVdeG3Grpn2jSXmg2yFkbH1HPxbULXPGJV9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4xftxFaE3sqjxYrtykxkvyNBLNH17AdigFU16qwgnu6U",
+"block_height": "223751013",
+"block_timestamp": "1794218018177309117"
+},
+"block_timestamp": "1794218018766910950",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "35644706",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "6FNRFnDsYMf8WbA9KXubzyMC61tyScpoCUGacLfW8nKT",
+"shard_id": 4,
+"transaction_hash": "9JmpJowuHVG26vFqXnNxTABVpmn1LpkJRPMdRjvcaxvH"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "CRFnK1GyrojZ8FEgAcs6vMys2xLHRLZbFk5tP1JaYWUw",
+"block_height": "223751006",
+"block_timestamp": "1794218014122180260"
+},
+"block_timestamp": "1794218015401646170",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-16273630",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "2PLMdQL8AkWHoZRvq4uAJGy9ZNsi1GcueQKkA1rfkhFQ",
+"shard_id": 4,
+"transaction_hash": "8XoJGyjaDak1ouFVksxCtBKfYmc1YBPkMibBJGidMNwh"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "BPAcEcJwX4VUKBtGK8WAtPdL5WRsTs245uTKpw9KUjUd",
+"block_height": "223750997",
+"block_timestamp": "1794218009138452191"
+},
+"block_timestamp": "1794218010194553020",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-244869012",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "6tnqJWmsezK3bGqT94J1b4XotN5dVdYBXeK2982f5UQT",
+"shard_id": 4,
+"transaction_hash": "GJB8rkm9oWc5F5H3MBWwCYz3WvcpZez9UKdvqzguobEy"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "G2H7ZBSfxRn1yvovJKV94TqNGoXNLPWYeAxLcnHt7PYX",
+"block_height": "223750996",
+"block_timestamp": "1794218008613259159"
+},
+"block_timestamp": "1794218009138452191",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "5039023768",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "Gv8sLvygTdqmnoNdycxt6nF5ywrBRdpsoWVLGy3djDZg",
+"shard_id": 4,
+"transaction_hash": "Cjo6FYY31ybNBVjwt7FJ2NiQH2qKK3MPTpMY3gpgiU9r"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "5FYmZXpuSSfAdMdRqLdZEaBN1q2Yem7kaJv4nvEfFjsN",
+"block_height": "223750965",
+"block_timestamp": "1794217991120579571"
+},
+"block_timestamp": "1794217994646437427",
+"cause": "TRANSFER",
+"contract_account_id": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"delta_amount": "-440000000",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+"decimals": 6,
+"symbol": "USDT",
+"name": "Tether USD"
+},
+"receipt_id": "GErynW92axu1QG8pcZ99N4xBST23yX1ttX14tj5LoNSf",
+"shard_id": 4,
+"transaction_hash": "B5mdrdVPySFUMyrNKxTLxBLvjxGchM1Fa7ibwoQZj2t9"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "J44CL18r92pDRTixPzErjGTitttnSq1JjAxRXisartYf",
+"block_height": "223750933",
+"block_timestamp": "1794217972365686933"
+},
+"block_timestamp": "1794217975912981447",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-479425442",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "4fN4T26Th7SewmixdxVF6DQPGbn6gj1RV6KZaA5CAwsN",
+"shard_id": 4,
+"transaction_hash": "3WX4AK9Tj21KBykjmdLXQmp9Kvj4YkAbTH1QaV2Yct7m"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "FgySZDw6uZ4m2BBR2XzLXqzba5ZUAuzGcUzgDF5VyKpd",
+"block_height": "223750932",
+"block_timestamp": "1794217971896103526"
+},
+"block_timestamp": "1794217972917216784",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "-8718",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "btc-connector.bridge.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "AY3DrySBCvix367a3iSnjPUGjNgubermdML9SipWeFoy",
+"shard_id": 4,
+"transaction_hash": "8zrSUBhFH6VSNHogBPVcxK6dodvkDZPQyXEofnj7TwEg"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4AUEjsVtdViNqs7gBkHWNRqRsHyYR9nBtanE4sKRVc8e",
+"block_height": "223750914",
+"block_timestamp": "1794217962068269875"
+},
+"block_timestamp": "1794217965303375842",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-3240559162",
+"event_index": 4,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "438P7NctxYCcCLQcc2ZN8ijuzEqpmjRdpdxv73Lyius7",
+"shard_id": 4,
+"transaction_hash": "5o4mXG9hVbmgKxYzS5knDuZ45eApcBs9M6Gn8HedSFU2"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4AUEjsVtdViNqs7gBkHWNRqRsHyYR9nBtanE4sKRVc8e",
+"block_height": "223750914",
+"block_timestamp": "1794217962068269875"
+},
+"block_timestamp": "1794217965303375842",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-361366552",
+"event_index": 2,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "5Bnf33VNezFrrBXdDivk7Cv7GJYHeAG6GzD3tdhECYfA",
+"shard_id": 4,
+"transaction_hash": "H1ct618Gfn7i1XdPK5CmTpeZrzsuX9erLJJLGHXQpsj2"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "4AUEjsVtdViNqs7gBkHWNRqRsHyYR9nBtanE4sKRVc8e",
+"block_height": "223750914",
+"block_timestamp": "1794217962068269875"
+},
+"block_timestamp": "1794217965303375842",
+"cause": "TRANSFER",
+"contract_account_id": "sol.omft.near",
+"delta_amount": "-2901708784",
+"event_index": 0,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "sol.omft.near",
+"decimals": 9,
+"symbol": "SOL",
+"name": "Solana"
+},
+"receipt_id": "DsHxUZEoDYjWfZy6DGoCiMoLVNeUWQbph16KyezXELcb",
+"shard_id": 4,
+"transaction_hash": "46TRm1ThzPhg9aYhHtfTMWspa6Jf3x9NcH2Q6Q3SoyFc"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "Fgvtxcs2yPP8hFMwX1itY3iukCR2EFBAEtprYfQpJCoX",
+"block_height": "223750888",
+"block_timestamp": "1794217947609007811"
+},
+"block_timestamp": "1794217948172424438",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "16273630",
+"event_index": 3,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "E61EiqZe7FEgCPgHfCghdY8yCutPvGno7EXudPGrMDi6",
+"shard_id": 4,
+"transaction_hash": "4J6jP2mKLVMSLHJSersWz3mvtWcDvTKh1A9ABn5qXfcg"
+},
+{
+"affected_account_id": "omni.bridge.near",
+"block": {
+"block_hash": "Fgvtxcs2yPP8hFMwX1itY3iukCR2EFBAEtprYfQpJCoX",
+"block_height": "223750888",
+"block_timestamp": "1794217947609007811"
+},
+"block_timestamp": "1794217948172424438",
+"cause": "TRANSFER",
+"contract_account_id": "nbtc.bridge.near",
+"delta_amount": "244869012",
+"event_index": 1,
+"event_type": 1,
+"involved_account_id": "intents.near",
+"meta": {
+"contract": "nbtc.bridge.near",
+"decimals": 8,
+"symbol": "NBTC",
+"name": "Near WBTC"
+},
+"receipt_id": "9G343PQYkU4sF6XWnqDc9K4LASLXJeCrkUH7YkFh1uiV",
+"shard_id": 4,
+"transaction_hash": "ChbthAGzL7yWMWuXJUq2Hc59ZBDYhW5CsBVrwpBHbkaP"
+}
+]
+}
